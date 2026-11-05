@@ -1,0 +1,61 @@
+name: Publicar en la web
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Montar la carpeta site/
+        run: python3 scripts/build_site.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: site/
+          retention-days: 7
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment: produccion
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: site
+          path: site/
+      # Configura en Settings > Secrets and variables > Actions:
+      #   secrets: FTP_SERVER, FTP_USERNAME, FTP_PASSWORD
+      #   variables: FTP_REMOTE_DIR (p. ej. /public_html/tenerife/), DEPLOY_PROTOCOL (ftp | ftps | sftp; por defecto ftps)
+      - name: Subir por FTP/FTPS
+        if: vars.DEPLOY_PROTOCOL != 'sftp'
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ${{ vars.DEPLOY_PROTOCOL || 'ftps' }}
+          local-dir: site/
+          server-dir: ${{ vars.FTP_REMOTE_DIR || '/public_html/' }}
+          dangerous-clean-slate: false
+      - name: Subir por SFTP
+        if: vars.DEPLOY_PROTOCOL == 'sftp'
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          port: ${{ vars.SFTP_PORT || 22 }}
+          local_path: ./site/*
+          remote_path: ${{ vars.FTP_REMOTE_DIR || '/public_html/' }}
+          sftp_only: true
