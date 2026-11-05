@@ -36,7 +36,7 @@ jobs:
           path: site/
       # Configura en Settings > Secrets and variables > Actions:
       #   secrets: FTP_SERVER, FTP_USERNAME, FTP_PASSWORD
-      #   variables: FTP_REMOTE_DIR (p. ej. /public_html/tenerife/), DEPLOY_PROTOCOL (ftp | ftps | sftp; por defecto ftps)
+      #   variables: FTP_REMOTE_DIR (por defecto ./, la raíz del usuario FTP; p. ej. ./tenerife/ para una subcarpeta), DEPLOY_PROTOCOL (ftp | ftps | sftp; por defecto ftps)
       - name: Subir por FTP/FTPS
         if: vars.DEPLOY_PROTOCOL != 'sftp'
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
@@ -46,7 +46,7 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           protocol: ${{ vars.DEPLOY_PROTOCOL || 'ftps' }}
           local-dir: site/
-          server-dir: ${{ vars.FTP_REMOTE_DIR || '/public_html/' }}
+          server-dir: ${{ vars.FTP_REMOTE_DIR || './' }}
           dangerous-clean-slate: false
       - name: Subir por SFTP
         if: vars.DEPLOY_PROTOCOL == 'sftp'
@@ -57,5 +57,5 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           port: ${{ vars.SFTP_PORT || 22 }}
           local_path: ./site/*
-          remote_path: ${{ vars.FTP_REMOTE_DIR || '/public_html/' }}
+          remote_path: ${{ vars.FTP_REMOTE_DIR || './' }}
           sftp_only: true

@@ -21,7 +21,7 @@ En el repositorio, *Settings → Secrets and variables → Actions*:
 | Secret | `FTP_SERVER` | host del hosting, p. ej. `ftp.midominio.es` |
 | Secret | `FTP_USERNAME` | usuario FTP |
 | Secret | `FTP_PASSWORD` | contraseña FTP |
-| Variable | `FTP_REMOTE_DIR` | carpeta de destino, p. ej. `/public_html/tenerife/` (con barra final) |
+| Variable | `FTP_REMOTE_DIR` | carpeta de destino relativa a la raíz del usuario FTP, con barra final; por defecto `./` (la raíz). Para una subcarpeta, p. ej. `./tenerife/` |
 | Variable | `DEPLOY_PROTOCOL` | `ftps` (por defecto), `ftp` o `sftp` |
 | Variable | `SFTP_PORT` | solo para SFTP, por defecto `22` |
 
