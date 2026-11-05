@@ -27,6 +27,10 @@ En el repositorio, *Settings → Secrets and variables → Actions*:
 
 El job `deploy` usa el *environment* `produccion`; créalo en *Settings → Environments* si quieres exigir aprobación manual antes de publicar. Sin él, basta con los secretos.
 
-## Fuentes y licencias
+## Licencia
+
+Código bajo [MIT](LICENSE); textos, ilustraciones y datos derivados bajo [CC BY 4.0](LICENSE-CONTENIDO.md), con atribución al visor original de La Palma y a los titulares de los datos. Detalle en `LICENSE-CONTENIDO.md`.
+
+## Fuentes
 
 Mapa de Cultivos de Tenerife 2021 y registro de primera venta de pesca 2021 (Gobierno de Canarias, CC BY 4.0) · Copernicus DEM GLO-30 (ESA) · FAOSTAT y ECOCROP (FAO) · AEMET, normales 1991-2020 · ISTAC · Consejo Insular de Aguas de Tenerife. Detalle en `v2/91_fuentes_y_licencias_tf.md` y en `v2/aviso_tf.html`. Textos, ilustraciones y código propios, reutilizables citando la fuente; three.js (MIT) incrustado.
