@@ -1,0 +1,165 @@
+n,f,c,l,pi,r,lp,a,o,s
+Caña de azúcar,Sugar cane,VIABLE CON RIEGO,agua,"['P1-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",1153,True,True,FAOSTAT,ECOCROP
+Millo (grano),Maize (corn),VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P5-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S', 'P5-S']",102,True,True,FAOSTAT,ECOCROP
+Arroz,Rice,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P5-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S', 'P5-S']",1002,False,True,FAOSTAT,ECOCROP
+Trigo,Wheat,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",252,True,True,FAOSTAT,ECOCROP
+Palma aceitera,Oil palm fruit,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",1002,False,True,FAOSTAT,ECOCROP
+Soja,Soya beans,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P5-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S', 'P5-S']",102,False,True,FAOSTAT,ECOCROP
+Papa,Potatoes,VIABLE SECANO,,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",2,True,True,FAOSTAT,ECOCROP
+Yuca,"Cassava, fresh",VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",502,False,True,FAOSTAT,ECOCROP
+Remolacha azucarera,Sugar beet,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",102,False,True,FAOSTAT,ECOCROP
+Tomate,Tomatoes,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P5-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S', 'P5-S']",102,True,True,FAOSTAT,ECOCROP
+Cebada,Barley,VIABLE SECANO,,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",2,True,True,FAOSTAT,ECOCROP
+Plátano,Bananas,VIABLE CON RIEGO,agua,"['P1-N', 'P1-S', 'P2-S', 'P3-S']",2053,True,True,FAOSTAT,ECOCROP
+Cebolla seca,"Onions and shallots, dry (excluding dehydrated)",VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P5-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S', 'P5-S']",0,True,True,FAOSTAT,ECOCROP
+Sandía,Watermelons,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P5-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S', 'P5-S']",2,True,True,FAOSTAT,ECOCROP
+Manzana,Apples,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",202,True,True,FAOSTAT,ECOCROP
+Ñame (Dioscorea),Yams,VIABLE CON PROTECCIÓN,frío (requiere invernadero),"['P1-N', 'P1-S']",820,False,True,FAOSTAT,ECOCROP
+Boniato,Sweet potatoes,VIABLE CON RIEGO,agua,"['P1-N', 'P1-S', 'P2-S']",403,True,True,FAOSTAT,ECOCROP
+Colza,Rape or colza seed,VIABLE SECANO,,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",2,False,True,FAOSTAT,ECOCROP
+Pepino,Cucumbers and gherkins,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P5-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S', 'P5-S']",502,True,True,FAOSTAT,ECOCROP
+Uva,Grapes,VIABLE SECANO,,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S', 'P5-S']",202,True,True,FAOSTAT,ECOCROP
+Col / repollo,Cabbages,VIABLE SECANO,,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",2,True,True,FAOSTAT,ECOCROP
+Algodón,"Seed cotton, unginned",VIABLE CON RIEGO,agua,"['P1-N', 'P1-S', 'P2-S', 'P3-S']",403,False,False,FAOSTAT,ECOCROP
+Naranja,Oranges,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",702,True,True,FAOSTAT,ECOCROP
+Coco,"Coconuts, in shell",VIABLE CON RIEGO,agua,"['P1-N', 'P1-S', 'P2-S', 'P3-S']",853,False,True,FAOSTAT,ECOCROP
+Sorgo,Sorghum,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S', 'P5-S']",0,False,True,FAOSTAT,ECOCROP
+Mango,"Mangoes, guavas and mangosteens",VIABLE CON RIEGO,agua,"['P1-N', 'P1-S']",253,True,True,FAOSTAT,ECOCROP
+Cacahuete,"Groundnuts, excluding shelled",VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S', 'P5-S']",102,False,True,FAOSTAT,ECOCROP
+Berenjena,Eggplants (aubergines),VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P5-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S', 'P5-S']",702,True,True,FAOSTAT,ECOCROP
+Girasol,Sunflower seed,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",102,False,True,FAOSTAT,ECOCROP
+Mandarina,"Tangerines, mandarins, clementines",VIABLE CON RIEGO,agua,"['P1-N', 'P1-S', 'P2-S']",853,True,True,FAOSTAT,ECOCROP
+Zanahoria y nabo,Carrots and turnips,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",102,True,True,FAOSTAT,ECOCROP
+Pimiento verde,"Chillies and peppers, green (Capsicum spp. and Pimenta spp.)",VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P5-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S', 'P5-S']",102,True,True,FAOSTAT,ECOCROP
+Plátano macho,Plantains and cooking bananas,VIABLE CON RIEGO,agua,"['P1-N', 'P1-S', 'P2-S', 'P3-S']",2053,False,True,FAOSTAT,ECOCROP
+Calabaza / bubango,"Pumpkins, squash and gourds",VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P5-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S', 'P5-S']",102,True,True,FAOSTAT,ECOCROP
+Té,Tea leaves,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",902,False,True,FAOSTAT,ECOCROP
+Mijo,Millet,VIABLE CON RIEGO,agua,"['P1-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",53,False,True,FAOSTAT,ECOCROP
+Espinaca,Spinach,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",302,True,True,FAOSTAT,ECOCROP
+Judía seca / habichuela,"Beans, dry",VIABLE SECANO,,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",2,True,True,FAOSTAT,ECOCROP
+Ajo,Green garlic,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P5-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S', 'P5-S']",252,True,True,FAOSTAT,ECOCROP
+Piña tropical,Pineapples,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",337,True,True,FAOSTAT,ECOCROP
+Melón,Cantaloupes and other melons,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P5-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S', 'P5-S']",502,True,True,FAOSTAT,ECOCROP
+Lechuga y escarola,Lettuce and chicory,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",602,True,True,FAOSTAT,ECOCROP
+Durazno y nectarina,Peaches and nectarines,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",402,True,True,FAOSTAT,ECOCROP
+Pera,Pears,VIABLE SECANO,,"['P1-N', 'P2-N', 'P3-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",102,True,True,FAOSTAT,ECOCROP
+Coliflor y brócoli,Cauliflowers and broccoli,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P5-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S', 'P5-S']",102,True,True,FAOSTAT,ECOCROP
+Judía verde,"Other beans, green",VIABLE SECANO,,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",2,True,True,FAOSTAT,ECOCROP
+Aceituna / olivo,Olives,VIABLE SECANO,,"['P1-N', 'P2-N', 'P3-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",0,True,True,FAOSTAT,ECOCROP
+Limón y lima,Lemons and limes,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",502,True,True,FAOSTAT,ECOCROP
+Avena,Oats,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",102,True,True,FAOSTAT,ECOCROP
+Arveja / guisante verde,"Peas, green",VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",302,True,True,FAOSTAT,ECOCROP
+"Ñame (Colocasia, FAOSTAT)",Taro,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",1337,False,True,FAOSTAT,ECOCROP
+Garbanzo,"Chick peas, dry",VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",102,True,True,FAOSTAT,ECOCROP
+Caucho,Natural rubber in primary forms,VIABLE CON RIEGO,agua,"['P1-N', 'P1-S']",1653,False,False,FAOSTAT,ECOCROP
+Papaya,Papayas,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",1037,True,True,FAOSTAT,ECOCROP
+Arveja seca,"Peas, dry",VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",302,True,True,FAOSTAT,ECOCROP
+Okra,Okra,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P5-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S', 'P5-S']",102,False,True,FAOSTAT,ECOCROP
+Ciruela,Plums and sloes,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",402,True,True,FAOSTAT,ECOCROP
+Triticale,Triticale,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",102,False,True,FAOSTAT,ECOCROP
+Centeno,Rye,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",102,True,True,FAOSTAT,ECOCROP
+Café,"Coffee, green",VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P5-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S', 'P5-S']",902,False,True,FAOSTAT · antecedente en TF: plantaciones testimoniales en el norte [CONOCIMIENTO_BASE],ECOCROP
+Aguacate,Avocados,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",2,True,True,FAOSTAT,ECOCROP
+Fresa,Strawberries,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P5-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S', 'P5-S']",102,True,True,FAOSTAT,ECOCROP
+Chícharo / caupí,"Cow peas, dry",VIABLE CON RIEGO,agua,"['P1-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",153,False,True,FAOSTAT,ECOCROP
+Dátil,Dates,MARGINAL,temperatura subóptima,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P5-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S', 'P5-S']",0,False,True,FAOSTAT,ECOCROP
+Pomelo,Pomelos and grapefruits,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S', 'P5-S']",1002,True,True,FAOSTAT,ECOCROP
+Millo tierno,Green corn (maize),VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",302,True,True,FAOSTAT,ECOCROP
+Espárrago,Asparagus,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",302,False,True,FAOSTAT,ECOCROP
+Lenteja,"Lentils, dry",VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",102,True,True,FAOSTAT,ECOCROP
+Sésamo,Sesame seed,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P5-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S', 'P5-S']",2,False,True,FAOSTAT,ECOCROP
+Haba seca,"Broad beans and horse beans, dry",VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P5-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S', 'P5-S']",152,True,True,FAOSTAT,ECOCROP
+Tabaco,Unmanufactured tobacco,VIABLE SECANO,,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",2,True,False,"FAOSTAT · antecedente en TF: 0,3 ha en el Mapa de Cultivos",ECOCROP
+Cebolleta,"Onions and shallots, green",VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P5-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S', 'P5-S']",352,True,True,FAOSTAT,ECOCROP
+Pimienta palmera / guindilla seca,"Chillies and peppers, dry (Capsicum spp., Pimenta spp.), raw",VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P5-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S', 'P5-S']",102,True,True,FAOSTAT,ECOCROP
+Cacao,Cocoa beans,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",737,False,True,FAOSTAT,ECOCROP
+Caqui,Persimmons,VIABLE SECANO,,"['P1-N', 'P2-N', 'P3-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",502,True,True,FAOSTAT,ECOCROP
+Jengibre,"Ginger, raw",VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",902,False,True,FAOSTAT,ECOCROP
+Guandú,"Pigeon peas, dry",VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S', 'P5-S']",102,False,True,FAOSTAT,ECOCROP
+Albaricoque,Apricots,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",402,True,True,FAOSTAT,ECOCROP
+Kiwi,Kiwi fruit,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",437,False,True,FAOSTAT,ECOCROP
+Nuez,"Walnuts, in shell",VIABLE SECANO,,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",302,True,True,FAOSTAT,ECOCROP
+Anacardo,"Cashew nuts, in shell",VIABLE SECANO,,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P5-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S', 'P5-S']",252,False,True,FAOSTAT,ECOCROP
+Almendra,"Almonds, in shell",VIABLE SECANO,,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",102,True,True,FAOSTAT,ECOCROP
+Yute,"Jute, raw or retted",VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P5-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S', 'P5-S']",1002,False,False,FAOSTAT,ECOCROP
+Cereza,Cherries,VIABLE SECANO,,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",2,True,True,FAOSTAT,ECOCROP
+Linaza,Linseed,VIABLE SECANO,,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",2,False,True,FAOSTAT,ECOCROP
+"Anís, cilantro, comino, hinojo","Anise, badian, coriander, cumin, caraway, fennel and juniper berries, raw",VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P5-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S', 'P5-S']",402,True,True,FAOSTAT,ECOCROP
+Nuez de areca,Areca nuts,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P5-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S', 'P5-S']",1002,False,False,FAOSTAT,ECOCROP
+Puerro,Leeks and other alliaceous vegetables,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P5-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S', 'P5-S']",252,True,True,FAOSTAT,ECOCROP
+Castaña,"Chestnuts, in shell",VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P5-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S', 'P5-S']",402,True,True,FAOSTAT,ECOCROP
+Trigo sarraceno,Buckwheat,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P5-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S', 'P5-S']",202,False,True,FAOSTAT,ECOCROP
+Ricino,Castor oil seeds,VIABLE SECANO,,"['P1-N', 'P2-N', 'P3-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",102,False,False,FAOSTAT,ECOCROP
+Fibra de coco,"Coir, raw",VIABLE CON RIEGO,agua,"['P1-N', 'P1-S', 'P2-S', 'P3-S']",853,False,False,FAOSTAT,ECOCROP
+Alcachofa,Artichokes,VIABLE SECANO,,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",402,True,True,FAOSTAT,ECOCROP
+Chocho / altramuz,Lupins,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P5-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S', 'P5-S']",0,True,True,FAOSTAT,ECOCROP
+Guinda,Sour cherries,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P5-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S', 'P5-S']",302,False,True,FAOSTAT,ECOCROP
+Haba verde,"Broad beans and horse beans, green",VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P5-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S', 'P5-S']",152,True,True,FAOSTAT,ECOCROP
+Arándano,Blueberries,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",402,True,True,FAOSTAT,ECOCROP
+Fruto del anacardo,Cashewapple,VIABLE SECANO,,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P5-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S', 'P5-S']",252,False,True,FAOSTAT,ECOCROP
+Pistacho,"Pistachios, in shell",MARGINAL,temperatura subóptima,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",0,False,True,FAOSTAT,ECOCROP
+Higo,Figs,VIABLE SECANO,,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",202,True,True,FAOSTAT,ECOCROP
+Lino (fibra),"Flax, raw or retted",VIABLE SECANO,,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",2,False,False,FAOSTAT,ECOCROP
+Avellana,"Hazelnuts, in shell",VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P5-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S', 'P5-S']",402,False,True,FAOSTAT,ECOCROP
+Judía de enrame,String beans,VIABLE SECANO,,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",2,False,True,FAOSTAT,ECOCROP
+Árbol del sebo,Tallowtree seeds,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",202,False,False,FAOSTAT,ECOCROP
+Pipa de melón,Melonseed,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P5-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S', 'P5-S']",502,False,True,FAOSTAT,ECOCROP
+Pimienta negra,"Pepper (Piper spp.), raw",MARGINAL,agua,"['P1-N', 'P1-S', 'P2-S', 'P3-S']",2153,False,True,FAOSTAT,ECOCROP
+Frambuesa,Raspberries,VIABLE SECANO,,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",302,True,True,FAOSTAT,ECOCROP
+Mostaza,Mustard seed,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",202,False,True,FAOSTAT,ECOCROP
+Karité,Karite nuts (sheanuts),VIABLE CON RIEGO,agua,"['P1-N', 'P1-S']",553,False,True,FAOSTAT,ficha manual
+Grosella negra,Currants,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",202,False,True,FAOSTAT,ECOCROP
+Membrillo,Quinces,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",202,True,True,FAOSTAT,ECOCROP
+Cártamo,Safflower seed,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",102,False,True,FAOSTAT,ECOCROP
+Fonio,Fonio,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",402,False,True,FAOSTAT,ECOCROP
+Veza / chícharo forrajero,Vetches,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",102,False,True,FAOSTAT,ECOCROP
+Arándano rojo,Cranberries,VIABLE SECANO,,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",102,False,True,FAOSTAT,ECOCROP
+Seda (morera + gusano),Silk-worm cocoons suitable for reeling,VIABLE SECANO,,"['P1-N', 'P2-N', 'P3-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",202,False,False,FAOSTAT,ECOCROP
+Tung,Tung nuts,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",502,False,True,FAOSTAT,ficha manual
+Malanga,Yautia,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",502,False,True,FAOSTAT,ECOCROP
+Cáñamo (fibra),"True hemp, raw or retted",VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",102,False,False,FAOSTAT,ECOCROP
+Nuez de cola,Kola nuts,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",937,False,False,FAOSTAT,ECOCROP
+Alpiste,Canary seed,VIABLE CON RIEGO,agua,"['P2-N', 'P3-N', 'P4-N', 'P5-N', 'P4-S', 'P5-S']",302,False,True,FAOSTAT,ECOCROP
+Kapok,Kapok fruit,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",1002,False,False,FAOSTAT,ECOCROP
+Canela,"Cinnamon and cinnamon-tree flowers, raw",VIABLE CON RIEGO,agua,"['P1-N', 'P1-S']",1653,False,True,FAOSTAT,ECOCROP
+Guisante bambara,"Bambara beans, dry",VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P5-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S', 'P5-S']",252,False,True,FAOSTAT,ECOCROP
+Sisal,"Sisal, raw",VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P5-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S', 'P5-S']",402,False,False,FAOSTAT,ECOCROP
+Kenaf,"Kenaf, and other textile bast fibres, raw or retted",VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",102,False,False,FAOSTAT,ECOCROP
+Clavo,"Cloves (whole stems), raw",VIABLE CON PROTECCIÓN,frío (requiere invernadero),"['P1-N', 'P1-S']",1620,False,True,FAOSTAT,ficha manual
+Nuez moscada y cardamomo,"Nutmeg, mace, cardamoms, raw",VIABLE CON RIEGO,agua,"['P1-N', 'P1-S', 'P2-S', 'P3-S']",1153,False,True,FAOSTAT,ECOCROP
+Quinoa,Quinoa,VIABLE SECANO,,"['P2-N', 'P3-N', 'P4-N', 'P5-N', 'P2-S', 'P3-S', 'P4-S', 'P5-S']",2,False,True,FAOSTAT,ECOCROP
+Lúpulo,Hop cones,VIABLE SECANO,,"['P2-N', 'P3-N', 'P4-N', 'P5-N', 'P3-S', 'P4-S', 'P5-S']",0,False,True,FAOSTAT,ECOCROP
+Abacá,"Abaca, manila hemp, raw",VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",1302,False,False,FAOSTAT,ECOCROP
+Grosella espinosa,Gooseberries,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",402,False,True,FAOSTAT,ECOCROP
+Nuez de Brasil,"Brazil nuts, in shell",VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",1902,False,True,FAOSTAT,ECOCROP
+Ramio,"Ramie, raw or retted",VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P5-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S', 'P5-S']",1002,False,False,FAOSTAT,ECOCROP
+Algarroba,Locust beans (carobs),VIABLE SECANO,,"['P1-N', 'P2-N', 'P3-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",0,False,True,FAOSTAT,ECOCROP
+Pita (fibra de agave),"Agave fibres, raw, n.e.c.",VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P5-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S', 'P5-S']",402,False,False,FAOSTAT,ECOCROP
+Menta y hierbabuena,"Peppermint, spearmint",VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",502,True,True,FAOSTAT,ECOCROP
+Cañamón,Hempseed,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",102,False,True,FAOSTAT,ECOCROP
+Achicoria,Chicory roots,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",1002,False,True,FAOSTAT,ECOCROP
+Adormidera,Poppy seed,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",302,False,True,FAOSTAT,ECOCROP
+Pelitre,"Pyrethrum, dried flowers",VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P5-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S', 'P5-S']",302,False,False,FAOSTAT,ficha manual
+Vainilla,"Vanilla, raw",VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",1537,False,True,FAOSTAT,ECOCROP
+Jojoba,Jojoba seeds,VIABLE SECANO,,"['P1-N', 'P2-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",0,False,False,FAOSTAT,ECOCROP
+Hoja de yuca,Cassava leaves,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",502,False,True,FAOSTAT,ECOCROP
+"Ñame (Colocasia, local)","Ñame (Colocasia, local)",VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",1337,True,True,Local Tenerife,ECOCROP
+Millo local,Millo local,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P5-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S', 'P5-S']",102,True,True,Local Tenerife,ECOCROP
+Tagasaste (forraje),Tagasaste (forraje),VIABLE SECANO,,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P5-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S', 'P5-S']",0,True,True,Local Tenerife,ficha manual
+Tunera / higo pico,Tunera / higo pico,VIABLE SECANO,,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S', 'P5-S']",0,True,True,Local Tenerife,ficha manual
+Pitaya,Pitaya,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S', 'P5-S']",0,True,True,Local Tenerife,ECOCROP
+Chirimoya,Chirimoya,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",302,True,True,Local Tenerife,ECOCROP
+Níspero,Níspero,VIABLE SECANO,,"['P1-N', 'P2-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",137,True,True,Local Tenerife,ECOCROP
+Guayaba,Guayaba,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",502,True,True,Local Tenerife,ECOCROP
+Parchita (maracuyá),Parchita (maracuyá),VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",402,True,True,Local Tenerife,ECOCROP
+Lichi,Lichi,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",502,True,True,Local Tenerife,ECOCROP
+Macadamia,Macadamia,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P5-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S', 'P5-S']",502,True,True,Local Tenerife,ECOCROP
+Granado,Granado,VIABLE CON RIEGO,agua,"['P1-N', 'P1-S', 'P2-S']",553,True,True,Local Tenerife,ECOCROP
+Moral (morera negra),Moral (morera negra),VIABLE SECANO,,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",202,False,True,Local Tenerife,ECOCROP
+Tomate de árbol,Tomate de árbol,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",1502,False,True,Local Tenerife,ECOCROP
+Pepino dulce,Pepino dulce,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",302,False,True,Local Tenerife,ECOCROP
+Boniato (local),Boniato (local),VIABLE CON RIEGO,agua,"['P1-N', 'P1-S', 'P2-S']",403,True,True,Local Tenerife,ECOCROP
+Papas antiguas (local),Papas antiguas (local),VIABLE SECANO,,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",2,True,True,Local Tenerife,ECOCROP
+Café (Coffea arabica),Café (Coffea arabica),VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P5-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S', 'P5-S']",902,False,True,Local Tenerife · antecedente en TF: plantaciones testimoniales en el norte [CONOCIMIENTO_BASE],ECOCROP
+Tuno indio,Tuno indio,VIABLE SECANO,,"['P1-N', 'P2-N', 'P3-N', 'P4-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",0,True,True,Local Tenerife,ficha manual
+Moringa,Moringa,VIABLE CON RIEGO,agua,"['P1-N', 'P2-N', 'P3-N', 'P1-S', 'P2-S', 'P3-S', 'P4-S']",202,True,True,Local Tenerife,ECOCROP

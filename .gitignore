@@ -1,0 +1,9 @@
+# Datos pesados derivados (se regeneran con los scripts; ver 00_INDICE.md de cada versión)
+*/_dl/
+*.parquet
+*.shp
+*.dbf
+*.zip
+*.tif
+__pycache__/
+.DS_Store

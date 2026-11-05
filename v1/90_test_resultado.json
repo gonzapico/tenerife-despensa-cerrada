@@ -1,0 +1,42 @@
+{
+ "externas": 0,
+ "ext": [],
+ "errores": 0,
+ "errs": [],
+ "vistas": [
+  {
+   "scrollW": 1280,
+   "innerW": 1280,
+   "chips": 144,
+   "pisos": 10,
+   "plan": 9,
+   "nevera": 56,
+   "despensa": 29,
+   "zonas": 6,
+   "canvas": true,
+   "frames": 0,
+   "check1": "Recalculado frente a la tabla (92): 3609,5 ha vs 3609,5 ha · CUMPLE",
+   "check4": "Coberturas recalculadas en el navegador frente a la tabla (96): diferencia máxima 0,005 pp · CUMPLE",
+   "cob": "Cobertura de 955.063 residentes · gris: producción actual sin plátano · azul: pesca · color: el reparto · línea: 100 %Energía17 %Proteína22 %Grasa17 %Frutas y hortalizas17 %",
+   "calibra": "Calibración: 98/98 CUMPLE",
+   "name": "desktop"
+  },
+  {
+   "scrollW": 390,
+   "innerW": 390,
+   "chips": 144,
+   "pisos": 10,
+   "plan": 9,
+   "nevera": 56,
+   "despensa": 29,
+   "zonas": 6,
+   "canvas": true,
+   "frames": 0,
+   "check1": "Recalculado frente a la tabla (92): 3609,5 ha vs 3609,5 ha · CUMPLE",
+   "check4": "Coberturas recalculadas en el navegador frente a la tabla (96): diferencia máxima 0,005 pp · CUMPLE",
+   "cob": "Cobertura de 955.063 residentes · gris: producción actual sin plátano · azul: pesca · color: el reparto · línea: 100 %Energía17 %Proteína22 %Grasa17 %Frutas y hortalizas17 %",
+   "calibra": "Calibración: 98/98 CUMPLE",
+   "name": "movil"
+  }
+ ]
+}

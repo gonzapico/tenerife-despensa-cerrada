@@ -1,0 +1,3402 @@
+{
+"clima": [
+{
+"piso": "P1-N",
+"nombre": "Costa",
+"cota": "0-300",
+"z_ref": 150,
+"tm_anual": 20.3,
+"tm_mes_frio": 17.3,
+"tn_mes_frio": 14.6,
+"t_abs_min_est": 8.6,
+"tm_mes_calido": 23.6,
+"lluvia_mm": 380,
+"horas_frio": 0
+},
+{
+"piso": "P2-N",
+"nombre": "Medianías bajas",
+"cota": "300-600",
+"z_ref": 450,
+"tm_anual": 18.0,
+"tm_mes_frio": 14.9,
+"tn_mes_frio": 12.2,
+"t_abs_min_est": 6.2,
+"tm_mes_calido": 21.5,
+"lluvia_mm": 600,
+"horas_frio": 9
+},
+{
+"piso": "P3-N",
+"nombre": "Medianías altas",
+"cota": "600-1000",
+"z_ref": 800,
+"tm_anual": 15.6,
+"tm_mes_frio": 12.5,
+"tn_mes_frio": 9.8,
+"t_abs_min_est": 3.8,
+"tm_mes_calido": 19.0,
+"lluvia_mm": 780,
+"horas_frio": 104
+},
+{
+"piso": "P4-N",
+"nombre": "Pinar y cumbre baja",
+"cota": "1000-1500",
+"z_ref": 1250,
+"tm_anual": 12.4,
+"tm_mes_frio": 9.0,
+"tn_mes_frio": 6.3,
+"t_abs_min_est": 0.3,
+"tm_mes_calido": 16.4,
+"lluvia_mm": 850,
+"horas_frio": 999
+},
+{
+"piso": "P5-N",
+"nombre": "Cumbre",
+"cota": "1500-3715",
+"z_ref": 1900,
+"tm_anual": 11.0,
+"tm_mes_frio": 5.8,
+"tn_mes_frio": 3.1,
+"t_abs_min_est": -2.9,
+"tm_mes_calido": 17.5,
+"lluvia_mm": 520,
+"horas_frio": 3133
+},
+{
+"piso": "P1-S",
+"nombre": "Costa",
+"cota": "0-300",
+"z_ref": 150,
+"tm_anual": 21.3,
+"tm_mes_frio": 18.0,
+"tn_mes_frio": 15.3,
+"t_abs_min_est": 9.3,
+"tm_mes_calido": 25.0,
+"lluvia_mm": 150,
+"horas_frio": 0
+},
+{
+"piso": "P2-S",
+"nombre": "Medianías bajas",
+"cota": "300-600",
+"z_ref": 450,
+"tm_anual": 19.0,
+"tm_mes_frio": 15.5,
+"tn_mes_frio": 12.8,
+"t_abs_min_est": 6.8,
+"tm_mes_calido": 23.0,
+"lluvia_mm": 260,
+"horas_frio": 7
+},
+{
+"piso": "P3-S",
+"nombre": "Medianías altas",
+"cota": "600-1000",
+"z_ref": 800,
+"tm_anual": 16.4,
+"tm_mes_frio": 12.6,
+"tn_mes_frio": 9.9,
+"t_abs_min_est": 3.9,
+"tm_mes_calido": 20.8,
+"lluvia_mm": 380,
+"horas_frio": 100
+},
+{
+"piso": "P4-S",
+"nombre": "Pinar y cumbre baja",
+"cota": "1000-1500",
+"z_ref": 1250,
+"tm_anual": 13.4,
+"tm_mes_frio": 9.6,
+"tn_mes_frio": 6.9,
+"t_abs_min_est": 0.9,
+"tm_mes_calido": 18.3,
+"lluvia_mm": 480,
+"horas_frio": 698
+},
+{
+"piso": "P5-S",
+"nombre": "Cumbre",
+"cota": "1500-3715",
+"z_ref": 1900,
+"tm_anual": 11.5,
+"tm_mes_frio": 6.5,
+"tn_mes_frio": 3.8,
+"t_abs_min_est": -2.2,
+"tm_mes_calido": 18.0,
+"lluvia_mm": 420,
+"horas_frio": 2662
+}
+],
+"cat": [
+{
+"n": "Caña de azúcar",
+"f": "Sugar cane",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P1-S",
+"P2-S"
+],
+"r": 1120,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Millo (grano)",
+"f": "Maize (corn)",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P4-N",
+"P5-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S",
+"P5-S"
+],
+"r": 0,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Arroz",
+"f": "Rice",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S",
+"P5-S"
+],
+"r": 720,
+"lp": false,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Trigo",
+"f": "Wheat",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S"
+],
+"r": 0,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Palma aceitera",
+"f": "Oil palm fruit",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P1-S",
+"P2-S",
+"P3-S"
+],
+"r": 900,
+"lp": false,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Soja",
+"f": "Soya beans",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S",
+"P5-S"
+],
+"r": 0,
+"lp": false,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Papa",
+"f": "Potatoes",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S"
+],
+"r": 0,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Yuca",
+"f": "Cassava, fresh",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P1-S",
+"P2-S",
+"P3-S"
+],
+"r": 400,
+"lp": false,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Remolacha azucarera",
+"f": "Sugar beet",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S"
+],
+"r": 0,
+"lp": false,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Tomate",
+"f": "Tomatoes",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S",
+"P5-S"
+],
+"r": 0,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Cebada",
+"f": "Barley",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S"
+],
+"r": 0,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Plátano",
+"f": "Bananas",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P1-S",
+"P2-S"
+],
+"r": 2020,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Cebolla seca",
+"f": "Onions and shallots, dry (excluding dehydrated)",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P4-N",
+"P5-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S",
+"P5-S"
+],
+"r": 0,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Sandía",
+"f": "Watermelons",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S",
+"P5-S"
+],
+"r": 0,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Manzana",
+"f": "Apples",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P4-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S"
+],
+"r": 0,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Ñame (Dioscorea)",
+"f": "Yams",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-S"
+],
+"r": 1050,
+"lp": false,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Boniato",
+"f": "Sweet potatoes",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P1-S",
+"P2-S"
+],
+"r": 150,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Colza",
+"f": "Rape or colza seed",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S"
+],
+"r": 0,
+"lp": false,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Pepino",
+"f": "Cucumbers and gherkins",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P4-N",
+"P5-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S",
+"P5-S"
+],
+"r": 150,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Uva",
+"f": "Grapes",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P1-S",
+"P2-S",
+"P3-S"
+],
+"r": 0,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Col / repollo",
+"f": "Cabbages",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S"
+],
+"r": 0,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Algodón",
+"f": "Seed cotton, unginned",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P1-S",
+"P2-S"
+],
+"r": 370,
+"lp": false,
+"a": false,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Naranja",
+"f": "Oranges",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P1-S",
+"P2-S",
+"P3-S"
+],
+"r": 600,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Coco",
+"f": "Coconuts, in shell",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P1-S",
+"P2-S"
+],
+"r": 820,
+"lp": false,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Sorgo",
+"f": "Sorghum",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P1-S",
+"P2-S",
+"P3-S"
+],
+"r": 0,
+"lp": false,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Mango",
+"f": "Mangoes, guavas and mangosteens",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-S"
+],
+"r": 450,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Cacahuete",
+"f": "Groundnuts, excluding shelled",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P1-S",
+"P2-S",
+"P3-S"
+],
+"r": 0,
+"lp": false,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Berenjena",
+"f": "Eggplants (aubergines)",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S",
+"P5-S"
+],
+"r": 420,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Girasol",
+"f": "Sunflower seed",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P4-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S"
+],
+"r": 0,
+"lp": false,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Mandarina",
+"f": "Tangerines, mandarins, clementines",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P1-S",
+"P2-S"
+],
+"r": 820,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Zanahoria y nabo",
+"f": "Carrots and turnips",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S"
+],
+"r": 0,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Pimiento verde",
+"f": "Chillies and peppers, green (Capsicum spp. and Pimenta spp.)",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P4-N",
+"P5-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S",
+"P5-S"
+],
+"r": 0,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Plátano macho",
+"f": "Plantains and cooking bananas",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P1-S",
+"P2-S"
+],
+"r": 2020,
+"lp": false,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Calabaza / bubango",
+"f": "Pumpkins, squash and gourds",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P4-N",
+"P5-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S",
+"P5-S"
+],
+"r": 0,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Té",
+"f": "Tea leaves",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P1-S",
+"P2-S",
+"P3-S"
+],
+"r": 800,
+"lp": false,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Mijo",
+"f": "Millet",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P1-S",
+"P2-S"
+],
+"r": 20,
+"lp": false,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Espinaca",
+"f": "Spinach",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P4-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S"
+],
+"r": 0,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Judía seca / habichuela",
+"f": "Beans, dry",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P1-S",
+"P2-S",
+"P3-S"
+],
+"r": 0,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Ajo",
+"f": "Green garlic",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P4-N",
+"P5-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S",
+"P5-S"
+],
+"r": 0,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Piña tropical",
+"f": "Pineapples",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P1-S",
+"P2-S"
+],
+"r": 200,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Melón",
+"f": "Cantaloupes and other melons",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P4-N",
+"P5-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S",
+"P5-S"
+],
+"r": 150,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Lechuga y escarola",
+"f": "Lettuce and chicory",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P4-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S"
+],
+"r": 250,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Durazno y nectarina",
+"f": "Peaches and nectarines",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P1-S",
+"P2-S",
+"P3-S"
+],
+"r": 300,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Pera",
+"f": "Pears",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P1-S",
+"P2-S",
+"P3-S"
+],
+"r": 0,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Coliflor y brócoli",
+"f": "Cauliflowers and broccoli",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P4-N",
+"P5-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S",
+"P5-S"
+],
+"r": 0,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Judía verde",
+"f": "Other beans, green",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P1-S",
+"P2-S",
+"P3-S"
+],
+"r": 0,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Aceituna / olivo",
+"f": "Olives",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P1-S",
+"P2-S",
+"P3-S"
+],
+"r": 0,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Limón y lima",
+"f": "Lemons and limes",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P4-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S"
+],
+"r": 150,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Avena",
+"f": "Oats",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P1-S",
+"P2-S",
+"P3-S"
+],
+"r": 0,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Arveja / guisante verde",
+"f": "Peas, green",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P4-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S"
+],
+"r": 0,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Ñame (Colocasia, FAOSTAT)",
+"f": "Taro",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P1-S",
+"P2-S"
+],
+"r": 1200,
+"lp": false,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Garbanzo",
+"f": "Chick peas, dry",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S"
+],
+"r": 0,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Caucho",
+"f": "Natural rubber in primary forms",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-S"
+],
+"r": 1850,
+"lp": false,
+"a": false,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Papaya",
+"f": "Papayas",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P1-S",
+"P2-S"
+],
+"r": 900,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Arveja seca",
+"f": "Peas, dry",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P4-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S"
+],
+"r": 0,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Okra",
+"f": "Okra",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S",
+"P5-S"
+],
+"r": 0,
+"lp": false,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Ciruela",
+"f": "Plums and sloes",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P1-S",
+"P2-S",
+"P3-S"
+],
+"r": 120,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Triticale",
+"f": "Triticale",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S"
+],
+"r": 0,
+"lp": false,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Centeno",
+"f": "Rye",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S"
+],
+"r": 0,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Café",
+"f": "Coffee, green",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P4-N",
+"P5-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S",
+"P5-S"
+],
+"r": 550,
+"lp": false,
+"a": true,
+"o": "FAOSTAT · antecedente en TF: plantaciones testimoniales en el norte [CONOCIMIENTO_BASE]",
+"s": "ECOCROP"
+},
+{
+"n": "Aguacate",
+"f": "Avocados",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P4-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S"
+],
+"r": 0,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Fresa",
+"f": "Strawberries",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P4-N",
+"P5-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S",
+"P5-S"
+],
+"r": 0,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Chícharo / caupí",
+"f": "Cow peas, dry",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P1-S",
+"P2-S"
+],
+"r": 120,
+"lp": false,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Dátil",
+"f": "Dates",
+"c": "MARGINAL",
+"l": "temperatura subóptima",
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P4-N",
+"P5-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S",
+"P5-S"
+],
+"r": 0,
+"lp": false,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Pomelo",
+"f": "Pomelos and grapefruits",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P1-S",
+"P2-S",
+"P3-S"
+],
+"r": 720,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Millo tierno",
+"f": "Green corn (maize)",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P1-S",
+"P2-S",
+"P3-S"
+],
+"r": 20,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Espárrago",
+"f": "Asparagus",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P4-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S"
+],
+"r": 0,
+"lp": false,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Lenteja",
+"f": "Lentils, dry",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S"
+],
+"r": 0,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Sésamo",
+"f": "Sesame seed",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S",
+"P5-S"
+],
+"r": 0,
+"lp": false,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Haba seca",
+"f": "Broad beans and horse beans, dry",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P4-N",
+"P5-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S",
+"P5-S"
+],
+"r": 0,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Tabaco",
+"f": "Unmanufactured tobacco",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S"
+],
+"r": 0,
+"lp": true,
+"a": false,
+"o": "FAOSTAT · antecedente en TF: 0,3 ha en el Mapa de Cultivos",
+"s": "ECOCROP"
+},
+{
+"n": "Cebolleta",
+"f": "Onions and shallots, green",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P4-N",
+"P5-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S",
+"P5-S"
+],
+"r": 0,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Pimienta palmera / guindilla seca",
+"f": "Chillies and peppers, dry (Capsicum spp., Pimenta spp.), raw",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P4-N",
+"P5-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S",
+"P5-S"
+],
+"r": 0,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Cacao",
+"f": "Cocoa beans",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P1-S",
+"P2-S"
+],
+"r": 600,
+"lp": false,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Caqui",
+"f": "Persimmons",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P1-S",
+"P2-S",
+"P3-S"
+],
+"r": 400,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Jengibre",
+"f": "Ginger, raw",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P1-S",
+"P2-S",
+"P3-S"
+],
+"r": 620,
+"lp": false,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Guandú",
+"f": "Pigeon peas, dry",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P1-S",
+"P2-S",
+"P3-S"
+],
+"r": 0,
+"lp": false,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Albaricoque",
+"f": "Apricots",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P4-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S"
+],
+"r": 50,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Kiwi",
+"f": "Kiwi fruit",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P1-S",
+"P2-S"
+],
+"r": 300,
+"lp": false,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Nuez",
+"f": "Walnuts, in shell",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P4-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S"
+],
+"r": 0,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Anacardo",
+"f": "Cashew nuts, in shell",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P4-N",
+"P5-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S",
+"P5-S"
+],
+"r": 0,
+"lp": false,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Almendra",
+"f": "Almonds, in shell",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P4-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S"
+],
+"r": 0,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Yute",
+"f": "Jute, raw or retted",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S",
+"P5-S"
+],
+"r": 720,
+"lp": false,
+"a": false,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Cereza",
+"f": "Cherries",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P1-S",
+"P2-S",
+"P3-S"
+],
+"r": 0,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Linaza",
+"f": "Linseed",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P4-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S"
+],
+"r": 0,
+"lp": false,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Anís, cilantro, comino, hinojo",
+"f": "Anise, badian, coriander, cumin, caraway, fennel and juniper berries, raw",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P4-N",
+"P5-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S",
+"P5-S"
+],
+"r": 50,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Nuez de areca",
+"f": "Areca nuts",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P4-N",
+"P5-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S",
+"P5-S"
+],
+"r": 650,
+"lp": false,
+"a": false,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Puerro",
+"f": "Leeks and other alliaceous vegetables",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P4-N",
+"P5-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S",
+"P5-S"
+],
+"r": 0,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Castaña",
+"f": "Chestnuts, in shell",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P4-N",
+"P5-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S",
+"P5-S"
+],
+"r": 50,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Trigo sarraceno",
+"f": "Buckwheat",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P4-N",
+"P5-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S",
+"P5-S"
+],
+"r": 0,
+"lp": false,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Ricino",
+"f": "Castor oil seeds",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P1-S",
+"P2-S",
+"P3-S"
+],
+"r": 0,
+"lp": false,
+"a": false,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Fibra de coco",
+"f": "Coir, raw",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P1-S",
+"P2-S"
+],
+"r": 820,
+"lp": false,
+"a": false,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Alcachofa",
+"f": "Artichokes",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P4-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S"
+],
+"r": 50,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Chocho / altramuz",
+"f": "Lupins",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P4-N",
+"P5-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S",
+"P5-S"
+],
+"r": 0,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Guinda",
+"f": "Sour cherries",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P4-N",
+"P5-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S",
+"P5-S"
+],
+"r": 0,
+"lp": false,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Haba verde",
+"f": "Broad beans and horse beans, green",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P4-N",
+"P5-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S",
+"P5-S"
+],
+"r": 0,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Arándano",
+"f": "Blueberries",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P1-S",
+"P2-S",
+"P3-S"
+],
+"r": 120,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Fruto del anacardo",
+"f": "Cashewapple",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P4-N",
+"P5-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S",
+"P5-S"
+],
+"r": 0,
+"lp": false,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Pistacho",
+"f": "Pistachios, in shell",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-S"
+],
+"r": 250,
+"lp": false,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Higo",
+"f": "Figs",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P4-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S"
+],
+"r": 0,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Lino (fibra)",
+"f": "Flax, raw or retted",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P4-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S"
+],
+"r": 0,
+"lp": false,
+"a": false,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Avellana",
+"f": "Hazelnuts, in shell",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P4-N",
+"P5-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S",
+"P5-S"
+],
+"r": 50,
+"lp": false,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Judía de enrame",
+"f": "String beans",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P1-S",
+"P2-S",
+"P3-S"
+],
+"r": 0,
+"lp": false,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Árbol del sebo",
+"f": "Tallowtree seeds",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P1-S",
+"P2-S",
+"P3-S"
+],
+"r": 100,
+"lp": false,
+"a": false,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Pipa de melón",
+"f": "Melonseed",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P4-N",
+"P5-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S",
+"P5-S"
+],
+"r": 150,
+"lp": false,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Pimienta negra",
+"f": "Pepper (Piper spp.), raw",
+"c": "MARGINAL",
+"l": "agua",
+"pi": [
+"P1-N",
+"P1-S",
+"P2-S"
+],
+"r": 2120,
+"lp": false,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Frambuesa",
+"f": "Raspberries",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S"
+],
+"r": 20,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Mostaza",
+"f": "Mustard seed",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S"
+],
+"r": 0,
+"lp": false,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Karité",
+"f": "Karite nuts (sheanuts)",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-S"
+],
+"r": 750,
+"lp": false,
+"a": true,
+"o": "FAOSTAT",
+"s": "ficha manual"
+},
+{
+"n": "Grosella negra",
+"f": "Currants",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S"
+],
+"r": 0,
+"lp": false,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Membrillo",
+"f": "Quinces",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P4-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S"
+],
+"r": 0,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Cártamo",
+"f": "Safflower seed",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S"
+],
+"r": 0,
+"lp": false,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Fonio",
+"f": "Fonio",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P1-S",
+"P2-S",
+"P3-S"
+],
+"r": 300,
+"lp": false,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Veza / chícharo forrajero",
+"f": "Vetches",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P4-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S"
+],
+"r": 0,
+"lp": false,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Arándano rojo",
+"f": "Cranberries",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P4-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S"
+],
+"r": 0,
+"lp": false,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Seda (morera + gusano)",
+"f": "Silk-worm cocoons suitable for reeling",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P1-S",
+"P2-S",
+"P3-S"
+],
+"r": 100,
+"lp": false,
+"a": false,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Tung",
+"f": "Tung nuts",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P1-S",
+"P2-S",
+"P3-S"
+],
+"r": 220,
+"lp": false,
+"a": true,
+"o": "FAOSTAT",
+"s": "ficha manual"
+},
+{
+"n": "Malanga",
+"f": "Yautia",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S"
+],
+"r": 220,
+"lp": false,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Cáñamo (fibra)",
+"f": "True hemp, raw or retted",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S"
+],
+"r": 0,
+"lp": false,
+"a": false,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Nuez de cola",
+"f": "Kola nuts",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P1-S",
+"P2-S"
+],
+"r": 800,
+"lp": false,
+"a": false,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Alpiste",
+"f": "Canary seed",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P2-N",
+"P3-N",
+"P4-N",
+"P5-N",
+"P3-S",
+"P4-S",
+"P5-S"
+],
+"r": 0,
+"lp": false,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Kapok",
+"f": "Kapok fruit",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S"
+],
+"r": 720,
+"lp": false,
+"a": false,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Canela",
+"f": "Cinnamon and cinnamon-tree flowers, raw",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-S"
+],
+"r": 1850,
+"lp": false,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Guisante bambara",
+"f": "Bambara beans, dry",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P5-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S",
+"P5-S"
+],
+"r": 0,
+"lp": false,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Sisal",
+"f": "Sisal, raw",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P4-N",
+"P5-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S",
+"P5-S"
+],
+"r": 50,
+"lp": false,
+"a": false,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Kenaf",
+"f": "Kenaf, and other textile bast fibres, raw or retted",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S"
+],
+"r": 0,
+"lp": false,
+"a": false,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Clavo",
+"f": "Cloves (whole stems), raw",
+"c": "VIABLE CON PROTECCIÓN",
+"l": "frío (requiere invernadero)",
+"pi": [
+"P1-N",
+"P1-S"
+],
+"r": 1620,
+"lp": false,
+"a": true,
+"o": "FAOSTAT",
+"s": "ficha manual"
+},
+{
+"n": "Nuez moscada y cardamomo",
+"f": "Nutmeg, mace, cardamoms, raw",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P1-S",
+"P2-S"
+],
+"r": 1120,
+"lp": false,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Quinoa",
+"f": "Quinoa",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P2-N",
+"P3-N",
+"P4-N",
+"P2-S",
+"P3-S",
+"P4-S"
+],
+"r": 0,
+"lp": false,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Lúpulo",
+"f": "Hop cones",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P2-N",
+"P3-N",
+"P4-N",
+"P5-N",
+"P2-S",
+"P3-S",
+"P4-S",
+"P5-S"
+],
+"r": 0,
+"lp": false,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Abacá",
+"f": "Abaca, manila hemp, raw",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P1-S",
+"P2-S",
+"P3-S"
+],
+"r": 1200,
+"lp": false,
+"a": false,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Grosella espinosa",
+"f": "Gooseberries",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P4-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S"
+],
+"r": 50,
+"lp": false,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Nuez de Brasil",
+"f": "Brazil nuts, in shell",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P1-S",
+"P2-S",
+"P3-S"
+],
+"r": 1800,
+"lp": false,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Ramio",
+"f": "Ramie, raw or retted",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S"
+],
+"r": 720,
+"lp": false,
+"a": false,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Algarroba",
+"f": "Locust beans (carobs)",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P1-S",
+"P2-S",
+"P3-S"
+],
+"r": 0,
+"lp": false,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Pita (fibra de agave)",
+"f": "Agave fibres, raw, n.e.c.",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P4-N",
+"P5-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S",
+"P5-S"
+],
+"r": 50,
+"lp": false,
+"a": false,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Menta y hierbabuena",
+"f": "Peppermint, spearmint",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P4-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S"
+],
+"r": 150,
+"lp": true,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Cañamón",
+"f": "Hempseed",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S"
+],
+"r": 0,
+"lp": false,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Achicoria",
+"f": "Chicory roots",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P4-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S"
+],
+"r": 650,
+"lp": false,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Adormidera",
+"f": "Poppy seed",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S"
+],
+"r": 20,
+"lp": false,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Pelitre",
+"f": "Pyrethrum, dried flowers",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P4-N",
+"P5-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S",
+"P5-S"
+],
+"r": 0,
+"lp": false,
+"a": false,
+"o": "FAOSTAT",
+"s": "ficha manual"
+},
+{
+"n": "Vainilla",
+"f": "Vanilla, raw",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P1-S",
+"P2-S"
+],
+"r": 1400,
+"lp": false,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Jojoba",
+"f": "Jojoba seeds",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P1-S",
+"P2-S"
+],
+"r": 0,
+"lp": false,
+"a": false,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Hoja de yuca",
+"f": "Cassava leaves",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P1-S",
+"P2-S",
+"P3-S"
+],
+"r": 400,
+"lp": false,
+"a": true,
+"o": "FAOSTAT",
+"s": "ECOCROP"
+},
+{
+"n": "Ñame (Colocasia, local)",
+"f": "Ñame (Colocasia, local)",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P1-S",
+"P2-S"
+],
+"r": 1200,
+"lp": true,
+"a": true,
+"o": "Local Tenerife",
+"s": "ECOCROP"
+},
+{
+"n": "Millo local",
+"f": "Millo local",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P4-N",
+"P5-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S",
+"P5-S"
+],
+"r": 0,
+"lp": true,
+"a": true,
+"o": "Local Tenerife",
+"s": "ECOCROP"
+},
+{
+"n": "Tagasaste (forraje)",
+"f": "Tagasaste (forraje)",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P4-N",
+"P5-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S",
+"P5-S"
+],
+"r": 0,
+"lp": true,
+"a": true,
+"o": "Local Tenerife",
+"s": "ficha manual"
+},
+{
+"n": "Tunera / higo pico",
+"f": "Tunera / higo pico",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P1-S",
+"P2-S",
+"P3-S"
+],
+"r": 0,
+"lp": true,
+"a": true,
+"o": "Local Tenerife",
+"s": "ficha manual"
+},
+{
+"n": "Pitaya",
+"f": "Pitaya",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P1-S",
+"P2-S",
+"P3-S"
+],
+"r": 0,
+"lp": true,
+"a": true,
+"o": "Local Tenerife",
+"s": "ECOCROP"
+},
+{
+"n": "Chirimoya",
+"f": "Chirimoya",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S"
+],
+"r": 20,
+"lp": true,
+"a": true,
+"o": "Local Tenerife",
+"s": "ECOCROP"
+},
+{
+"n": "Níspero",
+"f": "Níspero",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P1-S",
+"P2-S"
+],
+"r": 0,
+"lp": true,
+"a": true,
+"o": "Local Tenerife",
+"s": "ECOCROP"
+},
+{
+"n": "Guayaba",
+"f": "Guayaba",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P1-S",
+"P2-S",
+"P3-S"
+],
+"r": 400,
+"lp": true,
+"a": true,
+"o": "Local Tenerife",
+"s": "ECOCROP"
+},
+{
+"n": "Parchita (maracuyá)",
+"f": "Parchita (maracuyá)",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P1-S",
+"P2-S",
+"P3-S"
+],
+"r": 300,
+"lp": true,
+"a": true,
+"o": "Local Tenerife",
+"s": "ECOCROP"
+},
+{
+"n": "Lichi",
+"f": "Lichi",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P1-S",
+"P2-S",
+"P3-S"
+],
+"r": 400,
+"lp": true,
+"a": true,
+"o": "Local Tenerife",
+"s": "ECOCROP"
+},
+{
+"n": "Macadamia",
+"f": "Macadamia",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P4-N",
+"P5-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S",
+"P5-S"
+],
+"r": 150,
+"lp": true,
+"a": true,
+"o": "Local Tenerife",
+"s": "ECOCROP"
+},
+{
+"n": "Granado",
+"f": "Granado",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P1-S",
+"P2-S"
+],
+"r": 520,
+"lp": true,
+"a": true,
+"o": "Local Tenerife",
+"s": "ECOCROP"
+},
+{
+"n": "Moral (morera negra)",
+"f": "Moral (morera negra)",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P4-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S"
+],
+"r": 0,
+"lp": false,
+"a": true,
+"o": "Local Tenerife",
+"s": "ECOCROP"
+},
+{
+"n": "Tomate de árbol",
+"f": "Tomate de árbol",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P4-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S"
+],
+"r": 1150,
+"lp": false,
+"a": true,
+"o": "Local Tenerife",
+"s": "ECOCROP"
+},
+{
+"n": "Pepino dulce",
+"f": "Pepino dulce",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P4-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S"
+],
+"r": 0,
+"lp": false,
+"a": true,
+"o": "Local Tenerife",
+"s": "ECOCROP"
+},
+{
+"n": "Boniato (local)",
+"f": "Boniato (local)",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P1-S",
+"P2-S"
+],
+"r": 150,
+"lp": true,
+"a": true,
+"o": "Local Tenerife",
+"s": "ECOCROP"
+},
+{
+"n": "Papas antiguas (local)",
+"f": "Papas antiguas (local)",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S"
+],
+"r": 0,
+"lp": true,
+"a": true,
+"o": "Local Tenerife",
+"s": "ECOCROP"
+},
+{
+"n": "Café (Coffea arabica)",
+"f": "Café (Coffea arabica)",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P4-N",
+"P5-N",
+"P1-S",
+"P2-S",
+"P3-S",
+"P4-S",
+"P5-S"
+],
+"r": 550,
+"lp": false,
+"a": true,
+"o": "Local Tenerife · antecedente en TF: plantaciones testimoniales en el norte [CONOCIMIENTO_BASE]",
+"s": "ECOCROP"
+},
+{
+"n": "Tuno indio",
+"f": "Tuno indio",
+"c": "VIABLE SECANO",
+"l": null,
+"pi": [
+"P1-N",
+"P2-N",
+"P3-N",
+"P1-S",
+"P2-S",
+"P3-S"
+],
+"r": 0,
+"lp": true,
+"a": true,
+"o": "Local Tenerife",
+"s": "ficha manual"
+},
+{
+"n": "Moringa",
+"f": "Moringa",
+"c": "VIABLE CON RIEGO",
+"l": "agua",
+"pi": [
+"P1-N",
+"P2-N",
+"P1-S",
+"P2-S",
+"P3-S"
+],
+"r": 100,
+"lp": true,
+"a": true,
+"o": "Local Tenerife",
+"s": "ECOCROP"
+}
+],
+"calibra": {
+"ok": 98,
+"n": 98
+},
+"reglas": {
+"T_eff": "anuales: temperatura media del mes cálido (crecen en verano) salvo las de estación fría (TOPMN≤16), que usan la media anual; perennes: media de (anual, mes cálido)",
+"temp_ok": "TOPMN−2 ≤ T_eff ≤ TOPMX+2 y mínima absoluta estimada del piso > KTMP (temperatura letal, si consta)",
+"temp_marginal": "TMIN ≤ T_eff ≤ TMAX pero fuera de la banda óptima: MARGINAL (temperatura subóptima)",
+"proteccion": "si ningún piso cumple la temperatura y en la costa falta ≤6 °C para TOPMN−2 o la mínima letal se evita bajo cubierta: VIABLE CON PROTECCIÓN (invernadero, sin calefacción)",
+"secano_anual_fria": "anual de estación fría: secano si la lluvia del piso ≥ 0,9×ROPMN (crece con la lluvia de invierno)",
+"secano_anual_calida": "anual de estación cálida (TOPMN≥18): siempre con riego (regla del mes más seco: el verano canario es seco)",
+"secano_perenne": "perenne: secano si la lluvia ≥ 0,8×ROPMN, o si es perenne de secano mediterráneo (lista declarada) y la lluvia ≥ RMIN; los perennes sensibles a la sequía estival (lista declarada) exigen riego siempre",
+"agua_marginal": "si el mínimo absoluto de lluvia (RMIN) supera 1.500 mm, el cultivo exige humedad tropical constante y no solo riego: MARGINAL (agua); calibración: lo que hoy se riega en la isla (platanera, ñame) sale «con riego»",
+"riego_mm": "r = máx(0, ROPMN − lluvia del mejor piso)"
+},
+"cotas": [
+[
+0,
+300
+],
+[
+300,
+600
+],
+[
+600,
+1000
+],
+[
+1000,
+1500
+],
+[
+1500,
+3715
+]
+]
+}
