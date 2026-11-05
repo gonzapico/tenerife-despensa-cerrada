@@ -1,0 +1,42 @@
+# Cómo se trabaja en este repositorio: git flow
+
+| Rama | Para qué | Sale de | Vuelve a |
+|---|---|---|---|
+| `main` | producción; cada push publica la web | — | — |
+| `develop` | integración de lo siguiente que se publicará | `main` (una vez) | — |
+| `feature/<nombre>` | un cambio concreto (una escena, una fuente nueva, un script) | `develop` | `develop` |
+| `release/vN.M` | preparar una publicación: números de versión, documentación, pruebas | `develop` | `main` y `develop` |
+| `hotfix/<nombre>` | arreglar algo roto en producción | `main` | `main` y `develop` |
+
+## Flujo habitual
+
+```bash
+git checkout develop && git pull
+git checkout -b feature/clima-mar-de-nubes
+# ... trabajo y commits ...
+git checkout develop && git merge --no-ff feature/clima-mar-de-nubes && git push origin develop
+git branch -d feature/clima-mar-de-nubes
+```
+
+## Publicar una versión
+
+```bash
+git checkout -b release/v3.0 develop
+# ajustar documentación, 00_INDICE.md, pruebas
+git checkout main && git merge --no-ff release/v3.0 && git tag -a v3.0.0 -m "v3.0.0" && git push origin main --tags
+git checkout develop && git merge --no-ff release/v3.0 && git push origin develop
+git branch -d release/v3.0
+```
+
+El push a `main` lanza el workflow «Publicar en la web» y la web se actualiza sola. El workflow «Comprobar montaje» se ejecuta en `develop`, en las ramas `feature/*`, `release/*` y `hotfix/*` y en los pull requests, y solo monta `site/` para comprobar que todo está en orden; no publica.
+
+## Urgencias
+
+```bash
+git checkout -b hotfix/enlace-roto main
+# ... arreglo ...
+git checkout main && git merge --no-ff hotfix/enlace-roto && git tag -a v2.0.1 -m "v2.0.1" && git push origin main --tags
+git checkout develop && git merge --no-ff hotfix/enlace-roto && git push origin develop
+```
+
+Recomendado en GitHub: proteger `main` (Settings → Branches → Add rule: exigir pull request y que pase «Comprobar montaje»), de modo que nadie, ni una sesión de IA, pueda empujar directamente a producción.

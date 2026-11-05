@@ -1,0 +1,23 @@
+name: Comprobar montaje
+
+on:
+  push:
+    branches: [develop, "feature/**", "release/**", "hotfix/**"]
+  pull_request:
+    branches: [main, develop]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Montar la carpeta site/ (sin publicar)
+        run: python3 scripts/build_site.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: site-preview
+          path: site/
+          retention-days: 3
