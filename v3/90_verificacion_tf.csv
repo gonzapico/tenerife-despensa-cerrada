@@ -1,0 +1,14 @@
+pieza,prueba,resultado,estado
+catálogo,calibración con el campo REGADIO del Mapa de Cultivos oficial,106/106,CUMPLE
+datos,Mapa de Cultivos oficial frente a la copia de fiboa (parcelas y hectáreas),177.543 / 38.728 ha en ambos,CUMPLE
+C1,tierra liberada recalculada en el navegador frente a la tabla (96),"3607,2 vs 3607,2 ha",CUMPLE
+C4,coberturas recalculadas en el navegador frente a la rejilla (96),"diferencia máxima 0,004 pp",CUMPLE
+rejilla,132 escenarios resueltos por HiGHS (status 0),132/132,CUMPLE
+visor,conexiones externas al cargar,0,CUMPLE
+visor,errores de consola (escritorio y móvil),0,CUMPLE
+visor,scroll horizontal a 390 px,no,CUMPLE
+visor,"escenas renderizadas: 144 chips, 10 pisos, 11 filas de plan, 56+29 productos, 6 zonas, canvas WebGL",sí,CUMPLE
+territorio,parcelas rasterizadas sobre el DEM,177543,CUMPLE
+carga pendiente,página sin errores ni scroll horizontal,0 errores,CUMPLE
+clima,"pisos construidos con estaciones reales: 16 AEMET + 40 Agrocabildo (T), 224 + AEMET (lluvia); regresión N y S con 27 y 26 estaciones",238 pluviómetros,CUMPLE
+clima,"sesgo de las series cortas 2009-2025 frente a las normales 1991-2020, corregido",0.4 °C,CUMPLE
