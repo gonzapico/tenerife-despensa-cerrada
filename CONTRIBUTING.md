@@ -23,8 +23,11 @@ git branch -d feature/clima-mar-de-nubes
 ```bash
 git checkout -b release/v3.0 develop
 # ajustar documentación, 00_INDICE.md, pruebas
-git checkout main && git merge --no-ff release/v3.0 && git tag -a v3.0.0 -m "v3.0.0" && git push origin main --tags
-git checkout develop && git merge --no-ff release/v3.0 && git push origin develop
+git push -u origin release/v3.0
+gh pr create --base main --head release/v3.0 --title "Release v3.0" --body "..."
+# main está protegida: se fusiona el PR desde GitHub con merge commit (no squash)
+# después: crear la etiqueta v3.0.0 en GitHub → Releases, y
+git checkout develop && git pull && git merge --no-ff main && git push origin develop
 git branch -d release/v3.0
 ```
 
@@ -39,4 +42,4 @@ git checkout main && git merge --no-ff hotfix/enlace-roto && git tag -a v2.0.1 -
 git checkout develop && git merge --no-ff hotfix/enlace-roto && git push origin develop
 ```
 
-Recomendado en GitHub: proteger `main` (Settings → Branches → Add rule: exigir pull request y que pase «Comprobar montaje»), de modo que nadie, ni una sesión de IA, pueda empujar directamente a producción.
+`main` está protegida en GitHub (regla: cambios solo por pull request), de modo que nadie, ni una sesión de IA, puede empujar directamente a producción. El check «Comprobar montaje» se ejecuta en el PR.
