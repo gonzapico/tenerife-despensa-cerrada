@@ -1,0 +1,28 @@
+2. Para los consumos para regadío y uso agrícola se establece las siguientes dotaciones:
+Tabla 3. Dotaciones de consumo hídrico según cultivos según cultivos (m3/ha/año) para 2019 de conformidad con
+ | IPH de Canarias
+ | GRUPO CULTIVO | DOTACIÓN (m3/ha/año)
+ | I | Plátano | 10.000
+ | II | Frutales subtropicales | -
+ | Tomates | 8.571
+ | Hortalizas | 1.311
+ | Huertas familiares | 2.059
+ | IV
+ | Papa | 397
+ | Flores y Ornamentales 10.000
+ | Cereales y leguminosa 47
+ | Frutales templados | 1081
+ | Viña | -
+ | V
+ | Asociación con Viña | 44
+ | Otros cultivos | 61
+3. Para los consumos para ganado se establece las siguientes dotaciones:
+ | Tabla 4. Dotaciones para el uso de agua en ganadería (IPH Canaria)
+ | TIPO DE GANADO DOTACIÓN (m3/cabeza/año)
+ | Bovino | 17,3
+ | Ovino | 2,0
+ | Caprino | 2,0
+ | Porcino | 2,8
+ | Equino | 5,0
+ | Avícola | 0,08
+ | ARTÍCULO 26. Estrategia para la gestión de la demanda
