@@ -1,0 +1,2575 @@
+{
+"clima": [
+{
+"piso": "P1-N",
+"nombre": "Costa",
+"cota": "0-300",
+"z_ref": 150,
+"tm_anual": 19.3,
+"tm_mes_frio": 16.7,
+"tn_mes_frio": 13.7,
+"t_abs_min_est": 11.3,
+"tm_mes_calido": 22.2,
+"lluvia_mm": 323,
+"horas_frio": 2,
+"n_pluviometros": 31
+},
+{
+"piso": "P2-N",
+"nombre": "Medianías bajas",
+"cota": "300-600",
+"z_ref": 450,
+"tm_anual": 16.9,
+"tm_mes_frio": 14.5,
+"tn_mes_frio": 11.4,
+"t_abs_min_est": 8.7,
+"tm_mes_calido": 20.6,
+"lluvia_mm": 505,
+"horas_frio": 25,
+"n_pluviometros": 38
+},
+{
+"piso": "P3-N",
+"nombre": "Medianías altas",
+"cota": "600-1000",
+"z_ref": 800,
+"tm_anual": 14.2,
+"tm_mes_frio": 11.8,
+"tn_mes_frio": 8.7,
+"t_abs_min_est": 5.7,
+"tm_mes_calido": 18.8,
+"lluvia_mm": 606,
+"horas_frio": 203,
+"n_pluviometros": 30
+},
+{
+"piso": "P4-N",
+"nombre": "Pinar y cumbre baja",
+"cota": "1000-1500",
+"z_ref": 1250,
+"tm_anual": 10.7,
+"tm_mes_frio": 8.4,
+"tn_mes_frio": 5.2,
+"t_abs_min_est": 1.8,
+"tm_mes_calido": 16.4,
+"lluvia_mm": 701,
+"horas_frio": 1385,
+"n_pluviometros": 20
+},
+{
+"piso": "P5-N",
+"nombre": "Cumbre",
+"cota": "1500-3715",
+"z_ref": 1900,
+"tm_anual": 10.6,
+"tm_mes_frio": 6.3,
+"tn_mes_frio": 3.0,
+"t_abs_min_est": -1.6,
+"tm_mes_calido": 17.6,
+"lluvia_mm": 481,
+"horas_frio": 2797,
+"n_pluviometros": 11
+},
+{
+"piso": "P1-S",
+"nombre": "Costa",
+"cota": "0-300",
+"z_ref": 150,
+"tm_anual": 20.3,
+"tm_mes_frio": 17.3,
+"tn_mes_frio": 14.1,
+"t_abs_min_est": 11.5,
+"tm_mes_calido": 24.1,
+"lluvia_mm": 173,
+"horas_frio": 0,
+"n_pluviometros": 33
+},
+{
+"piso": "P2-S",
+"nombre": "Medianías bajas",
+"cota": "300-600",
+"z_ref": 450,
+"tm_anual": 18.2,
+"tm_mes_frio": 15.4,
+"tn_mes_frio": 11.7,
+"t_abs_min_est": 9.5,
+"tm_mes_calido": 22.8,
+"lluvia_mm": 243,
+"horas_frio": 7,
+"n_pluviometros": 22
+},
+{
+"piso": "P3-S",
+"nombre": "Medianías altas",
+"cota": "600-1000",
+"z_ref": 800,
+"tm_anual": 15.7,
+"tm_mes_frio": 13.2,
+"tn_mes_frio": 8.9,
+"t_abs_min_est": 7.2,
+"tm_mes_calido": 21.1,
+"lluvia_mm": 307,
+"horas_frio": 75,
+"n_pluviometros": 23
+},
+{
+"piso": "P4-S",
+"nombre": "Pinar y cumbre baja",
+"cota": "1000-1500",
+"z_ref": 1250,
+"tm_anual": 12.4,
+"tm_mes_frio": 10.5,
+"tn_mes_frio": 5.4,
+"t_abs_min_est": 4.2,
+"tm_mes_calido": 19.1,
+"lluvia_mm": 398,
+"horas_frio": 478,
+"n_pluviometros": 11
+},
+{
+"piso": "P5-S",
+"nombre": "Cumbre",
+"cota": "1500-3715",
+"z_ref": 1900,
+"tm_anual": 11.3,
+"tm_mes_frio": 7.1,
+"tn_mes_frio": 3.1,
+"t_abs_min_est": -0.6,
+"tm_mes_calido": 18.7,
+"lluvia_mm": 394,
+"horas_frio": 2259,
+"n_pluviometros": 19
+}
+],
+"ajuste_temperatura": {
+"N": {
+"tm": {
+"pendiente_por_100m": -0.78,
+"ordenada": 20.46,
+"n": 27
+},
+"tf": {
+"pendiente_por_100m": -0.76,
+"ordenada": 17.87,
+"n": 27
+},
+"tn": {
+"pendiente_por_100m": -0.77,
+"ordenada": 14.85,
+"n": 6
+},
+"tc": {
+"pendiente_por_100m": -0.52,
+"ordenada": 22.93,
+"n": 27
+},
+"tamin": {
+"pendiente_por_100m": -0.87,
+"ordenada": 12.66,
+"n": 6
+}
+},
+"S": {
+"tm": {
+"pendiente_por_100m": -0.72,
+"ordenada": 21.42,
+"n": 24
+},
+"tf": {
+"pendiente_por_100m": -0.62,
+"ordenada": 18.19,
+"n": 24
+},
+"tn": {
+"pendiente_por_100m": -0.79,
+"ordenada": 15.25,
+"n": 8
+},
+"tc": {
+"pendiente_por_100m": -0.46,
+"ordenada": 24.81,
+"n": 24
+},
+"tamin": {
+"pendiente_por_100m": -0.66,
+"ordenada": 12.48,
+"n": 8
+}
+}
+},
+"sesgo_2009_2025_vs_normales": 0.4,
+"lluvia_por_piso": {
+"P1-N": {
+"n": 31,
+"mediana": 323,
+"p25": 273,
+"p75": 386
+},
+"P2-N": {
+"n": 38,
+"mediana": 505,
+"p25": 462,
+"p75": 561
+},
+"P3-N": {
+"n": 30,
+"mediana": 606,
+"p25": 559,
+"p75": 656
+},
+"P4-N": {
+"n": 20,
+"mediana": 701,
+"p25": 605,
+"p75": 737
+},
+"P5-N": {
+"n": 11,
+"mediana": 481,
+"p25": 466,
+"p75": 534
+},
+"P1-S": {
+"n": 33,
+"mediana": 173,
+"p25": 132,
+"p75": 227
+},
+"P2-S": {
+"n": 22,
+"mediana": 243,
+"p25": 216,
+"p75": 298
+},
+"P3-S": {
+"n": 23,
+"mediana": 307,
+"p25": 258,
+"p75": 520
+},
+"P4-S": {
+"n": 11,
+"mediana": 398,
+"p25": 249,
+"p75": 514
+},
+"P5-S": {
+"n": 19,
+"mediana": 394,
+"p25": 327,
+"p75": 499
+}
+},
+"estaciones_temperatura": [
+{
+"src": "AEMET normales 1991-2020",
+"nombre": "STA.CRUZ DE TENERIFE",
+"alt": 36,
+"vert": "S",
+"tm": 21.8,
+"tf": 18.3,
+"tn": 15.5,
+"tc": 25.8,
+"tamin": 13.0,
+"peso": 3
+},
+{
+"src": "AEMET normales 1991-2020",
+"nombre": "TENERIFE SUR AEROPUERTO",
+"alt": 64,
+"vert": "S",
+"tm": 21.5,
+"tf": 18.6,
+"tn": 15.0,
+"tc": 25.0,
+"tamin": 12.0,
+"peso": 3
+},
+{
+"src": "AEMET normales 1991-2020",
+"nombre": "TENERIFE NORTE AEROPUERTO",
+"alt": 632,
+"vert": "N",
+"tm": 16.9,
+"tf": 13.3,
+"tn": 10.3,
+"tc": 21.5,
+"tamin": 7.3,
+"peso": 3
+},
+{
+"src": "AEMET normales 1991-2020",
+"nombre": "IZAÑA",
+"alt": 2369,
+"vert": "S",
+"tm": 10.5,
+"tf": 4.7,
+"tn": 1.4,
+"tc": 18.5,
+"tamin": -4.1,
+"peso": 3
+},
+{
+"src": "AEMET medias 2009-2025 (−sesgo)",
+"nombre": "ANAGA",
+"alt": 19,
+"vert": "S",
+"tm": 21.400000000000002,
+"tf": 18.0,
+"tn": 14.7,
+"tc": 25.700000000000003,
+"tamin": 11.9,
+"peso": 2
+},
+{
+"src": "AEMET medias 2009-2025 (−sesgo)",
+"nombre": "PUERTO DE LA CRUZ",
+"alt": 25,
+"vert": "N",
+"tm": 21.200000000000003,
+"tf": 18.5,
+"tn": 15.1,
+"tc": 24.200000000000003,
+"tamin": 13.299999999999999,
+"peso": 2
+},
+{
+"src": "AEMET medias 2009-2025 (−sesgo)",
+"nombre": "GÜÍMAR",
+"alt": 115,
+"vert": "S",
+"tm": 20.0,
+"tf": 16.900000000000002,
+"tn": 13.299999999999999,
+"tc": 23.900000000000002,
+"tamin": 10.5,
+"peso": 2
+},
+{
+"src": "AEMET medias 2009-2025 (−sesgo)",
+"nombre": "ADEJE",
+"alt": 130,
+"vert": "S",
+"tm": 21.1,
+"tf": 18.400000000000002,
+"tn": 14.2,
+"tc": 24.5,
+"tamin": 11.9,
+"peso": 2
+},
+{
+"src": "AEMET medias 2009-2025 (−sesgo)",
+"nombre": "TACORONTE",
+"alt": 310,
+"vert": "N",
+"tm": 18.8,
+"tf": 15.5,
+"tn": 12.0,
+"tc": 22.200000000000003,
+"tamin": 8.9,
+"peso": 2
+},
+{
+"src": "AEMET medias 2009-2025 (−sesgo)",
+"nombre": "LOMO DEL BALO",
+"alt": 403,
+"vert": "S",
+"tm": 19.900000000000002,
+"tf": 16.900000000000002,
+"tn": 13.0,
+"tc": 24.1,
+"tamin": 11.0,
+"peso": 2
+},
+{
+"src": "AEMET medias 2009-2025 (−sesgo)",
+"nombre": "ARICO",
+"alt": 418,
+"vert": "S",
+"tm": 18.8,
+"tf": 15.799999999999999,
+"tn": 11.9,
+"tc": 23.0,
+"tamin": 9.6,
+"peso": 2
+},
+{
+"src": "AEMET medias 2009-2025 (−sesgo)",
+"nombre": "CANDELARIA",
+"alt": 463,
+"vert": "S",
+"tm": 18.3,
+"tf": 14.7,
+"tn": 11.0,
+"tc": 23.200000000000003,
+"tamin": 8.6,
+"peso": 2
+},
+{
+"src": "AEMET medias 2009-2025 (−sesgo)",
+"nombre": "LA VICTORIA DE ACENTEJO",
+"alt": 567,
+"vert": "N",
+"tm": 16.400000000000002,
+"tf": 13.6,
+"tn": 9.6,
+"tc": 19.8,
+"tamin": 6.8999999999999995,
+"peso": 2
+},
+{
+"src": "AEMET medias 2009-2025 (−sesgo)",
+"nombre": "SAN JUAN DE LA RAMBLA",
+"alt": 667,
+"vert": "N",
+"tm": 16.1,
+"tf": 13.5,
+"tn": 9.799999999999999,
+"tc": 19.400000000000002,
+"tamin": 7.1,
+"peso": 2
+},
+{
+"src": "AEMET medias 2009-2025 (−sesgo)",
+"nombre": "SAN CRISTÓBAL DE LA LAGUNA,LLANO DE LOS LOROS",
+"alt": 868,
+"vert": "N",
+"tm": 15.6,
+"tf": 12.0,
+"tn": 8.4,
+"tc": 21.3,
+"tamin": 5.6,
+"peso": 2
+},
+{
+"src": "AEMET medias 2009-2025 (−sesgo)",
+"nombre": "LA OROTAVA, CAÑADAS TEIDE",
+"alt": 2150,
+"vert": "S",
+"tm": 12.2,
+"tf": 5.5,
+"tn": -1.3,
+"tc": 20.0,
+"tamin": -5.7,
+"peso": 2
+},
+{
+"src": "Agrocabildo 2001-2007",
+"nombre": "TEJINA",
+"alt": 90,
+"vert": "N",
+"tm": 19.6,
+"tf": 17.1,
+"tn": null,
+"tc": 22.6,
+"tamin": null,
+"peso": 1
+},
+{
+"src": "Agrocabildo 2001-2007",
+"nombre": "LA PADILLA",
+"alt": 400,
+"vert": "N",
+"tm": 18.1,
+"tf": 15.1,
+"tn": null,
+"tc": 21.5,
+"tamin": null,
+"peso": 1
+},
+{
+"src": "Agrocabildo 2001-2007",
+"nombre": "LA CORUJERA",
+"alt": 550,
+"vert": "N",
+"tm": 15.6,
+"tf": 13.2,
+"tn": null,
+"tc": 19.4,
+"tamin": null,
+"peso": 1
+},
+{
+"src": "Agrocabildo 2001-2007",
+"nombre": "LOS RODEOS",
+"alt": 617,
+"vert": "N",
+"tm": 16.4,
+"tf": 13.5,
+"tn": null,
+"tc": 20.0,
+"tamin": null,
+"peso": 1
+},
+{
+"src": "Agrocabildo 2001-2007",
+"nombre": "C. DEL CAMINO",
+"alt": 650,
+"vert": "N",
+"tm": 13.4,
+"tf": 12.5,
+"tn": null,
+"tc": 18.8,
+"tamin": null,
+"peso": 1
+},
+{
+"src": "Agrocabildo 2001-2007",
+"nombre": "AGUA GARCIA",
+"alt": 694,
+"vert": "N",
+"tm": 14.2,
+"tf": 12.9,
+"tn": null,
+"tc": 19.5,
+"tamin": null,
+"peso": 1
+},
+{
+"src": "Agrocabildo 2001-2007",
+"nombre": "EL LOMO",
+"alt": 825,
+"vert": "N",
+"tm": 13.5,
+"tf": 12.8,
+"tn": null,
+"tc": 18.7,
+"tamin": null,
+"peso": 1
+},
+{
+"src": "Agrocabildo 2001-2007",
+"nombre": "RAVELO",
+"alt": 922,
+"vert": "N",
+"tm": 13.5,
+"tf": 10.6,
+"tn": null,
+"tc": 17.1,
+"tamin": null,
+"peso": 1
+},
+{
+"src": "Agrocabildo 2001-2007",
+"nombre": "EL RINCÓN",
+"alt": 216,
+"vert": "N",
+"tm": 18.7,
+"tf": 16.3,
+"tn": null,
+"tc": 21.5,
+"tamin": null,
+"peso": 1
+},
+{
+"src": "Agrocabildo 2001-2007",
+"nombre": "LA PERDOMA -",
+"alt": 380,
+"vert": "N",
+"tm": 17.4,
+"tf": 14.7,
+"tn": null,
+"tc": 20.4,
+"tamin": null,
+"peso": 1
+},
+{
+"src": "Agrocabildo 2001-2007",
+"nombre": "VILLA ARRIBA",
+"alt": 440,
+"vert": "N",
+"tm": 16.1,
+"tf": 15.8,
+"tn": null,
+"tc": 15.3,
+"tamin": null,
+"peso": 1
+},
+{
+"src": "Agrocabildo 2001-2007",
+"nombre": "LA PERDOMA -",
+"alt": 550,
+"vert": "N",
+"tm": 13.9,
+"tf": 13.4,
+"tn": null,
+"tc": 19.0,
+"tamin": null,
+"peso": 1
+},
+{
+"src": "Agrocabildo 2001-2007",
+"nombre": "PALO BLANCO",
+"alt": 595,
+"vert": "N",
+"tm": 13.4,
+"tf": 12.7,
+"tn": null,
+"tc": 18.6,
+"tamin": null,
+"peso": 1
+},
+{
+"src": "Agrocabildo 2001-2007",
+"nombre": "BENIJOS",
+"alt": 906,
+"vert": "N",
+"tm": 11.5,
+"tf": 10.3,
+"tn": null,
+"tc": 16.9,
+"tamin": null,
+"peso": 1
+},
+{
+"src": "Agrocabildo 2001-2007",
+"nombre": "CHARCO DEL",
+"alt": 60,
+"vert": "N",
+"tm": 19.4,
+"tf": 17.0,
+"tn": null,
+"tc": 22.5,
+"tamin": null,
+"peso": 1
+},
+{
+"src": "Agrocabildo 2001-2007",
+"nombre": "SANTA BARBARA",
+"alt": 475,
+"vert": "N",
+"tm": 16.8,
+"tf": 13.8,
+"tn": null,
+"tc": 19.9,
+"tamin": null,
+"peso": 1
+},
+{
+"src": "Agrocabildo 2001-2007",
+"nombre": "REDONDO",
+"alt": 525,
+"vert": "N",
+"tm": 13.2,
+"tf": 12.0,
+"tn": null,
+"tc": 18.9,
+"tamin": null,
+"peso": 1
+},
+{
+"src": "Agrocabildo 2001-2007",
+"nombre": "ICOD EL ALTO",
+"alt": 770,
+"vert": "N",
+"tm": 14.9,
+"tf": 12.0,
+"tn": null,
+"tc": 18.1,
+"tamin": null,
+"peso": 1
+},
+{
+"src": "Agrocabildo 2001-2007",
+"nombre": "BVISTA. NORTE",
+"alt": 66,
+"vert": "N",
+"tm": 19.8,
+"tf": 17.2,
+"tn": null,
+"tc": 22.7,
+"tamin": null,
+"peso": 1
+},
+{
+"src": "Agrocabildo 2001-2007",
+"nombre": "TIERRA DEL",
+"alt": 450,
+"vert": "N",
+"tm": 16.9,
+"tf": 14.4,
+"tn": null,
+"tc": 20.4,
+"tamin": null,
+"peso": 1
+},
+{
+"src": "Agrocabildo 2001-2007",
+"nombre": "EL PALMAR",
+"alt": 555,
+"vert": "N",
+"tm": 15.4,
+"tf": 11.8,
+"tn": null,
+"tc": 18.4,
+"tamin": null,
+"peso": 1
+},
+{
+"src": "Agrocabildo 2001-2007",
+"nombre": "PLAYA SAN JUAN",
+"alt": 50,
+"vert": "S",
+"tm": 20.1,
+"tf": 17.3,
+"tn": null,
+"tc": 23.2,
+"tamin": null,
+"peso": 1
+},
+{
+"src": "Agrocabildo 2001-2007",
+"nombre": "GUÍA DE ISORA",
+"alt": 476,
+"vert": "S",
+"tm": 18.3,
+"tf": 15.5,
+"tn": null,
+"tc": 21.7,
+"tamin": null,
+"peso": 1
+},
+{
+"src": "Agrocabildo 2001-2007",
+"nombre": "EL POZO",
+"alt": 700,
+"vert": "S",
+"tm": 14.7,
+"tf": 13.7,
+"tn": null,
+"tc": 21.0,
+"tamin": null,
+"peso": 1
+},
+{
+"src": "Agrocabildo 2001-2007",
+"nombre": "CHÍO",
+"alt": 735,
+"vert": "S",
+"tm": 14.2,
+"tf": 13.0,
+"tn": null,
+"tc": 20.7,
+"tamin": null,
+"peso": 1
+},
+{
+"src": "Agrocabildo 2001-2007",
+"nombre": "VALLE DE ARRIBA",
+"alt": 990,
+"vert": "S",
+"tm": 14.8,
+"tf": 10.8,
+"tn": null,
+"tc": 20.0,
+"tamin": null,
+"peso": 1
+},
+{
+"src": "Agrocabildo 2001-2007",
+"nombre": "ARIPE – LOS",
+"alt": 1032,
+"vert": "S",
+"tm": 12.2,
+"tf": 10.6,
+"tn": null,
+"tc": 19.9,
+"tamin": null,
+"peso": 1
+},
+{
+"src": "Agrocabildo 2001-2007",
+"nombre": "LAS GALLETAS",
+"alt": 73,
+"vert": "S",
+"tm": 19.7,
+"tf": 16.8,
+"tn": null,
+"tc": 22.9,
+"tamin": null,
+"peso": 1
+},
+{
+"src": "Agrocabildo 2001-2007",
+"nombre": "LLANOS DE SAN",
+"alt": 135,
+"vert": "S",
+"tm": 19.7,
+"tf": 17.3,
+"tn": null,
+"tc": 22.7,
+"tamin": null,
+"peso": 1
+},
+{
+"src": "Agrocabildo 2001-2007",
+"nombre": "TEGUEDITE - EL",
+"alt": 410,
+"vert": "S",
+"tm": 17.8,
+"tf": 14.7,
+"tn": null,
+"tc": 21.4,
+"tamin": null,
+"peso": 1
+},
+{
+"src": "Agrocabildo 2001-2007",
+"nombre": "CHARCO DEL PINO",
+"alt": 505,
+"vert": "S",
+"tm": 17.4,
+"tf": 14.2,
+"tn": null,
+"tc": 20.9,
+"tamin": null,
+"peso": 1
+},
+{
+"src": "Agrocabildo 2001-2007",
+"nombre": "ORTIZ - BCO. LA",
+"alt": 725,
+"vert": "S",
+"tm": 13.6,
+"tf": 12.3,
+"tn": null,
+"tc": 20.2,
+"tamin": null,
+"peso": 1
+},
+{
+"src": "Agrocabildo 2001-2007",
+"nombre": "EL PINALETE",
+"alt": 850,
+"vert": "S",
+"tm": 15.8,
+"tf": 12.0,
+"tn": null,
+"tc": 20.7,
+"tamin": null,
+"peso": 1
+},
+{
+"src": "Agrocabildo 2001-2007",
+"nombre": "EL BUENO -",
+"alt": 930,
+"vert": "S",
+"tm": 15.9,
+"tf": 12.4,
+"tn": null,
+"tc": 20.7,
+"tamin": null,
+"peso": 1
+},
+{
+"src": "Agrocabildo 2001-2007",
+"nombre": "EL FRONTÓN",
+"alt": 1258,
+"vert": "S",
+"tm": 14.7,
+"tf": 14.5,
+"tn": null,
+"tc": 21.6,
+"tamin": null,
+"peso": 1
+},
+{
+"src": "Agrocabildo 2001-2007",
+"nombre": "AÑAVINGO",
+"alt": 700,
+"vert": "S",
+"tm": 16.8,
+"tf": 13.4,
+"tn": null,
+"tc": 21.3,
+"tamin": null,
+"peso": 1
+},
+{
+"src": "Agrocabildo 2001-2007",
+"nombre": "MUSEO DE",
+"alt": 20,
+"vert": "S",
+"tm": 20.5,
+"tf": 17.4,
+"tn": null,
+"tc": 24.0,
+"tamin": null,
+"peso": 1
+}
+],
+"estaciones_lluvia": [
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "GARACHICO - VILLA",
+"alt": 20,
+"vert": "N",
+"p": 302.03333333333336
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "BUENAVISTA DEL NORTE - ICIA",
+"alt": 28,
+"vert": "N",
+"p": 258.3
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "BUENAVISTA DEL NORTE - AGROCABILDO",
+"alt": 66,
+"vert": "N",
+"p": 257.0
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LOS SILOS - VILLA",
+"alt": 95,
+"vert": "N",
+"p": 337.8
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "GARACHICO - GENOVES",
+"alt": 410,
+"vert": "N",
+"p": 377.3
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LOS SILOS - TIERRA TRIGO - AGROCABILDO",
+"alt": 450,
+"vert": "N",
+"p": 634.6
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LOS SILOS - TIERRA DEL TRIGO",
+"alt": 490,
+"vert": "N",
+"p": 460.79999999999995
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "EL TANQUE - RUIGOMEZ - GALERIA EL CUBO",
+"alt": 750,
+"vert": "N",
+"p": 665.1
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LOS SILOS - LOMO DE LA CEBADA",
+"alt": 800,
+"vert": "N",
+"p": 401.2
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LOS SILOS - MONTE DEL AGUA",
+"alt": 900,
+"vert": "N",
+"p": 656.5
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "GARACHICO - LA MONTANETA - CASA FORESTAL",
+"alt": 960,
+"vert": "N",
+"p": 651.5999999999999
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "EL TANQUE - ERJOS - CASA FORESTAL",
+"alt": 1010,
+"vert": "N",
+"p": 750.6500000000001
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "EL TANQUE - SAN JOSE LLANOS",
+"alt": 1184,
+"vert": "N",
+"p": 739.7
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "GARACHICO - MONTANA NEGRA",
+"alt": 1325,
+"vert": "N",
+"p": 602.6
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LA GUANCHA - CHARCO DEL VIENTO",
+"alt": 60,
+"vert": "N",
+"p": 254.2
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LA GUANCHA - SANTO DOMINGO",
+"alt": 150,
+"vert": "N",
+"p": 290.56666666666666
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ICOD - LOMO BLANCO",
+"alt": 280,
+"vert": "N",
+"p": 414.8
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ICOD - PIE DE LAS LAJAS",
+"alt": 350,
+"vert": "N",
+"p": 397.5
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ICOD - SANTA BARBARA",
+"alt": 468,
+"vert": "N",
+"p": 432.4666666666667
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ICOD - LLANOS PERERA",
+"alt": 475,
+"vert": "N",
+"p": 494.0
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ICOD - REDONDO CABILDO",
+"alt": 525,
+"vert": "N",
+"p": 554.4
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "GARACHICO - SAN JUAN REPARO",
+"alt": 600,
+"vert": "N",
+"p": 500.04999999999995
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ICOD - REDONDO",
+"alt": 925,
+"vert": "N",
+"p": 587.4
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ICOD - LAS ABIERTAS",
+"alt": 1000,
+"vert": "N",
+"p": 552.95
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ICOD - LLANOS CEBADA - CASA FOR.",
+"alt": 1040,
+"vert": "N",
+"p": 576.0666666666667
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ICOD - VISTAS SAN FELIPE",
+"alt": 1175,
+"vert": "N",
+"p": 562.85
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LA GUANCHA - GALERIA VERGARA",
+"alt": 1400,
+"vert": "N",
+"p": 519.6
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ICOD DE LOS VINOS - LA TABONA",
+"alt": 1525,
+"vert": "N",
+"p": 456.85
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "SAN JUAN DE LA RAMBLA",
+"alt": 47,
+"vert": "N",
+"p": 309.8333333333333
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LA GUANCHA - SANTO DOMINGO",
+"alt": 150,
+"vert": "N",
+"p": 290.56666666666666
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LA GUANCHA - ASOMADA",
+"alt": 500,
+"vert": "N",
+"p": 505.6000000000001
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LA GUANCHA - C. F.",
+"alt": 585,
+"vert": "N",
+"p": 518.8499999999999
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LOS REALEJOS - EL LANCE",
+"alt": 610,
+"vert": "N",
+"p": 440.75
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LOS REALEJOS - ICOD EL ALTO CASA FOR.",
+"alt": 670,
+"vert": "N",
+"p": 555.45
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LOS REALEJOS - ICOD EL ALTO",
+"alt": 770,
+"vert": "N",
+"p": 606.1
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LOS REALEJOS - ASOMADERO",
+"alt": 1090,
+"vert": "N",
+"p": 644.6
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "SAN JUAN RAMBLA - CHAMUSCADA",
+"alt": 1100,
+"vert": "N",
+"p": 675.25
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LOS REALEJOS - CORRAL QUEMADO",
+"alt": 1325,
+"vert": "N",
+"p": 767.1
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LOS REALEJOS - PIEDRA LOS PASTORES",
+"alt": 1610,
+"vert": "N",
+"p": 551.55
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "SAN JUAN RAMBLA TORRE VIG. INCENDIOS",
+"alt": 1710,
+"vert": "N",
+"p": 470.29999999999995
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LOS REALEJOS - LA FORTALEZA",
+"alt": 1890,
+"vert": "N",
+"p": 517.0
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LAS CANADAS - DEGOLLADA DEL CEDRO",
+"alt": 2085,
+"vert": "N",
+"p": 474.54999999999995
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LOS REALEJOS - LA GORVORANA",
+"alt": 190,
+"vert": "N",
+"p": 297.0
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LOS REALEJOS - SAN AGUSTIN",
+"alt": 250,
+"vert": "N",
+"p": 384.6666666666667
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LOS REALEJOS - TIGAIGA",
+"alt": 300,
+"vert": "N",
+"p": 436.29999999999995
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LOS REALEJOS - CRUZ SANTA",
+"alt": 475,
+"vert": "N",
+"p": 481.2333333333333
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LOS REALEJOS - PALO BLANCO - AGROC.",
+"alt": 595,
+"vert": "N",
+"p": 611.2
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LOS REALEJOS - PALO BLANCO",
+"alt": 675,
+"vert": "N",
+"p": 606.4666666666667
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LOS REALEJOS - LAS LLANADAS",
+"alt": 900,
+"vert": "N",
+"p": 593.1
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LOS REALEJOS - LA PARCELA",
+"alt": 1300,
+"vert": "N",
+"p": 689.6
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LOS REALEJOS - MONTANA ALTA",
+"alt": 1800,
+"vert": "N",
+"p": 493.75
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LAS CANADAS - CENTRO VISITANTES TEIDE",
+"alt": 2100,
+"vert": "N",
+"p": 463.5333333333333
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "PUERTO DE LA CRUZ - BOTANICO",
+"alt": 142,
+"vert": "N",
+"p": 354.3666666666666
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LA OROTAVA - EL RINCON",
+"alt": 216,
+"vert": "N",
+"p": 387.7
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LA OROTAVA - EL RAMAL",
+"alt": 250,
+"vert": "N",
+"p": 404.9
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LA OROTAVA - VILLA",
+"alt": 335,
+"vert": "N",
+"p": 446.4666666666667
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LA OROTAVA - SAN ANTONIO F.P.",
+"alt": 415,
+"vert": "N",
+"p": 465.9
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LA OROTAVA - LA PERDOMA - SUERTE",
+"alt": 550,
+"vert": "N",
+"p": 540.0
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LA OROTAVA - PINOLERE",
+"alt": 800,
+"vert": "N",
+"p": 522.0
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LA OROTAVA - CAMINO CHASNA",
+"alt": 830,
+"vert": "N",
+"p": 656.4
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LA OROTAVA - BENIJOS",
+"alt": 906,
+"vert": "N",
+"p": 572.5
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LA OROTAVA - AGUAMANSA C. F.",
+"alt": 1065,
+"vert": "N",
+"p": 736.5333333333333
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LA OROTAVA - LOS OREGANOS",
+"alt": 1125,
+"vert": "N",
+"p": 637.5
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LA OROTAVA - MONTANA BERMEJA",
+"alt": 1325,
+"vert": "N",
+"p": 606.6
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LA OROTAVA - GALERIA PINO LA CRUZ",
+"alt": 1610,
+"vert": "N",
+"p": 480.8
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "IZANA",
+"alt": 2386,
+"vert": "N",
+"p": 374.56666666666666
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "EL SAUZAL - LOS ANGELES",
+"alt": 225,
+"vert": "N",
+"p": 400.1
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "EL SAUZAL - LOS NARANJOS",
+"alt": 250,
+"vert": "N",
+"p": 422.70000000000005
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "SANTA URSULA - AYUNTAMIENTO",
+"alt": 290,
+"vert": "N",
+"p": 401.73333333333335
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LA VICTORIA - AYUNTAMIENTO",
+"alt": 390,
+"vert": "N",
+"p": 486.55
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "EL SAUZAL - LA CARRETERA COL. NAC.",
+"alt": 465,
+"vert": "N",
+"p": 487.2
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LA MATANZA",
+"alt": 500,
+"vert": "N",
+"p": 503.5
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "SANTA URSULA - LA CORUJERA",
+"alt": 550,
+"vert": "N",
+"p": 644.4
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "SANTA URSULA - PINO ALTO",
+"alt": 550,
+"vert": "N",
+"p": 501.23333333333335
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LA VICTORIA - EL LOMO",
+"alt": 648,
+"vert": "N",
+"p": 723.8
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LA MATANZA - CRUZ DEL CAMINO",
+"alt": 650,
+"vert": "N",
+"p": 573.6
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "SANTA URSULA - LA ATALAYA",
+"alt": 830,
+"vert": "N",
+"p": 619.1
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LA MATANZA - LA VICA",
+"alt": 850,
+"vert": "N",
+"p": 621.4
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LA VICTORIA - LOMO ABADE",
+"alt": 1100,
+"vert": "N",
+"p": 712.15
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "SANTA URSULA - MONTANA LAS OVEJAS",
+"alt": 1287,
+"vert": "N",
+"p": 731.1
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LA VICTORIA - LOMO RINCON",
+"alt": 1350,
+"vert": "N",
+"p": 728.85
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ANAGA - PUNTA DEL HIDALGO",
+"alt": 35,
+"vert": "N",
+"p": 275.7
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LAGUNA - TEJINA",
+"alt": 90,
+"vert": "N",
+"p": 271.0
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LA LAGUNA - PAJALILLOS - ICIA",
+"alt": 110,
+"vert": "N",
+"p": 323.1
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "TACORONTE - MESA DEL MAR",
+"alt": 285,
+"vert": "N",
+"p": 460.9
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LAGUNA - ISAMAR - ICIA",
+"alt": 293,
+"vert": "N",
+"p": 417.0333333333333
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "TACORONTE - S.E.A.",
+"alt": 327,
+"vert": "N",
+"p": 428.25
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "TEGUESTE - EL DRAGO",
+"alt": 370,
+"vert": "N",
+"p": 499.6666666666667
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "TEGUESTE - LA PADILLA",
+"alt": 400,
+"vert": "N",
+"p": 490.0
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "TEGUESTE - SAN GONZALO",
+"alt": 440,
+"vert": "N",
+"p": 548.15
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "TACORONTE",
+"alt": 485,
+"vert": "N",
+"p": 539.7333333333333
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "TACORONTE - LOS NARANJEROS",
+"alt": 580,
+"vert": "N",
+"p": 599.3666666666667
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LA LAGUNA - CAMINO ALAMOS",
+"alt": 587,
+"vert": "N",
+"p": 631.9666666666667
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LOS RODEOS - AEROPUERTO TENERIFE NORTE",
+"alt": 610,
+"vert": "N",
+"p": 534.6333333333333
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "TACORONTE - AGUA GARCIA - AGROCABILDO",
+"alt": 643,
+"vert": "N",
+"p": 597.3
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "TACORONTE - AGUA GARCIA",
+"alt": 800,
+"vert": "N",
+"p": 721.05
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "EL SAUZAL - RAVELO",
+"alt": 922,
+"vert": "N",
+"p": 770.2
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "TACORONTE - LOS MADRONOS",
+"alt": 950,
+"vert": "N",
+"p": 947.2
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "TACORONTE - LA PARCELA",
+"alt": 1010,
+"vert": "N",
+"p": 948.8
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "EL SAUZAL - PLAZA DE LA PAZ (MONTE)",
+"alt": 1190,
+"vert": "N",
+"p": 719.6
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LA MATANZA - LAS LAGUNETAS",
+"alt": 1400,
+"vert": "N",
+"p": 1003.8
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LA VICTORIA - MIRADOR ORTUNO",
+"alt": 1570,
+"vert": "N",
+"p": 922.5
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LA VICTORIA - GAITERO T.V.I.",
+"alt": 1745,
+"vert": "N",
+"p": 945.9
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LA LAGUNA - PUNTA DEL HIDALGO",
+"alt": 35,
+"vert": "N",
+"p": 257.7
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LA LAGUNA - BAJAMAR - ALPA",
+"alt": 114,
+"vert": "N",
+"p": 239.6
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LA LAGUNA - TEJINA - PICO",
+"alt": 250,
+"vert": "N",
+"p": 328.9
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ANAGA - EL BATAN",
+"alt": 470,
+"vert": "N",
+"p": 562.6999999999999
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ANAGA - AFUR - INCHIRES",
+"alt": 510,
+"vert": "N",
+"p": 441.1
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ANAGA - ROQUE NEGRO",
+"alt": 525,
+"vert": "N",
+"p": 556.4666666666666
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LA LAGUNA - LAS CANTERAS",
+"alt": 575,
+"vert": "N",
+"p": 665.4
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ANAGA - LAS CARBONERAS",
+"alt": 600,
+"vert": "N",
+"p": 650.6500000000001
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "TEGUESTE - PEDRO ALVAREZ - H PILATO",
+"alt": 625,
+"vert": "N",
+"p": 669.8000000000001
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ANAGA - JARDINA",
+"alt": 675,
+"vert": "N",
+"p": 622.6
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ANAGA - TAGANANA - EL CARDONAL",
+"alt": 40,
+"vert": "N",
+"p": 310.4666666666667
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ANAGA - EL DRAGUILLO",
+"alt": 160,
+"vert": "N",
+"p": 271.06666666666666
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ANAGA - TAGANAGA - LOS CHORROS",
+"alt": 200,
+"vert": "N",
+"p": 380.1
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ANAGA - TAGANANA - AZANOS",
+"alt": 250,
+"vert": "N",
+"p": 377.1666666666667
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ANAGA - TAGANANA",
+"alt": 290,
+"vert": "N",
+"p": 372.90000000000003
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ANAGA - BARRANCO CAMPANARIO",
+"alt": 350,
+"vert": "N",
+"p": 420.59999999999997
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ANAGA - TAGANANA - LOS MOLINOS",
+"alt": 375,
+"vert": "N",
+"p": 579.7333333333335
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ANAGA - TAGANANA - FAJANETAS",
+"alt": 400,
+"vert": "N",
+"p": 536.7333333333332
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ANAGA - CHAMORGA",
+"alt": 460,
+"vert": "N",
+"p": 587.3499999999999
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ANAGA - LAS BODEGAS",
+"alt": 500,
+"vert": "N",
+"p": 569.9333333333333
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ANAGA - LOMO PELADO",
+"alt": 775,
+"vert": "N",
+"p": 593.6
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "S/C TENERIFE - SAN ANDRES",
+"alt": 20,
+"vert": "S",
+"p": 224.55
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "S/C TENERIFE - URBANIZACION ANAGA",
+"alt": 25,
+"vert": "S",
+"p": 227.63333333333335
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "S/C TENERIFE - IGUESTE DE SAN ANDRES",
+"alt": 60,
+"vert": "S",
+"p": 236.6
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ANAGA - BCO TAHODIO - POZO LARA",
+"alt": 125,
+"vert": "S",
+"p": 377.45000000000005
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "S/C TENERIFE - SAN ANDRES - BCO HUERTAS",
+"alt": 140,
+"vert": "S",
+"p": 399.4333333333334
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ANAGA - ROQUE BERMEJO - FARO",
+"alt": 235,
+"vert": "S",
+"p": 287.3
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "SANTA CRUZ - VALLE JIMENEZ",
+"alt": 425,
+"vert": "S",
+"p": 385.3333333333333
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LOS RODEOS - AEROPUERTO TENERIFE NORTE",
+"alt": 610,
+"vert": "S",
+"p": 534.6333333333333
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "SANTA CRUZ DE TENERIFE",
+"alt": 36,
+"vert": "S",
+"p": 227.0666666666667
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "CANDELARIA - LAS CALETILLAS",
+"alt": 50,
+"vert": "S",
+"p": 247.7
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "SANTA CRUZ - DEPURADORA DE AGUAS",
+"alt": 85,
+"vert": "S",
+"p": 173.3
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "EL ROSARIO - BARRANCO GRANDE",
+"alt": 320,
+"vert": "S",
+"p": 203.2
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LA LAGUNA - MONTANA OFRA",
+"alt": 380,
+"vert": "S",
+"p": 248.2
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "CANDELARIA - BARRANCO HONDO",
+"alt": 390,
+"vert": "S",
+"p": 296.85
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "EL ROSARIO - LAS ROSAS",
+"alt": 940,
+"vert": "S",
+"p": 518.2
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "EL ROSARIO - LA ESPERANZA CASA FOR.",
+"alt": 965,
+"vert": "S",
+"p": 745.4
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "CANDELARIA - LAS RAMONAS",
+"alt": 995,
+"vert": "S",
+"p": 619.35
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "CANDELARIA - BOCA DEL VALLE",
+"alt": 1565,
+"vert": "S",
+"p": 540.25
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "GUIMAR - EL SOCORRO - PLAYA",
+"alt": 10,
+"vert": "S",
+"p": 270.7
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "GUIMAR - LA PLANTA - ICIA",
+"alt": 156,
+"vert": "S",
+"p": 181.93333333333337
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "GUIMAR - TOPO NEGRO",
+"alt": 290,
+"vert": "S",
+"p": 315.3
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "GUIMAR - BARRANCO DE BADAJOZ",
+"alt": 340,
+"vert": "S",
+"p": 469.1
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "CANDELARIA - PENA VERIGUESTE",
+"alt": 410,
+"vert": "S",
+"p": 291.15
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ARAFO - VILLA",
+"alt": 485,
+"vert": "S",
+"p": 298.8333333333333
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ARAFO - ANAVINGO - DEPOSITO AGUA",
+"alt": 595,
+"vert": "S",
+"p": 379.6333333333334
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ARAFO - BARRANCO AFONA",
+"alt": 610,
+"vert": "S",
+"p": 306.6
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ARAFO - ANAVINGO - AGROCABILDO",
+"alt": 700,
+"vert": "S",
+"p": 522.6
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "CANDELARIA - BCO HONDO - PINO GACHO",
+"alt": 740,
+"vert": "S",
+"p": 376.7
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "GUIMAR - LAS VISTAS",
+"alt": 850,
+"vert": "S",
+"p": 301.7
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ARAFO - ANAVINGO - CHARQUILLO",
+"alt": 1125,
+"vert": "S",
+"p": 562.5
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "CANDELARIA - CHIVISAYA",
+"alt": 1300,
+"vert": "S",
+"p": 657.2666666666667
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ARAFO - MONTANA COLORADA",
+"alt": 1505,
+"vert": "S",
+"p": 635.7666666666667
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "GUIMAR - LOMO CUCHILLO",
+"alt": 1615,
+"vert": "S",
+"p": 420.45
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ARICO - LA JURADA",
+"alt": 45,
+"vert": "S",
+"p": 106.7
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ARICO - LLANOS DE SAN JUAN",
+"alt": 135,
+"vert": "S",
+"p": 196.2
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ARICO - EL NUEVO",
+"alt": 375,
+"vert": "S",
+"p": 256.2
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ARICO - TEGUEDITE - EL VISO",
+"alt": 410,
+"vert": "S",
+"p": 346.9
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ARICO - LOMO",
+"alt": 510,
+"vert": "S",
+"p": 139.5
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ARICO - BARRANCO PUENTE - ORTIZ",
+"alt": 725,
+"vert": "S",
+"p": 504.1
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ARICO - EL BUENO",
+"alt": 830,
+"vert": "S",
+"p": 249.1
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ARICO - ESQUINA DE LOS CARDONES",
+"alt": 895,
+"vert": "S",
+"p": 133.8
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ARICO - EL BUENO - LOS HELECHOS",
+"alt": 930,
+"vert": "S",
+"p": 410.5
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ARICO - VALLE DEL CONTADOR",
+"alt": 1260,
+"vert": "S",
+"p": 225.4
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ARICO - PENON DEL CONTADOR CASA FOR.",
+"alt": 1550,
+"vert": "S",
+"p": 212.65
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "GRANADILLA - BARRANCO JUAN DANA",
+"alt": 1575,
+"vert": "S",
+"p": 250.6
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ARONA - FARO DE RASCA",
+"alt": 12,
+"vert": "S",
+"p": 87.8
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "AEROPUERTO TENERIFE SUR",
+"alt": 59,
+"vert": "S",
+"p": 132.03333333333333
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ARONA - GUAZA",
+"alt": 75,
+"vert": "S",
+"p": 131.66666666666666
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ARONA - BUZANADA",
+"alt": 280,
+"vert": "S",
+"p": 170.6
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "GRANADILLA - YACO",
+"alt": 375,
+"vert": "S",
+"p": 185.2
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ARONA - LA CAMELLA",
+"alt": 390,
+"vert": "S",
+"p": 222.36666666666665
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "VALLE SAN LORENZO - JAMA",
+"alt": 435,
+"vert": "S",
+"p": 229.86666666666665
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "GRANADILLA - CHARCO DEL PINO - CABILDO",
+"alt": 505,
+"vert": "S",
+"p": 358.4
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "SAN MIGUEL DE ABONA",
+"alt": 590,
+"vert": "S",
+"p": 227.5
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "GRANADILLA - CHOZAS ABAJO",
+"alt": 625,
+"vert": "S",
+"p": 254.5
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "GRANADILLA - CHARCO DEL PINO",
+"alt": 650,
+"vert": "S",
+"p": 262.23333333333335
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "GRANADILLA - EL PINALETE",
+"alt": 850,
+"vert": "S",
+"p": 632.5
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "GRANADILLA - LAS FUENTES",
+"alt": 1010,
+"vert": "S",
+"p": 232.6
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "VILAFLOR - LA ESCALONA",
+"alt": 1100,
+"vert": "S",
+"p": 230.4
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "VILAFLOR – LOS FRONTONES",
+"alt": 1258,
+"vert": "S",
+"p": 590.8
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "VILAFLOR - PUEBLO",
+"alt": 1515,
+"vert": "S",
+"p": 359.6666666666667
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "VILAFLOR - CASA FORESTAL",
+"alt": 1550,
+"vert": "S",
+"p": 327.3
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "GRANADILLA - LA FLORIDA",
+"alt": 1570,
+"vert": "S",
+"p": 328.65
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ADEJE - LOS RETAMARES",
+"alt": 2100,
+"vert": "S",
+"p": 297.5
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LAS CANADAS - LLANO DE UCANCA",
+"alt": 2020,
+"vert": "S",
+"p": 390.09999999999997
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ARONA - LAS GALLETAS - ICIA",
+"alt": 27,
+"vert": "S",
+"p": 148.3
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ADEJE - PLAYA AMERICAS",
+"alt": 40,
+"vert": "S",
+"p": 111.0
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ARONA - LOS CRISTIANOS",
+"alt": 51,
+"vert": "S",
+"p": 106.75
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ARONA - LAS GALLETAS - AGROCABIDO",
+"alt": 73,
+"vert": "S",
+"p": 181.2
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ADEJE - LA CALETA",
+"alt": 100,
+"vert": "S",
+"p": 214.8
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ADEJE - FANABE",
+"alt": 112,
+"vert": "S",
+"p": 155.4
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ARONA - LA CALDERA",
+"alt": 138,
+"vert": "S",
+"p": 97.6
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ADEJE - VILLA",
+"alt": 318,
+"vert": "S",
+"p": 182.4333333333333
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ADEJE - TIJOCO DE ABAJO",
+"alt": 460,
+"vert": "S",
+"p": 218.3
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ARONA - VILLA",
+"alt": 610,
+"vert": "S",
+"p": 242.85
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ADEJE - TAUCHO",
+"alt": 910,
+"vert": "S",
+"p": 292.70000000000005
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ADEJE - IFONCHE",
+"alt": 1070,
+"vert": "S",
+"p": 266.7
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "ADEJE - EL CEDRO - FINCA FYFFES",
+"alt": 1350,
+"vert": "S",
+"p": 397.93333333333334
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "GUIA DE ISORA - ICERCE - FYFFES",
+"alt": 1600,
+"vert": "S",
+"p": 394.4333333333334
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "GUIA ISORA - BARRANCO NIAGARA",
+"alt": 1805,
+"vert": "S",
+"p": 565.0
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "GUIA DE ISORA - CHAVAO REF. FORESTAL",
+"alt": 1950,
+"vert": "S",
+"p": 434.59999999999997
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "LAS CANADAS - BOCA TAUCE",
+"alt": 2050,
+"vert": "S",
+"p": 500.3999999999999
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "GUIA DE ISORA - CUEVA DEL POLVO",
+"alt": 28,
+"vert": "S",
+"p": 135.5
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "GUIA DE ISORA - PLAYA SAN JUAN CAB.",
+"alt": 50,
+"vert": "S",
+"p": 164.6
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "GUIA DE ISORA - PLAYA SAN JUAN",
+"alt": 86,
+"vert": "S",
+"p": 141.96666666666667
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "GUIA DE ISORA - TEJINA - COOP.",
+"alt": 400,
+"vert": "S",
+"p": 238.29999999999998
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "GUIA DE ISORA",
+"alt": 476,
+"vert": "S",
+"p": 210.7
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "GUIA DE ISORA - EL POZO",
+"alt": 700,
+"vert": "S",
+"p": 290.6
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "GUIA DE ISORA - CHIO - CASA FORESTAL",
+"alt": 715,
+"vert": "S",
+"p": 240.04999999999998
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "GUIA DE ISORA - CHIO - AGROCABILDO",
+"alt": 735,
+"vert": "S",
+"p": 242.4
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "GUIA ISORA - ARIPE",
+"alt": 760,
+"vert": "S",
+"p": 277.5
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "SANTIAGO DEL TEIDE",
+"alt": 940,
+"vert": "S",
+"p": 506.7
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "SANTIAGO DEL TEIDE - VALLE ARRIBA",
+"alt": 990,
+"vert": "S",
+"p": 559.2
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "GUIA ISORA - ARIPE - LOS LLANITOS",
+"alt": 1032,
+"vert": "S",
+"p": 414.4
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "GUIA DE ISORA - LOS FRONTONES",
+"alt": 1200,
+"vert": "S",
+"p": 355.7
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "EL TANQUE - MONTANA CHINYERO",
+"alt": 1475,
+"vert": "S",
+"p": 466.23333333333335
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "GUIA DE ISORA - LOS BALDIOS",
+"alt": 1820,
+"vert": "S",
+"p": 635.6
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "GUIA DE ISORA - MONTANA SAMARA",
+"alt": 1900,
+"vert": "S",
+"p": 497.6333333333334
+},
+{
+"src": "Agrocabildo 1983-2010",
+"nombre": "GUIA DE ISORA - EL ENCERRADERO",
+"alt": 2080,
+"vert": "S",
+"p": 426.76666666666665
+},
+{
+"src": "AEMET normales 1991-2020",
+"nombre": "STA.CRUZ DE TENERIFE",
+"alt": 36,
+"vert": "S",
+"p": 219.7
+},
+{
+"src": "AEMET normales 1991-2020",
+"nombre": "TENERIFE SUR AEROPUERTO",
+"alt": 64,
+"vert": "S",
+"p": 117.2
+},
+{
+"src": "AEMET normales 1991-2020",
+"nombre": "ADEJE",
+"alt": 130,
+"vert": "S",
+"p": 150.0
+},
+{
+"src": "AEMET normales 1991-2020",
+"nombre": "TENERIFE NORTE AEROPUERTO",
+"alt": 632,
+"vert": "N",
+"p": 515.7
+},
+{
+"src": "AEMET normales 1991-2020",
+"nombre": "LA OROTAVA, CAÑADAS TEIDE",
+"alt": 2150,
+"vert": "S",
+"p": 326.0
+},
+{
+"src": "AEMET normales 1991-2020",
+"nombre": "IZAÑA",
+"alt": 2369,
+"vert": "S",
+"p": 331.6
+},
+{
+"src": "AEMET medias 2009-2025",
+"nombre": "ANAGA",
+"alt": 19,
+"vert": "S",
+"p": 276.0
+},
+{
+"src": "AEMET medias 2009-2025",
+"nombre": "PUERTO DE LA CRUZ",
+"alt": 25,
+"vert": "N",
+"p": 224.0
+},
+{
+"src": "AEMET medias 2009-2025",
+"nombre": "GÜÍMAR",
+"alt": 115,
+"vert": "S",
+"p": 113.0
+},
+{
+"src": "AEMET medias 2009-2025",
+"nombre": "TACORONTE",
+"alt": 310,
+"vert": "N",
+"p": 370.0
+},
+{
+"src": "AEMET medias 2009-2025",
+"nombre": "ARICO",
+"alt": 418,
+"vert": "S",
+"p": 216.0
+},
+{
+"src": "AEMET medias 2009-2025",
+"nombre": "CANDELARIA",
+"alt": 463,
+"vert": "S",
+"p": 248.0
+},
+{
+"src": "AEMET medias 2009-2025",
+"nombre": "LA VICTORIA DE ACENTEJO",
+"alt": 567,
+"vert": "N",
+"p": 525.0
+},
+{
+"src": "AEMET medias 2009-2025",
+"nombre": "SAN JUAN DE LA RAMBLA",
+"alt": 667,
+"vert": "N",
+"p": 544.0
+},
+{
+"src": "AEMET medias 2009-2025",
+"nombre": "SAN CRISTÓBAL DE LA LAGUNA,LLANO DE LOS LOROS",
+"alt": 868,
+"vert": "N",
+"p": 889.0
+}
+],
+"fuentes": [
+"AEMET OpenData, valores climatológicos normales 1991-2020 y series mensuales 2009-2025 (16 estaciones de Tenerife)",
+"Cabildo de Tenerife, Agrocabildo: Temperatura del aire, análisis 2008 (40 estaciones, medias 2001-2007)",
+"Cabildo de Tenerife, Agrocabildo, L. M. Santana Pérez (2012): ¿Existe cambio pluviométrico en los últimos 40 años en Tenerife? Transectos pluviométricos 1983-2010 (224 pluviómetros)"
+],
+"nota": "Temperaturas por regresión sobre la cota con todas las estaciones de cada vertiente; lluvia por mediana de los pluviómetros de cada franja; la vertiente norte (barlovento) incluye el noreste y la sur (sotavento) el este y el oeste."
+}

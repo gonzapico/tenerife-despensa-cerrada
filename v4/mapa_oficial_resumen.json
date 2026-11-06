@@ -1,0 +1,55 @@
+{
+"parcelas": 177543,
+"ha_total": 38727.9,
+"regado_ha": 13506.8,
+"fecha": [
+"01/01/2021",
+"31/05/2021"
+],
+"regado_100": [
+"Aguacate",
+"Aloe",
+"Aromáticas",
+"Batata",
+"Cebolla",
+"Cítricos",
+"Fresas",
+"Hortaliza Otras Mezclas",
+"Huerto Familiar",
+"Mango",
+"Melón-Sandía",
+"Moringa",
+"Ornamentales",
+"Papaya",
+"Parchita",
+"Pepino",
+"Pitaya",
+"Piña",
+"Platanera",
+"Próteas",
+"Strelitzias",
+"Subtropicales Otras Mezclas",
+"Tomate",
+"Viveros",
+"Ñame"
+],
+"sanu_abandon": {
+"Sí, prolongado": 15965.5,
+"Sí, reciente": 3250.4
+},
+"categoria_ha": {
+"Frutales": 2485.5,
+"Huerta": 8173.5,
+"Ornamentales": 367.8,
+"Otros": 898.6,
+"Pastoreo sobre superficie agrícola no utilizada": 292.4,
+"Pastoreo sobre superficie no agrícola": 35.6,
+"Platanera": 3935.2,
+"Superficie agrícola no utilizada": 19215.9,
+"Tomate": 102.4,
+"Viña": 3220.9
+},
+"invernadero_ha": 2807.7,
+"platanera_invernadero_ha": 1447.6,
+"sanu_regable_ha": 970.6
+}
