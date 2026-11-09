@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Carga pendiente del visor Tenerife, despensa cerrada</title>
+<style>
+:root{
+  --bg:#F3F5F2; --panel:#FFFFFF; --ink:#18222D; --muted:#5B6773; --line:#D8DDD8;
+  --accent:#2F6B4F; --accent-soft:#E1EEE7;
+  --crit:#B42318; --crit-soft:#FDE8E6; --warn:#A15C07; --warn-soft:#FEF3DC; --ok:#067647; --ok-soft:#E3F4EA;
+  --jorge:#2F6B4F; --tec:#6B7FA8; --otros:#B9A27A;
+  --display:"Arial Narrow","Roboto Condensed",Arial,sans-serif;
+  --body:"Segoe UI",system-ui,-apple-system,Arial,sans-serif;
+  --mono:ui-monospace,Consolas,"Courier New",monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#11171D; --panel:#18212A; --ink:#E6ECE8; --muted:#9AA7B2; --line:#2A3540;
+    --accent:#6FC29A; --accent-soft:#1D3328;
+    --crit:#F97066; --crit-soft:#3A1D1B; --warn:#F5B546; --warn-soft:#3A2C12; --ok:#47CD89; --ok-soft:#15301F;
+    --jorge:#6FC29A; --tec:#8FA3CC; --otros:#CDB88F; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#11171D; --panel:#18212A; --ink:#E6ECE8; --muted:#9AA7B2; --line:#2A3540;
+  --accent:#6FC29A; --accent-soft:#1D3328;
+  --crit:#F97066; --crit-soft:#3A1D1B; --warn:#F5B546; --warn-soft:#3A2C12; --ok:#47CD89; --ok-soft:#15301F;
+  --jorge:#6FC29A; --tec:#8FA3CC; --otros:#CDB88F; color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.5;padding-inline:16px;padding-block:0 40px}
+.wrap{max-width:1080px;margin:0 auto}
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding-block:14px 10px;border-bottom:1px solid var(--line);display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between}
+.brand{font-family:var(--display);font-weight:700;font-size:22px;letter-spacing:.02em;text-transform:uppercase}
+.brand small{display:block;font-family:var(--body);font-weight:400;font-size:13px;letter-spacing:0;text-transform:none;color:var(--muted)}
+nav.tabs{display:flex;flex-wrap:wrap;gap:6px}
+nav.tabs button{font:600 13px var(--body);border:1px solid var(--line);background:var(--panel);color:var(--ink);padding:6px 10px;border-radius:6px;cursor:pointer}
+nav.tabs button[aria-current="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+nav.tabs button:focus-visible,.btn:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.progress{height:3px;background:var(--line);margin-top:8px;width:100%}
+.progress i{display:block;height:100%;background:var(--accent);transition:width .3s}
+section.slide{padding-block:28px 8px}
+h1,h2{font-family:var(--display);font-weight:700;line-height:1.05;text-wrap:balance;margin:0 0 6px}
+h1{font-size:clamp(34px,6vw,54px)} h2{font-size:clamp(28px,4.5vw,40px)}
+h3{font:700 13px var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 8px}
+.lede{font-size:18px;max-width:68ch;color:var(--ink)}
+.muted{color:var(--muted)}
+.grid{display:grid;gap:16px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:16px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-block:18px}
+.kpi{border-top:3px solid var(--ink);padding-top:8px}
+.kpi b{display:block;font-family:var(--display);font-size:38px;line-height:1;font-variant-numeric:tabular-nums}
+.kpi span{font-size:13px;color:var(--muted)}
+.bars{display:grid;gap:10px}
+.bar-row{display:grid;grid-template-columns:170px 1fr 56px;gap:10px;align-items:center;font-size:14px}
+.bar-row .name{font-weight:600;cursor:pointer;background:none;border:0;color:var(--ink);text-align:left;font:600 14px var(--body);padding:0}
+.bar-row .name:hover{color:var(--accent)}
+.track{display:flex;height:18px;background:var(--line);border-radius:3px;overflow:hidden}
+.track i{display:block;height:100%}
+.num{font-family:var(--mono);font-variant-numeric:tabular-nums;text-align:right}
+.legend{display:flex;flex-wrap:wrap;gap:14px;font-size:13px;color:var(--muted);margin-top:10px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px}
+.pill{display:inline-block;font:600 12px var(--body);padding:2px 8px;border-radius:999px;white-space:nowrap}
+.p-crit{background:var(--crit-soft);color:var(--crit)} .p-warn{background:var(--warn-soft);color:var(--warn)} .p-ok{background:var(--ok-soft);color:var(--ok)}
+.ref{font-family:var(--mono);font-size:13px;color:var(--muted)}
+.explain{border-left:3px solid var(--accent);background:var(--accent-soft);padding:14px 16px;border-radius:0 8px 8px 0;max-width:75ch}
+.explain p{margin:0 0 8px} .explain p:last-child{margin:0}
+table{border-collapse:collapse;width:100%;font-size:14px}
+.tbl{overflow-x:auto}
+th,td{text-align:left;padding:8px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:700}
+td.h{font-family:var(--mono);text-align:right;white-space:nowrap}
+.filters{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}
+.btn{font:600 13px var(--body);border:1px solid var(--line);background:var(--panel);color:var(--ink);padding:6px 10px;border-radius:6px;cursor:pointer}
+.btn[aria-pressed="true"]{border-color:var(--accent);color:var(--accent);background:var(--accent-soft)}
+details.quiz{background:var(--panel);border:1px dashed var(--accent);border-radius:8px;padding:12px 14px}
+details.quiz summary{cursor:pointer;font-weight:700}
+details.quiz p{margin:8px 0 0}
+.steps{counter-reset:s;display:grid;gap:8px;padding:0;margin:0;list-style:none}
+.steps li{counter-increment:s;display:grid;grid-template-columns:28px 1fr;gap:8px}
+.steps li::before{content:counter(s);font-family:var(--display);font-weight:700;font-size:20px;color:var(--accent)}
+.navfoot{display:flex;justify-content:space-between;gap:10px;margin-top:28px}
+pre.prompt{white-space:pre-wrap;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:16px;font:13px/1.55 var(--mono);max-height:420px;overflow:auto}
+.q{border:1px solid var(--line);margin:0}.q legend{padding:0 4px}
+.opts{display:grid;gap:6px;margin-bottom:8px}.opt{display:flex;gap:8px;align-items:flex-start;flex-wrap:wrap;cursor:pointer}.opt input[type=radio]{margin-top:4px}
+.txt{font:14px var(--body);color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:6px 8px;flex:1 1 180px;min-width:0}
+.txt:focus-visible,.opt input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}.nota{width:100%}
+.note{font-size:13px;color:var(--muted);max-width:80ch}
+@media (max-width:560px){.bar-row{grid-template-columns:1fr 48px}.bar-row .track{grid-column:1/-1;order:3}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <div class="brand" id="brand"></div>
+    <nav class="tabs" id="tabs" aria-label="Diapositivas"></nav>
+    <div class="progress" aria-hidden="true"><i id="prog"></i></div>
+  </header>
+  <main id="stage"></main>
+  <div class="navfoot">
+    <button class="btn" id="prev">← Anterior</button>
+    <span class="muted" id="pos"></span>
+    <button class="btn" id="next">Siguiente →</button>
+  </div>
+</div>
+
+<script>
+const D = {"titulo": "Carga pendiente del visor Tenerife, despensa cerrada", "marca": "Carga pendiente · Tenerife, despensa cerrada", "subtitulo": "Prototipo personal · réplica del visor de La Palma · v4", "corte": "06/11/2026", "estado": "[BORRADOR]", "titular": "Lo que falta para dar por bueno el visor «Tenerife, despensa cerrada»", "lede": "Seis frentes de una cuarta versión: rendimientos medidos en Tenerife (ISTAC 2017-2023) para 30 cultivos. dotación de riego del plátano medida por el Cabildo. clima de estaciones reales y el resto de fuentes directas: el catálogo por pisos. la tierra y el agua que libera el plátano. el balance con ganado y pesca. el visor con el mapa 3D. la cocina y el botiquín. y lo colateral (supuestos heredados de La Palma). La conclusión provisional es dura: con 961.745 residentes la isla cubre un 22 % de sus necesidades en el escenario de referencia y un 56 % en el mejor caso. Cada barra muestra las horas que faltan y quién tiene que ponerlas.", "proyectos": [{"id": "A1", "short": "A1 Catálogo", "title": "Catálogo de viabilidad agroclimática (164 productos, 10 pisos)", "ref": "03_catalogo_viabilidad_tf.csv · 93_catalogo_viabilidad_tf.py · 95_catalogo_salida_tf.json", "state": "ok", "stateTxt": "Clima de estaciones reales", "why": ["Se cruzó el catálogo mundial de la FAO con el clima de Tenerife por cinco pisos de altitud y dos vertientes (norte y sur). De 144 productos alimentarios, <b>50</b> se dan en secano, 90 con riego, 1 con invernadero y 3 son marginales.", "Calibración con la realidad: los 106 contrastes (productos con superficie en el Mapa de Cultivos de Tenerife viables; los regados al 100 % no salen de secano) cumplen <b>106/106</b>.", "Las reglas de clasificación son propias y están declaradas en el script (banda de temperatura, mes más seco, lista de perennes de secano). El clima por piso sale ahora de estaciones reales: temperatura por regresión sobre la cota con 16 estaciones de AEMET y 40 de Agrocabildo, lluvia por mediana de los 224 pluviómetros de Agrocabildo (1983-2010) más AEMET en cada franja. Las medianías altas del norte quedan en 606 mm y el pinar en 701 mm; el mar de nubes ya cuenta."], "quiz": ["¿Por qué la cumbre (P5) sale más seca que el pinar (P4) aunque esté más alta?", "Porque el mar de nubes de los alisios descarga entre 600 y 1.500 m; por encima de la inversión térmica (Izaña, 2.371 m) el aire es seco y soleado. Por eso la lluvia baja de 850 a 520 mm al subir de P4-N a P5-N."], "next": "Validar las reglas de clasificación declaradas (banda ±2 °C, 0,9×ROPMN, listas de perennes) ahora que el clima ya tiene fuente.", "items": [{"t": "Validar las reglas de clasificación declaradas (banda ±2 °C, 0,9×ROPMN, listas de perennes)", "c": "Decisión", "b": 1, "j": 1, "x": 0, "o": 0}, {"t": "Decidir si la clase «imposible» exige mínima letal o también humedad tropical (pimienta, canela, clavo)", "c": "Decisión", "b": 0, "j": 0.5, "x": 0, "o": 0}, {"t": "Series de Agrocabildo posteriores a 2010 (los transectos acaban en 2010 y las temperaturas en 2007)", "c": "Fuente", "b": 0, "j": 0, "x": 0, "o": 2}, {"t": "Horas de frío medidas en Tenerife (hoy derivadas de la relación de La Palma)", "c": "Fuente", "b": 0, "j": 0, "x": 0, "o": 2}], "rf": 1}, {"id": "A2", "short": "A2 Sin plátano", "title": "Tierra y agua que libera la platanera (C1–C2)", "ref": "96_balance_suficiencia_tf.py (bloque C1) · 97_balance_salida_tf.json", "state": "ok", "stateTxt": "Agua del plátano con fuente propia", "why": ["La platanera ocupa <b>3.935 ha</b> en el Mapa de Cultivos 2020-21. Para el consumo de la isla (15 kg por persona y año) hacen falta unas 307 ha; quedan libres 3.628.", "El agua liberada está entre <b>24.8 y 42.4 hm³/año</b>, entre el 29 % y el 50 % de los 84,25 hm³ de demanda agraria del Plan Hidrológico. El agua se calcula ya con la dotación medida de la platanera en Tenerife (12.375 m³/ha, Estudio de Consumos Hídricos del Cabildo de 2005, citado por C. Méndez), que cuadra con el 60 % del agua agraria que consume el plátano. Alternativas en el visor: media del regadío (6.846), por planta (8.760-11.680) e IPH de Canarias (10.000).", "Hay 19.216 ha de suelo agrícola abandonado y 2.382 ha de barbecho: el suelo no es lo que falta."], "quiz": ["¿Por qué en Tenerife sí importa cuánto plátano se come la isla, y en La Palma no?", "Porque hay once veces más bocas: 955.000 residentes piden 326 ha de platanera (el 8 % de la que hay), frente a las 29 ha de La Palma. Si el consumo se duplicara, la isla retendría 650 ha."], "next": "Decidir si el barbecho (2.382 ha) y las 971 ha de suelo abandonado con riego entran en la bolsa recuperable.", "items": [{"t": "Serie reciente del consumo de la platanera (el estudio del Cabildo es de 2005; las recomendaciones de riego actuales rondan 10.000 m³/ha)", "c": "Fuente", "b": 0, "j": 0, "x": 0, "o": 1}, {"t": "Consumo de plátano por habitante en Canarias", "c": "Fuente", "b": 0, "j": 0, "x": 0, "o": 1}, {"t": "Decidir si el barbecho (2.382 ha) entra en la bolsa de tierra recuperable", "c": "Decisión", "b": 0, "j": 0.5, "x": 0, "o": 0}], "rf": 2}, {"id": "A3", "short": "A3 Balance", "title": "Balance de suficiencia con ganado, abono y pesca (C3–C5)", "ref": "96_balance_suficiencia_tf.py · 97_balance_salida_tf.json (132 escenarios)", "state": "warn", "stateTxt": "Rendimientos propios; zootecnia heredada", "why": ["Un modelo de programación lineal reparte la tierra. el agua y el forraje para cubrir a la vez energía. proteína. grasa y frutas y hortalizas de 961.745 residentes. Con insumos actuales. el 30 % del suelo abandonado y ganado se llega al <b>22 %</b>.", "Ni el mejor caso cierra la despensa: con rendimientos de España, todo el suelo abandonado y triple pesca, el <b>56 %</b>. En autarquía estricta sin suelo recuperado, el 8 %.", "La grasa es el cuello de botella, como en La Palma, y el modelo la cubre con olivo, girasol, cacahuete y leche de cabra. El caprino está limitado por el monte (13.000 t de materia seca al año, un supuesto calibrado con el máximo del censo ISTAC 2014-2025: 37.253 cabras en 2014, 28.452 en 2025)."], "quiz": ["Si el modelo dice 17 %, ¿qué significa para una familia de cuatro?", "Que la isla produciría, repartida a partes iguales, la comida de uno de los cuatro, y no todos los días del año. El resto llegaría por barco o no llegaría. Es un resultado del modelo, con rendimientos medios y sin pérdidas, no una predicción."], "next": "Validar los coeficientes de ganado y nitrógeno heredados de La Palma; los rendimientos ya son del ISTAC.", "items": [{"t": "Validar los coeficientes de ganado, nitrógeno y composición nutricional heredados de La Palma", "c": "Decisión", "b": 1, "j": 1, "x": 0, "o": 0}, {"t": "Decidir el factor de los tres cultivos sin dato ISTAC (cacahuete, girasol, ñame): hoy FAOSTAT × 0,7", "c": "Decisión", "b": 0, "j": 0.3, "x": 0, "o": 0}, {"t": "Rendimiento del millo en grano: el ISTAC da 2,1 t/ha (0,17 de FAOSTAT); comprobar si incluye millo tierno", "c": "Fuente", "b": 0, "j": 0, "x": 0, "o": 1}, {"t": "Capacidad real del monte y el matorral para el caprino (hoy 13.000 t MS/año [APROXIMADO])", "c": "Fuente", "b": 1, "j": 0, "x": 0, "o": 2}, {"t": "Primera venta de pesca de 2022 en adelante (solo está publicado 2021)", "c": "Fuente", "b": 0, "j": 0, "x": 0, "o": 1}, {"t": "Decidir si frutas y hortalizas van como cuarta cobertura (como ahora) o como obligación de 400 g/día", "c": "Decisión", "b": 0, "j": 0.5, "x": 0, "o": 0}, {"t": "Composición nutricional contrastada con BEDCA", "c": "Fuente", "b": 0, "j": 0, "x": 0, "o": 2}, {"t": "Rehacer la rejilla de 132 escenarios tras las decisiones", "c": "Técnica", "b": 0, "j": 0, "x": 0, "o": 1}], "rf": 2}, {"id": "A4", "short": "A4 Visor y mapa", "title": "Visor autocontenido con relieve 3D y parcelas", "ref": "05_visor_despensa_cerrada_tf_v4.html · 93c_territorio_tf.py · 90_test_visor.js", "state": "ok", "stateTxt": "Listo para revisar", "why": ["El visor es un único HTML de <b>1.8 MB</b> que funciona sin conexión. con las siete escenas de La Palma. el relieve real de la isla (Copernicus DEM GLO-30) y las 177.543 parcelas del Mapa de Cultivos de Tenerife.", "En el mapa. el modo «despensa cerrada» reparte la tierra liberada sobre parcelas reales: lo más cálido en lo más bajo. y del suelo abandonado se recuperan las 5.764 ha de menor pendiente. Es una ilustración del plan. no una propuesta parcela a parcela.", "Las pruebas con Playwright dan cero conexiones externas, cero errores de consola y sin desbordamiento en móvil (390 px). El navegador recalcula los escenarios y coincide con el cálculo (diferencia máxima 0,005 puntos)."], "quiz": ["Si alguien señala una parcela de Güímar y pregunta «¿aquí van a plantar olivos?», ¿qué le contestas?", "Que no. El mapa reparte las hectáreas del plan con una regla sencilla (calor y pendiente) para que se vea qué tipo de cultivo dominaría en cada zona. No decide parcela a parcela ni tiene en cuenta propiedad, riego existente ni planeamiento."], "next": "Recorrer el visor en ordenador y en móvil y apuntar lo que no se entiende a la primera.", "items": [{"t": "Revisar el visor completo (7 escenas) en ordenador y en móvil", "c": "Trámite", "b": 0, "j": 1, "x": 0, "o": 0}, {"t": "Validar el reparto espacial por calor y pendiente como ilustración", "c": "Decisión", "b": 0, "j": 0.5, "x": 0, "o": 0}, {"t": "Zonas de la isla por límites municipales reales (hoy sectores aproximados por coordenadas)", "c": "Técnica", "b": 0, "j": 0, "x": 0, "o": 2}, {"t": "Que el mapa 3D cambie con el escenario elegido en la escena 4", "c": "Técnica", "b": 0, "j": 0, "x": 0, "o": 3}, {"t": "Zonas por municipio: Grafcan no expone WFS de límites; buscar el shapefile de municipios en opendata.sitcan.es", "c": "Fuente", "b": 0, "j": 0, "x": 0, "o": 1}, {"t": "Decidir con quién se comparte y si va a la vitrina con QR", "c": "Decisión", "b": 0, "j": 0.5, "x": 0, "o": 0}], "rf": 1}, {"id": "A5", "short": "A5 Cocina y botiquín", "title": "Nevera, despensa, semana tinerfeña y botiquín", "ref": "Escenas 5, 6 y 7 del visor · 04b_cocina_tf.py", "state": "warn", "stateTxt": "Textos sin validar", "why": ["La nevera y la despensa recogen lo que se cultiva, se cría o se pesca en Tenerife o tiene antecedentes: 56 productos frescos y 29 de despensa, con los vinos de las cinco denominaciones, la miel de Tenerife, las papas antiguas, las castañas de Acentejo y 14 pescados.", "Los pescados salen ahora del registro de primera venta de 2021: 14 especies con su tonelaje y sus meses de venta. Los huecos son los mismos que en La Palma (arroz, té, cacao, especias, azúcar refinado) más uno nuevo: las calorías para 962.000 personas.", "El botiquín repite la conclusión de La Palma con los hospitales de la isla. Con once veces más población, las existencias duran menos."], "quiz": ["¿Por qué la nevera tinerfeña se parece tanto a la palmera?", "Porque el clima y la tradición son los mismos; cambia la escala. Lo que distingue a Tenerife no es qué hay en la nevera, sino cuántas neveras hay que llenar."], "next": "Revisar producto a producto temporadas y antecedentes, y calcular la cobertura nutricional del menú.", "items": [{"t": "Validar temporadas, antecedentes y nombres locales de los 85 productos", "c": "Decisión", "b": 0, "j": 1.5, "x": 0, "o": 0}, {"t": "Cobertura nutricional del menú semanal", "c": "Técnica", "b": 0, "j": 0, "x": 0, "o": 2}, {"t": "Cuantificar el botiquín: existencias y consumo de los hospitales", "c": "Técnica", "b": 0, "j": 0, "x": 0, "o": 4}], "rf": 1}, {"id": "A6", "short": "Colaterales", "title": "Supuestos heredados, un error corregido y fuentes que faltan", "ref": "91_fuentes_y_licencias_tf.md · 90_verificacion_tf.csv", "state": "warn", "stateTxt": "Coeficientes sin adaptar", "why": ["En la v2 la red ya permite los portales canarios: el Mapa de Cultivos oficial (idéntico a la copia de fiboa: 177.543 parcelas, 38.728 ha), la población y el censo ganadero del ISTAC, la memoria del Plan Hidrológico y el registro de primera venta de 2021 se leyeron de su fuente.", "En las v1-v3 la producción actual de aguacate, viña, cítricos, papa, almendro, mango, hortalizas, olivo, higuera, batata, ñame, millo y plátano retenido salía mil veces menor por un error de unidades (t/ha por kg/ha): la barra gris «producción actual sin plátano» marcaba un 1 % de la energía y son un 11 %. Corregido en la v4. Los coeficientes de ganado y nutrición siguen siendo los del visor de La Palma.", "Todo se generó en una sesión de Claude Code; los scripts y las salidas están en la carpeta del proyecto para rehacer cada cifra."], "quiz": ["¿Por qué no basta con el visor para dar por buena la réplica?", "Porque el visor es la última pieza. Las cifras salen de cuatro scripts (93, 96, 93c, 98) y de dos descargas; sin ellos no se puede comprobar ni corregir nada."], "next": "Validar o descartar los coeficientes heredados de La Palma (rendimientos, zootecnia, nitrógeno, nutrición).", "items": [{"t": "Abrir www.tenerife.es y bancodatos.tenerife.es si hacen falta datos del Cabildo", "c": "Trámite", "b": 0, "j": 0.2, "x": 0, "o": 0}, {"t": "Validar o descartar los supuestos heredados de La Palma (F5–F16 de aquel visor)", "c": "Decisión", "b": 1, "j": 1, "x": 0, "o": 0}], "rf": 1}], "preguntas": [{"id": "coef", "asunto": "A3 Balance", "pregunta": "¿Valen para Tenerife los coeficientes heredados de La Palma (rendimientos, ganado, nitrógeno, pesca)?", "contexto": "Son los mismos números; solo cambian la tierra, el agua, la población y la pesca.", "opciones": ["Sí, como aproximación declarada", "Antes, buscar rendimientos tinerfeños en el ISTAC o Agrocabildo", "Cambiarlos por otros valores que indique"], "recomendada": 1}, {"id": "monte", "asunto": "A3 Balance", "pregunta": "¿Aceptas el techo de 13.000 t de materia seca del monte para el caprino?", "contexto": "Sin techo el modelo pone 200.000 cabras; con él, 37.000 (máximo del censo ISTAC 2014-2025; 28.452 en 2025).", "opciones": ["Sí, como aproximación calibrada con el censo", "Buscar una estimación de carga pastoral del Cabildo", "Quitar el monte y que el ganado coma solo forraje cultivado"], "recomendada": 0}, {"id": "fyh", "asunto": "A3 Balance", "pregunta": "¿Cómo tratamos las frutas y hortalizas?", "contexto": "Como obligación absoluta (400 g/día) ocupan toda la costa y la cobertura cae al 15 %; como cuarta cobertura van en proporción.", "opciones": ["Cuarta cobertura en proporción (como ahora)", "Obligación absoluta de 400 g/día", "Sin restricción"], "recomendada": 0}, {"id": "clima", "asunto": "A1 Catálogo", "pregunta": "¿Validas el método de pisos de la v3 (regresión de temperatura por vertiente y mediana de pluviómetros por franja)?", "contexto": "Mezcla normales AEMET 1991-2020, series cortas 2009-2025 corregidas de sesgo y medias de Agrocabildo 2001-2007 y 1983-2010.", "opciones": ["Sí, como método declarado", "Usar solo AEMET aunque queden franjas sin estación", "Encargar un mapa climático a un técnico"], "recomendada": 0}, {"id": "barbecho", "asunto": "A2 Sin plátano", "pregunta": "¿Entran el barbecho (2.382 ha) y el suelo abandonado con riego (971 ha) en la tierra recuperable?", "opciones": ["No: solo el suelo abandonado, como en La Palma", "Sí, sumados al suelo abandonado", "Sí, como bolsa aparte con su propio deslizador"], "recomendada": 0}, {"id": "reparto_espacial", "asunto": "A4 Visor y mapa", "pregunta": "¿Te vale el reparto sobre parcelas por calor y pendiente como ilustración?", "opciones": ["Sí, como ilustración declarada", "Afinarlo con el riego existente y los municipios"], "recomendada": 0}, {"id": "zonas", "asunto": "A4 Visor y mapa", "pregunta": "¿Las seis zonas de la isla van por sectores aproximados o por municipios?", "opciones": ["Sectores aproximados, por ahora", "Municipios reales (requiere límites del ISTAC o Grafcan)"], "recomendada": 0}, {"id": "difusion", "asunto": "A4 Visor y mapa", "pregunta": "¿Con qué alcance se difunde el visor?", "opciones": ["Privado, solo para mí", "Compartirlo con personas concretas", "Publicarlo junto al de La Palma"], "recomendada": 0}, {"id": "vertiente", "asunto": "A1 Catálogo", "pregunta": "¿Mantenemos dos vertientes (barlovento y sotavento) o pasamos a cuatro (norte, este, sur, oeste)?", "contexto": "Hay pluviómetros de sobra para cuatro; el visor y el catálogo están pensados para dos.", "opciones": ["Dos, como La Palma", "Cuatro, en la siguiente versión"], "recomendada": 0}], "reinicio": {"asunto": "visor «Tenerife, despensa cerrada»: réplica para Tenerife del visor de La Palma (catálogo por pisos, tierra y agua liberadas por la platanera, balance con ganado, abono y pesca, mapa 3D de parcelas, nevera, menú y botiquín)", "carpeta": "tenerife-despensa-cerrada/v4 (repositorio github.com/gonzapico/tenerife-despensa-cerrada; una carpeta por versión; v1-v3 conservadas)", "leer": ["v4/00_INDICE.md (qué es cada fichero)", "v4/04_lectura_balance_tf.md (escenarios, rendimientos y cifras del balance)", "v4/91_fuentes_y_licencias_tf.md (fuentes y etiquetas)", "v4/90_verificacion_tf.csv (pruebas que pasan)", "v4/99_CARGA_PENDIENTE_TF.html (esta presentación)", "CLAUDE.md y CONTRIBUTING.md (git flow obligatorio)"], "decisiones": ["Método heredado del visor de La Palma v6 (tres bolsas de tierra, forraje, ganado, abono, pesca; 132 escenarios) [VALIDADO en La Palma, no en Tenerife]", "Fuentes F1–F9 [VERIFICADO]: Mapa de Cultivos de Tenerife 2021 (opendata.sitcan.es), Copernicus DEM GLO-30, FAO ECOCROP (copia OpenCLIM), ISTAC población 2025 y ganado 2014-2025, memoria del PHT 3.er ciclo, primera venta de pesca 2021, AEMET OpenData (16 estaciones: normales 1991-2020 y series 2009-2025), Agrocabildo (40 estaciones de temperatura y 224 pluviómetros), ISTAC superficies y producciones 2017-2023 (rendimientos de 30 cultivos), Cabildo de Tenerife (consumo de la platanera 12.375 m³/ha)", "Cifras canónicas v4: platanera 3.935 ha; tierra liberada 3.628 ha; agua 24.8–42.4 hm³; suelo abandonado 19.216 ha; cobertura 22 % con insumos actuales. 30 % de suelo y ganado; 56 % en el mejor caso", "Frutas y hortalizas como cuarta cobertura en proporción; techo del monte 13.000 t MS/año para el caprino [DECISIÓN v2, revisable]", "Pisos climáticos v3: regresión de temperatura por vertiente bajo 1.300 m e interpolación a Izaña en la cumbre; lluvia por mediana de pluviómetros por franja [DECISIÓN v3, revisable]", "Rendimientos v4: factor por cultivo = mediana ISTAC 2017-2023 / FAOSTAT España; autarquía sin abono ×5/7 de ese factor; España = máx(factor, 1); agua del plátano con la dotación D (12.375 m³/ha) [DECISIÓN v4, revisable]", "Léxico canario (boniato o batata, millo, papas), etiquetas epistémicas en todas las cifras"], "objetivo": "Elige uno: a) validar la zootecnia y la nutrición heredadas y rehacer el balance (v5); b) pasar a cuatro vertientes con los pluviómetros de Agrocabildo; c) mejorar el visor (zonas por municipio, mapa ligado al escenario, cobertura del menú).", "ideas": [{"titulo": "Mapa de sensibilidad de la cobertura", "que": "A partir de 96_balance_suficiencia_tf.py, mover uno a uno los parámetros dudosos (techo del monte, factor de rendimiento, necesidad de grasa, fracción de suelo recuperado) y dibujar un gráfico de tornado con cuánto cambia la cobertura mínima.", "porque": "Te dice qué tres supuestos sostienen la conclusión «Tenerife no se alimenta sola». Esos son los que hay que acreditar primero.", "skill": "data:statistical-analysis", "alternativa": "data:build-dashboard"}, {"titulo": "Comparar las dos islas en una tabla", "que": "Poner lado a lado La Palma y Tenerife: habitantes por hectárea cultivada, platanera por habitante, agua por habitante, cobertura por escenario.", "porque": "La diferencia de escala es la conclusión; verla en una tabla la hace defendible.", "skill": "data:explore-data", "alternativa": "anthropic-skills:docs"}, {"titulo": "Datos abiertos que faltan", "que": "Buscar en el ISTAC (encuesta ganadera, producción de leche y carne) los rendimientos por cabeza de cabra y vaca en Tenerife y en el MAPA las bases zootécnicas, para sustituir los coeficientes de ganado heredados de La Palma.", "porque": "Con los rendimientos agrícolas ya medidos, el ganado es el supuesto heredado que más pesa en la grasa y la proteína.", "skill": "anthropic-skills:evidencia-datos-abiertos", "alternativa": "data:explore-data"}], "reglas": ["Instantáneas vN/ completas; cerrada no se edita; cambio ⇒ v(N+1)", "Etiquetas [VERIFICADO], [INFERENCIA], [APROXIMADO], [REQUIERE_FUENTE], [CONOCIMIENTO_BASE]; estados [BORRADOR] y [VALIDADO]", "Léxico canario en textos visibles; sentence case", "Visor: un HTML sin red, three.js incrustado, pruebas Playwright (externas 0, errores 0, sin scroll horizontal) antes de publicar", "Mensaje final en cinco puntos y pregunta de cierre: qué queda validado y qué pendiente"]}};
+const P = D.proyectos;
+const esc=s=>String(s??"").replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+document.getElementById("brand").innerHTML=`${esc(D.marca)}<small>${esc(D.subtitulo)} · corte ${esc(D.corte)} · ${esc(D.estado)}</small>`;
+const CAT = {"Decisión":"p-crit","Fuente":"p-warn","Técnica":"p-warn","Trámite":"p-ok"};
+const tot = p => p.items.reduce((a,i)=>a+i.j+i.x+i.o,0);
+const sum = (p,k) => p.items.reduce((a,i)=>a+i[k],0);
+const fmt = n => (Math.round(n*10)/10).toLocaleString('es-ES');
+const T = {j:P.reduce((a,p)=>a+sum(p,'j'),0), x:P.reduce((a,p)=>a+sum(p,'x'),0), o:P.reduce((a,p)=>a+sum(p,'o'),0)};
+const TT = T.j+T.x+T.o;
+const blocks = P.reduce((a,p)=>a+p.items.filter(i=>i.b).length,0);
+const nitems = P.reduce((a,p)=>a+p.items.length,0);
+const maxH = Math.max(...P.map(tot));
+
+function overview(){
+  const rows = P.map((p,i)=>{
+    const w=k=>(sum(p,k)/maxH*100).toFixed(1)+'%';
+    return `<div class="bar-row"><button class="name" data-go="${i+2}">${p.short}</button>
+      <div class="track" role="img" aria-label="${p.short}: ${fmt(tot(p))} horas"><i style="width:${w('j')};background:var(--jorge)"></i><i style="width:${w('x')};background:var(--tec)"></i><i style="width:${w('o')};background:var(--otros)"></i></div>
+      <span class="num">${fmt(tot(p))} h</span></div>`}).join('');
+  return `<section class="slide"><h3>Visión de conjunto</h3><h1>${esc(D.titular)}</h1>
+  <p class="lede">${esc(D.lede)}</p>
+  <div class="kpis">
+   <div class="kpi"><b>${fmt(TT)} h</b><span>de trabajo pendiente [APROXIMADO]</span></div>
+   <div class="kpi"><b>${fmt(T.j)} h</b><span>solo tuyas: decidir, revisar, firmar</span></div>
+   <div class="kpi"><b>${blocks}</b><span>de ${nitems} pendientes bloquean la firma</span></div>
+   <div class="kpi"><b>${P.reduce((a,p)=>a+p.rf,0)}</b><span>marcas [REQUIERE_FUENTE] en las piezas</span></div>
+  </div>
+  <div class="card"><div class="bars">${rows}</div>
+  <div class="legend"><span><i style="background:var(--jorge)"></i>Tú (comprender, decidir, revisar)</span><span><i style="background:var(--tec)"></i>Técnica externa</span><span><i style="background:var(--otros)"></i>Otros (fuentes, Claude)</span></div></div>
+  <p class="note">Estimación por tarea con documentación ya redactada, sin esperas de terceros ni plazos de tramitación. Son horas de dedicación, no días de calendario.</p></section>`;
+}
+function concept(){
+  return `<section class="slide"><h3>Cómo leer esta presentación</h3><h2>Qué es «deuda» en un expediente</h2>
+  <div class="grid g2" style="margin-top:14px">
+   <div class="explain"><p>La <b>deuda</b> de un expediente es todo lo que hoy está resuelto de forma provisional y habrá que pagar antes de firmar: un dato que no tiene fuente, una decisión que nadie ha tomado, un informe técnico que falta, un trámite pendiente.</p><p>Si se firma con deuda, el coste lo paga después la Intervención, un requerimiento o un recurso.</p></div>
+   <div class="card"><h3>Cuatro tipos</h3><table><tbody>
+    <tr><td><span class="pill p-crit">Decisión</span></td><td>Solo tú (o el órgano) puedes resolverla. Es la que exige comprensión.</td></tr>
+    <tr><td><span class="pill p-warn">Fuente</span></td><td>Un dato o una norma sin acreditar: [REQUIERE_FUENTE].</td></tr>
+    <tr><td><span class="pill p-warn">Técnica</span></td><td>Un cálculo, una medición o un informe de un técnico competente.</td></tr>
+    <tr><td><span class="pill p-ok">Trámite</span></td><td>Revisar, firmar, registrar, subir a MYTAO.</td></tr></tbody></table></div>
+  </div>
+  <h3 style="margin-top:22px">En cada expediente encontrarás</h3>
+  <ol class="steps"><li><span><b>Entenderlo en un minuto</b>: tres frases para poder explicarlo al Consejero sin papeles.</span></li><li><span><b>Pon a prueba tu comprensión</b>: una pregunta. Si la contestas sin abrir la respuesta, el asunto es tuyo.</span></li><li><span><b>La deuda</b>, filtrable por tipo y con horas por responsable.</span></li><li><span><b>El siguiente paso</b>: una sola acción.</span></li></ol></section>`;
+}
+function project(p){
+  const rows = p.items.map(i=>`<tr data-c="${i.c}"><td>${i.b?'<span class="pill p-crit">Bloquea</span>':''}</td><td>${i.t}</td><td><span class="pill ${CAT[i.c]}">${i.c}</span></td><td class="h">${fmt(i.j)}</td><td class="h">${fmt(i.x)}</td><td class="h">${fmt(i.o)}</td></tr>`).join('');
+  const cats=[...new Set(p.items.map(i=>i.c))];
+  return `<section class="slide"><h3>${p.id} · <span class="pill ${p.state==='crit'?'p-crit':p.state==='warn'?'p-warn':'p-ok'}">${p.stateTxt}</span></h3>
+  <h2>${p.title}</h2><p class="ref">${p.ref}</p>
+  <div class="grid g2" style="margin-top:14px">
+    <div class="explain"><h3>Entenderlo en un minuto</h3>${p.why.map(w=>`<p>${w}</p>`).join('')}</div>
+    <div class="grid" style="align-content:start">
+      <div class="kpis" style="margin:0"><div class="kpi"><b>${fmt(tot(p))} h</b><span>pendientes</span></div><div class="kpi"><b>${fmt(sum(p,'j'))} h</b><span>tuyas</span></div><div class="kpi"><b>${p.items.filter(i=>i.b).length}</b><span>bloquean firma</span></div></div>
+      <details class="quiz"><summary>Pon a prueba tu comprensión: ${p.quiz[0]}</summary><p>${p.quiz[1]}</p></details>
+      <div class="card"><h3>Siguiente paso</h3><p style="margin:0">${p.next}</p></div>
+    </div>
+  </div>
+  <h3 style="margin-top:22px">Deuda del expediente${p.rf?` · ${p.rf} marcas [REQUIERE_FUENTE] en las piezas`:''}</h3>
+  <div class="filters" role="group" aria-label="Filtrar por tipo"><button class="btn" aria-pressed="true" data-f="*">Todo</button>${cats.map(c=>`<button class="btn" aria-pressed="false" data-f="${c}">${c}</button>`).join('')}</div>
+  <div class="tbl"><table><thead><tr><th></th><th>Pendiente</th><th>Tipo</th><th style="text-align:right">Tú</th><th style="text-align:right">Técnica</th><th style="text-align:right">Otros</th></tr></thead><tbody>${rows}</tbody></table></div></section>`;
+}
+const R = D.reinicio;
+function buildPrompt(){
+  const L=[];
+  L.push(`Retomamos: ${R.asunto}. Esta conversación continúa una sesión anterior; aprovecha su contexto y no repitas trabajo hecho.`);
+  L.push('');
+  L.push('1. CONTEXTO QUE DEBES LEER PRIMERO (solo lectura; lee siempre el original citado)');
+  L.push(`   Carpeta de trabajo: ${R.carpeta}`);
+  R.leer.forEach(f=>L.push(`   - ${f}`));
+  L.push('');
+  L.push('2. DECISIONES YA TOMADAS (no las reabras; cítalas como tales)');
+  R.decisiones.forEach(d=>L.push(`   - ${d}`));
+  L.push('');
+  L.push(`3. ESTADO AL CORTE ${D.corte} (${fmt(P.reduce((a,p)=>a+tot(p),0))} h pendientes, ${blocks} de ${nitems} pendientes bloquean la firma)`);
+  P.forEach(p=>{
+    L.push(`   · ${p.id} ${p.title} — ${p.stateTxt}. Siguiente paso: ${p.next}`);
+    p.items.filter(i=>i.b).forEach(i=>L.push(`       bloquea: [${i.c}] ${i.t}`));
+  });
+  L.push('');
+  L.push('4. OBJETIVO DE ESTA SESIÓN');
+  L.push(`   ${R.objetivo}`);
+  L.push('');
+  L.push('5. IDEAS PARA ENRIQUECER MI CONOCIMIENTO A PARTIR DE LA INSTANTÁNEA (propón cuál hacemos primero y ejecútala si te lo confirmo)');
+  R.ideas.forEach((x,k)=>{L.push(`   ${String.fromCharCode(97+k)}) ${x.titulo}. ${x.que}`);L.push(`      Por qué me ayuda a comprender: ${x.porque}`);if(x.skill)L.push(`      Se puede hacer con la skill ${x.skill}${x.alternativa?' (alternativa: '+x.alternativa+')':''}. Comprueba antes que está disponible.`);});
+  L.push('');
+  L.push('6. REGLAS');
+  R.reglas.forEach(r=>L.push(`   - ${r}`));
+  L.push('');
+  L.push('');
+  L.push('7. RESPUESTAS A LAS DECISIONES ABIERTAS (aplícalas; si alguna sigue en [RESPONDER], pregúntamela antes de tocar la pieza afectada)');
+  answersText().split('\n').forEach(x=>L.push('   '+x));
+  L.push('');
+  L.push('Empieza confirmando en 5 líneas qué has leído y qué vas a hacer primero. No produzcas documentos hasta que confirme el objetivo.');
+  return L.join('\n');
+}
+const Q = D.preguntas || [];
+let ANS = {};
+try{ ANS = JSON.parse(localStorage.getItem('deuda_ans_'+D.corte+'_'+D.marca)||'{}')||{}; }catch(e){ ANS={}; }
+function saveAns(){ try{ localStorage.setItem('deuda_ans_'+D.corte+'_'+D.marca, JSON.stringify(ANS)); }catch(e){} }
+function answerOf(q){
+  const a = ANS[q.id]||{};
+  let v;
+  if(a.sel==='otra') v = a.otra && a.otra.trim() ? a.otra.trim() : '[RESPONDER: alternativa propia]';
+  else if(a.sel!==undefined && a.sel!==null && a.sel!=='') v = q.opciones[+a.sel];
+  else v = '[RESPONDER]';
+  return v + (a.nota && a.nota.trim() ? ' — Nota: '+a.nota.trim() : '');
+}
+function answersText(){
+  return Q.map((q,k)=>`${k+1}. [${q.asunto}] ${q.pregunta}\n   Respuesta: ${answerOf(q)}`).join('\n');
+}
+function decisionsPrompt(){
+  const L=[`Continúo la sesión sobre ${R.asunto}.`,`Estas son mis respuestas a las decisiones abiertas al corte ${D.corte}. Aplícalas en las piezas afectadas siguiendo mis reglas de versionado; las que figuren como [RESPONDER] pregúntamelas antes de tocar la pieza correspondiente.`,'',answersText(),'','Al terminar, dime qué piezas has modificado y qué queda pendiente.'];
+  return L.join('\n');
+}
+const pending = () => Q.filter(q=>answerOf(q).startsWith('[RESPONDER')).length;
+function questionsSlide(){
+  const qs = Q.map((q,k)=>{
+    const a = ANS[q.id]||{};
+    const opts = q.opciones.map((o,n)=>`<label class="opt"><input type="radio" name="q_${q.id}" id="q_${q.id}_${n}" data-q="${q.id}" value="${n}" ${String(a.sel)===String(n)?'checked':''}> <span>${esc(o)}${q.recomendada===n?' <span class="pill p-ok">recomendada</span>':''}</span></label>`).join('');
+    return `<fieldset class="card q"><legend><span class="ref">${k+1} · ${esc(q.asunto)}</span></legend>
+      <p style="margin:0 0 6px"><b>${esc(q.pregunta)}</b></p>${q.contexto?`<p class="muted" style="margin:0 0 8px">${esc(q.contexto)}</p>`:''}
+      <div class="opts">${opts}<label class="opt"><input type="radio" name="q_${q.id}" id="q_${q.id}_otra" data-q="${q.id}" value="otra" ${a.sel==='otra'?'checked':''}> <span>Otra:</span> <input type="text" class="txt" id="q_${q.id}_otxt" data-otra="${q.id}" value="${esc(a.otra||'')}" placeholder="Escribe tu alternativa"></label></div>
+      <input type="text" class="txt nota" id="q_${q.id}_nota" data-nota="${q.id}" value="${esc(a.nota||'')}" placeholder="Nota o matiz (opcional)"></fieldset>`;}).join('');
+  return `<section class="slide"><h3>Decisiones abiertas</h3><h2>Responde y copia para continuar</h2>
+  <p class="lede">Marca una alternativa o escribe la tuya. Lo que dejes sin contestar sale como <span class="ref">[RESPONDER]</span> para que la siguiente conversación te lo pregunte. Las respuestas también se incorporan al prompt de reinicio.</p>
+  <p><button class="btn" id="copyq">Copiar respuestas como prompt</button> <button class="btn" id="recq">Rellenar las vacías con la recomendada</button> <button class="btn" id="clrq">Borrar respuestas</button> <span class="muted" id="qstat" aria-live="polite"></span></p>
+  <div class="grid g2">${qs}</div>
+  <h3 style="margin-top:18px">Vista previa</h3><pre class="prompt" id="qtxt"></pre></section>`;
+}
+function refreshQ(){ const t=document.getElementById('qtxt'); if(t) t.textContent=decisionsPrompt(); const st=document.getElementById('qstat'); if(st) st.textContent=`${Q.length-pending()} de ${Q.length} respondidas`; }
+function promptSlide(){
+  const ideas = R.ideas.map(x=>`<div class="card"><h3>Idea</h3><p style="margin:0 0 6px"><b>${x.titulo}</b></p><p style="margin:0 0 6px">${x.que}</p><p class="muted" style="margin:0">${x.porque}</p>${x.skill?`<p style="margin:8px 0 0"><span class="pill p-ok">${esc(x.skill)}</span>${x.alternativa?` <span class="ref">o ${esc(x.alternativa)}</span>`:''}</p>`:''}</div>`).join('');
+  return `<section class="slide"><h3>Reiniciar la conversación</h3><h2>Prompt de reinicio con el contexto de esta instantánea</h2>
+  <p class="lede">Ábrelo en una conversación nueva: carga el contexto, las decisiones tomadas y el estado de cada asunto, sin arrastrar el historial largo. Incluye ${R.ideas.length} ideas para aprender a partir de lo generado.</p>
+  <div class="grid g3" style="margin-block:14px">${ideas}</div>
+  <p><button class="btn" id="copy">Copiar el prompt</button> <span class="muted" id="copied" aria-live="polite"></span></p>
+  <pre class="prompt" id="ptxt"></pre></section>`;
+}
+const slides = [overview, concept, ...P.map(p=>()=>project(p)), questionsSlide, promptSlide];
+const names = ["Conjunto","Qué es deuda",...P.map(p=>p.short),"Decisiones","Reinicio"];
+let cur = 0;
+try{ const s=parseInt(localStorage.getItem('deuda_slide')); if(s>=0&&s<slides.length) cur=s; }catch(e){}
+const stage=document.getElementById('stage'), tabs=document.getElementById('tabs');
+tabs.innerHTML = names.map((n,i)=>`<button data-go="${i}">${n}</button>`).join('');
+function show(i){
+  cur=Math.max(0,Math.min(slides.length-1,i));
+  stage.innerHTML=slides[cur]();
+  tabs.querySelectorAll('button').forEach((b,k)=>b.setAttribute('aria-current',k===cur));
+  document.getElementById('prog').style.width=((cur+1)/slides.length*100)+'%';
+  document.getElementById('pos').textContent=`${cur+1} / ${slides.length}`;
+  const pt=document.getElementById('ptxt'); if(pt) pt.textContent=buildPrompt();
+  refreshQ();
+  try{localStorage.setItem('deuda_slide',cur)}catch(e){}
+}
+function copyText(txt, preId, statId){
+  const fb=()=>{const r=document.createRange();r.selectNodeContents(document.getElementById(preId));const g=getSelection();g.removeAllRanges();g.addRange(r);document.getElementById(statId).textContent='Texto seleccionado: usa Ctrl+C';};
+  try{navigator.clipboard.writeText(txt).then(()=>{document.getElementById(statId).textContent='Copiado';},fb)}catch(err){fb()}
+}
+document.addEventListener('change',e=>{
+  const q=e.target.dataset&&e.target.dataset.q; if(q){ANS[q]=Object.assign(ANS[q]||{}, {sel:e.target.value}); saveAns(); refreshQ();}
+});
+document.addEventListener('input',e=>{
+  const d=e.target.dataset||{};
+  if(d.otra){ANS[d.otra]=Object.assign(ANS[d.otra]||{}, {otra:e.target.value, sel:'otra'}); const r=document.getElementById('q_'+d.otra+'_otra'); if(r) r.checked=true; saveAns(); refreshQ();}
+  if(d.nota){ANS[d.nota]=Object.assign(ANS[d.nota]||{}, {nota:e.target.value}); saveAns(); refreshQ();}
+});
+document.addEventListener('click',e=>{
+  if(e.target.id==='copyq'){ copyText(decisionsPrompt(),'qtxt','qstat'); return; }
+  if(e.target.id==='recq'){ Q.forEach(q=>{ const a=ANS[q.id]||{}; if((a.sel===undefined||a.sel===''||a.sel===null) && Number.isInteger(q.recomendada)) ANS[q.id]=Object.assign(a,{sel:String(q.recomendada)}); }); saveAns(); show(cur); return; }
+  if(e.target.id==='clrq'){ ANS={}; saveAns(); show(cur); return; }
+  const g=e.target.closest('[data-go]'); if(g){show(+g.dataset.go);window.scrollTo(0,0);return;}
+  const f=e.target.closest('[data-f]'); if(f){
+    const v=f.dataset.f; f.parentElement.querySelectorAll('[data-f]').forEach(b=>b.setAttribute('aria-pressed',b===f));
+    stage.querySelectorAll('tbody tr[data-c]').forEach(r=>r.hidden=!(v==='*'||r.dataset.c===v)); return;}
+  if(e.target.id==='copy'){
+    const done=()=>document.getElementById('copied').textContent='Copiado';
+    const fb=()=>{const r=document.createRange();r.selectNodeContents(document.getElementById('ptxt'));const s=getSelection();s.removeAllRanges();s.addRange(r);document.getElementById('copied').textContent='Texto seleccionado: usa Ctrl+C';};
+    try{navigator.clipboard.writeText(buildPrompt()).then(done,fb)}catch(err){fb()}
+  }
+});
+document.getElementById('prev').onclick=()=>{show(cur-1);window.scrollTo(0,0)};
+document.getElementById('next').onclick=()=>{show(cur+1);window.scrollTo(0,0)};
+document.addEventListener('keydown',e=>{if(e.target.closest('input,textarea'))return;if(e.key==='ArrowRight')show(cur+1);if(e.key==='ArrowLeft')show(cur-1);});
+show(cur);
+</script>
+<a href="aviso_tf.html" aria-label="Aviso, fuentes y licencias" title="Aviso, fuentes y licencias" style="position:fixed;left:6px;bottom:6px;z-index:2147483000;width:20px;height:20px;border-radius:50%;background:rgba(20,24,30,.6);color:#fff;font:600 12px/20px system-ui,sans-serif;text-align:center;text-decoration:none;opacity:.6">i</a>
