@@ -9,3 +9,5 @@ __pycache__/
 .DS_Store
 site/
 _ref/
+islas/tenerife/
+islas/*/v*/93c_log.txt

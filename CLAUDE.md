@@ -11,8 +11,9 @@
 - Antes de abrir una release: `python3 scripts/build_site.py` debe terminar sin errores y las pruebas de `vN/90_test_visor.js` deben dar 0 externas, 0 errores y sin scroll horizontal.
 
 ## Versiones del visor
-- Cada versión del visor vive en su carpeta congelada `vN/` (no se edita una versión cerrada; un cambio es `v(N+1)/`). La etiqueta `vN.M.P` de `main` corresponde a la carpeta `vN/` publicada en `/p/despensa-cerrada/`.
-- Los datos pesados (`_dl/`, parquet, shapefiles, DEM) no se suben; cada `00_INDICE.md` dice cómo regenerarlos.
+- Tenerife: cada versión vive en su carpeta congelada `vN/` en la raíz (no se edita una versión cerrada; un cambio es `v(N+1)/`). La etiqueta `vN.M.P` de `main` corresponde a la carpeta `vN/` publicada en `/p/despensa-cerrada/`.
+- Resto de islas: `islas/<isla>/vN/`, generadas con `pipeline/run.sh <isla>` (pipeline común parametrizado por `pipeline/config_islas.json`; textos de cocina en `pipeline/cocina_islas.json`). Un cambio de método en el pipeline se aplica regenerando una versión nueva de cada isla afectada, nunca editando una carpeta cerrada. La web publica cada isla en `/<isla>/`.
+- Los datos pesados (`_dl/`, `_ref/`, parquet, shapefiles, DEM) no se suben; cada `00_INDICE.md` dice cómo regenerarlos. `_ref/` guarda la plantilla del visor de La Palma, ECOCROP, los shapefiles del Mapa de Cultivos, las teselas DEM y las descargas de AEMET.
 
 ## Estilo del proyecto
 - Léxico canario en textos visibles (papas, millo, batata o boniato); etiquetas epistémicas [VERIFICADO], [APROXIMADO], [INFERENCIA], [REQUIERE_FUENTE], [CONOCIMIENTO_BASE] en toda cifra.

@@ -1,0 +1,554 @@
+{
+ "tenerife": {
+  "nombre": "Tenerife",
+  "isla_na": "Tenerife",
+  "gent": "tinerfeño",
+  "gent_f": "tinerfeña",
+  "gent_pl": "tinerfeños",
+  "shp": "TF_MCultivos_2021.shp",
+  "dem": [
+   "N28_00_W017_00"
+  ],
+  "pisos": [
+   [
+    0,
+    300,
+    "Costa",
+    150
+   ],
+   [
+    300,
+    600,
+    "Medianías bajas",
+    450
+   ],
+   [
+    600,
+    1000,
+    "Medianías altas",
+    800
+   ],
+   [
+    1000,
+    1500,
+    "Pinar y cumbre baja",
+    1250
+   ],
+   [
+    1500,
+    3715,
+    "Cumbre",
+    1900
+   ]
+  ],
+  "linea_vertiente": [
+   [
+    -16.92,
+    28.35
+   ],
+   [
+    -16.15,
+    28.55
+   ]
+  ],
+  "centro": [
+   -16.64,
+   28.29
+  ],
+  "max_alt": 3715,
+  "inversion_m": 1300,
+  "zonas": [
+   [
+    -15,
+    45,
+    "Norte (La Orotava · Acentejo · Tacoronte)"
+   ],
+   [
+    45,
+    100,
+    "Noreste (Anaga · La Laguna · Tegueste)"
+   ],
+   [
+    100,
+    170,
+    "Este (Güímar · Candelaria · Santa Cruz)"
+   ],
+   [
+    170,
+    225,
+    "Sur (Granadilla · Arico · Vilaflor)"
+   ],
+   [
+    225,
+    290,
+    "Suroeste (Guía de Isora · Adeje · Arona)"
+   ],
+   [
+    290,
+    345,
+    "Noroeste (Icod · Daute · Teno)"
+   ]
+  ],
+  "agua": {
+   "dot_A": 6846,
+   "dot_C": 10000,
+   "dot_D": 12375,
+   "metodo": "D",
+   "demanda_agraria_hm3": 84.23,
+   "sup_regada_ha": 12304,
+   "fuente": "Memoria del PHT 3.er ciclo; Estudio de Consumos Hídricos del Cabildo (2005)"
+  },
+  "hospitales": "Hospital Universitario de Canarias, Hospital Universitario Nuestra Señora de Candelaria, hospitales del norte y del sur, centros de salud y su personal",
+  "monte_cap_t_ms": 13000
+ },
+ "gran-canaria": {
+  "nombre": "Gran Canaria",
+  "isla_na": "Gran Canaria",
+  "gent": "grancanario",
+  "gent_f": "grancanaria",
+  "gent_pl": "grancanarios",
+  "shp": "GC_MCultivos_2024.shp",
+  "dem": [
+   "N27_00_W016_00",
+   "N28_00_W016_00"
+  ],
+  "pisos": [
+   [
+    0,
+    300,
+    "Costa",
+    150
+   ],
+   [
+    300,
+    600,
+    "Medianías bajas",
+    450
+   ],
+   [
+    600,
+    1000,
+    "Medianías altas",
+    800
+   ],
+   [
+    1000,
+    1500,
+    "Cumbre baja",
+    1250
+   ],
+   [
+    1500,
+    1956,
+    "Cumbre",
+    1700
+   ]
+  ],
+  "linea_vertiente": [
+   [
+    -15.85,
+    27.95
+   ],
+   [
+    -15.35,
+    28.0
+   ]
+  ],
+  "centro": [
+   -15.6,
+   27.96
+  ],
+  "max_alt": 1956,
+  "inversion_m": 1300,
+  "zonas": [
+   [
+    -30,
+    30,
+    "Norte (Arucas · Firgas · Moya · Guía · Gáldar)"
+   ],
+   [
+    30,
+    90,
+    "Noreste (Las Palmas · Telde · Santa Brígida)"
+   ],
+   [
+    90,
+    160,
+    "Sureste (Ingenio · Agüimes · Santa Lucía)"
+   ],
+   [
+    160,
+    215,
+    "Sur (San Bartolomé de Tirajana · Mogán)"
+   ],
+   [
+    215,
+    290,
+    "Oeste (La Aldea · Tejeda · Artenara)"
+   ],
+   [
+    290,
+    330,
+    "Noroeste (Agaete · Gáldar costa)"
+   ]
+  ],
+  "agua": {
+   "dot_A": 8167,
+   "dot_C": 10000,
+   "dot_D": null,
+   "metodo": "C",
+   "demanda_agraria_hm3": 71.1,
+   "sup_regada_ha": 8706,
+   "fuente": "Apéndice 1.17 MITECO (PH Gran Canaria 3.er ciclo): demanda agraria 71,1 hm³/año, 8.706 ha regadas [APROXIMADO: tabla fragmentada]; dotación del plátano IPH 10.000 m³/ha"
+  },
+  "hospitales": "Hospital Universitario de Gran Canaria Doctor Negrín, Hospital Universitario Insular-Materno Infantil, centros de salud y su personal",
+  "monte_cap_t_ms": null
+ },
+ "lanzarote": {
+  "nombre": "Lanzarote",
+  "isla_na": "Lanzarote",
+  "gent": "lanzaroteño",
+  "gent_f": "lanzaroteña",
+  "gent_pl": "lanzaroteños",
+  "shp": "LZ_2025_MCultivos.shp",
+  "dem": [
+   "N28_00_W014_00",
+   "N29_00_W014_00"
+  ],
+  "pisos": [
+   [
+    0,
+    150,
+    "Costa",
+    75
+   ],
+   [
+    150,
+    300,
+    "Medianías bajas",
+    225
+   ],
+   [
+    300,
+    500,
+    "Medianías altas",
+    400
+   ],
+   [
+    500,
+    671,
+    "Cumbre",
+    580
+   ]
+  ],
+  "linea_vertiente": [
+   [
+    -13.85,
+    28.9
+   ],
+   [
+    -13.45,
+    29.25
+   ]
+  ],
+  "centro": [
+   -13.63,
+   29.03
+  ],
+  "max_alt": 671,
+  "inversion_m": 700,
+  "zonas": [
+   [
+    -40,
+    40,
+    "Norte (Haría · La Graciosa)"
+   ],
+   [
+    40,
+    120,
+    "Este (Teguise · Arrecife costa)"
+   ],
+   [
+    120,
+    200,
+    "Sur (San Bartolomé · Tías · Yaiza)"
+   ],
+   [
+    200,
+    320,
+    "Oeste (Tinajo · Timanfaya · La Geria)"
+   ]
+  ],
+  "agua": {
+   "dot_A": 2039,
+   "dot_C": 10000,
+   "dot_D": null,
+   "metodo": "C",
+   "demanda_agraria_hm3": 1.56,
+   "sup_regada_ha": 765,
+   "fuente": "Apéndice 1.19 MITECO (PH Lanzarote 3.er ciclo): demanda agraria 1,56 hm³/año, 765 ha regadas [APROXIMADO]; platanera testimonial (4 ha)"
+  },
+  "hospitales": "Hospital Universitario Doctor José Molina Orosa, centros de salud y su personal",
+  "monte_cap_t_ms": null
+ },
+ "fuerteventura": {
+  "nombre": "Fuerteventura",
+  "isla_na": "Fuerteventura",
+  "gent": "majorero",
+  "gent_f": "majorera",
+  "gent_pl": "majoreros",
+  "shp": "FV_2025_MCultivos.shp",
+  "dem": [
+   "N28_00_W015_00",
+   "N28_00_W014_00"
+  ],
+  "pisos": [
+   [
+    0,
+    150,
+    "Costa",
+    75
+   ],
+   [
+    150,
+    300,
+    "Medianías bajas",
+    225
+   ],
+   [
+    300,
+    500,
+    "Medianías altas",
+    400
+   ],
+   [
+    500,
+    807,
+    "Cumbre",
+    620
+   ]
+  ],
+  "linea_vertiente": [
+   [
+    -14.5,
+    28.05
+   ],
+   [
+    -13.85,
+    28.75
+   ]
+  ],
+  "centro": [
+   -14.07,
+   28.4
+  ],
+  "max_alt": 807,
+  "inversion_m": 900,
+  "zonas": [
+   [
+    -40,
+    40,
+    "Norte (La Oliva · Corralejo)"
+   ],
+   [
+    40,
+    130,
+    "Este (Puerto del Rosario · Antigua costa)"
+   ],
+   [
+    130,
+    210,
+    "Sur (Tuineje · Pájara · Jandía)"
+   ],
+   [
+    210,
+    320,
+    "Oeste (Betancuria · Pájara interior)"
+   ]
+  ],
+  "agua": {
+   "dot_A": 2278,
+   "dot_C": 10000,
+   "dot_D": null,
+   "metodo": "C",
+   "demanda_agraria_hm3": 1.13,
+   "sup_regada_ha": 496,
+   "fuente": "Apéndice 1.18 MITECO (PH Fuerteventura 3.er ciclo): demanda agraria 1,13 hm³/año, 496 ha regadas [APROXIMADO]; platanera testimonial (3 ha)"
+  },
+  "hospitales": "Hospital General de Fuerteventura, centros de salud y su personal",
+  "monte_cap_t_ms": null
+ },
+ "la-gomera": {
+  "nombre": "La Gomera",
+  "isla_na": "La Gomera",
+  "gent": "gomero",
+  "gent_f": "gomera",
+  "gent_pl": "gomeros",
+  "shp": "LG_MCultivos_2023.shp",
+  "dem": [
+   "N28_00_W018_00"
+  ],
+  "pisos": [
+   [
+    0,
+    300,
+    "Costa",
+    150
+   ],
+   [
+    300,
+    600,
+    "Medianías bajas",
+    450
+   ],
+   [
+    600,
+    1000,
+    "Medianías altas",
+    800
+   ],
+   [
+    1000,
+    1487,
+    "Cumbre",
+    1200
+   ]
+  ],
+  "linea_vertiente": [
+   [
+    -17.35,
+    28.1
+   ],
+   [
+    -17.1,
+    28.12
+   ]
+  ],
+  "centro": [
+   -17.23,
+   28.11
+  ],
+  "max_alt": 1487,
+  "inversion_m": 1300,
+  "zonas": [
+   [
+    -40,
+    40,
+    "Norte (Agulo · Hermigua · Vallehermoso)"
+   ],
+   [
+    40,
+    130,
+    "Este (San Sebastián)"
+   ],
+   [
+    130,
+    220,
+    "Sur (Alajeró · Playa Santiago)"
+   ],
+   [
+    220,
+    320,
+    "Oeste (Valle Gran Rey · Vallehermoso oeste)"
+   ]
+  ],
+  "agua": {
+   "dot_A": 5505,
+   "dot_C": 10000,
+   "dot_D": null,
+   "metodo": "C",
+   "demanda_agraria_hm3": 5.34,
+   "sup_regada_ha": 970,
+   "fuente": "Apéndice 1.22 MITECO (PH La Gomera 3.er ciclo): demanda agraria 5,34 hm³/año, 970 ha regadas [APROXIMADO]; dotación del plátano IPH 10.000 m³/ha"
+  },
+  "hospitales": "Hospital Nuestra Señora de Guadalupe, centros de salud y su personal",
+  "monte_cap_t_ms": null
+ },
+ "el-hierro": {
+  "nombre": "El Hierro",
+  "isla_na": "El Hierro",
+  "gent": "herreño",
+  "gent_f": "herreña",
+  "gent_pl": "herreños",
+  "shp": "EH_MCultivos_2022.shp",
+  "dem": [
+   "N27_00_W019_00",
+   "N27_00_W018_00"
+  ],
+  "pisos": [
+   [
+    0,
+    300,
+    "Costa",
+    150
+   ],
+   [
+    300,
+    600,
+    "Medianías bajas",
+    450
+   ],
+   [
+    600,
+    1000,
+    "Medianías altas",
+    800
+   ],
+   [
+    1000,
+    1501,
+    "Cumbre",
+    1200
+   ]
+  ],
+  "linea_vertiente": [
+   [
+    -18.16,
+    27.75
+   ],
+   [
+    -17.88,
+    27.82
+   ]
+  ],
+  "centro": [
+   -18.02,
+   27.74
+  ],
+  "max_alt": 1501,
+  "inversion_m": 1300,
+  "zonas": [
+   [
+    -50,
+    40,
+    "Norte (Valverde · El Mocanal · Frontera costa)"
+   ],
+   [
+    40,
+    140,
+    "Este (Valverde sur · Tamaduste · La Caleta)"
+   ],
+   [
+    140,
+    230,
+    "Sur (El Pinar · La Restinga)"
+   ],
+   [
+    230,
+    310,
+    "Oeste (El Golfo · Sabinosa)"
+   ]
+  ],
+  "agua": {
+   "dot_A": 4236,
+   "dot_C": 10000,
+   "dot_D": null,
+   "metodo": "C",
+   "demanda_agraria_hm3": 1.72,
+   "sup_regada_ha": 406,
+   "fuente": "Apéndice 1.23 MITECO (PH El Hierro 3.er ciclo): demanda agraria 1,72 hm³/año, 406 ha regadas [APROXIMADO]; dotación del plátano IPH 10.000 m³/ha"
+  },
+  "hospitales": "Hospital Nuestra Señora de los Reyes, centros de salud y su personal",
+  "monte_cap_t_ms": null
+ }
+}
