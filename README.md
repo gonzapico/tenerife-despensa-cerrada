@@ -7,10 +7,12 @@ Si el mundo se cerrara y la isla dejara de exportar plátano: qué se podría cu
 ## Estructura
 
 - `v1/`, `v2/` · instantáneas completas de cada versión: visor (`05_visor_*.html`, un solo HTML sin red), carga pendiente (`99_CARGA_PENDIENTE_TF.html`), scripts (`93`, `96`, `93c`, `04b`, `98`, `99`), salidas, documentación (`00_INDICE.md`, `01_RESUMEN.md`, `04_lectura_balance_tf.md`, `91_fuentes_y_licencias_tf.md`, `90_verificacion_tf.csv`) y capturas de las pruebas. La vigente es la de número más alto.
-- `scripts/build_site.py` · monta `site/` con la estructura de URL de la web (`/p/despensa-cerrada/`, `/p/despensa-pendiente/`, `/aviso.html`, `/v1/`, `/v2/`).
+- `pipeline/` · pipeline común para todas las islas (`run.sh <isla>`): parcelas con relieve, pisos climáticos de estaciones AEMET, catálogo ECOCROP, balance por programación lineal, mapa 3D, cocina, visor, carga pendiente y documentación. Parámetros por isla en `config_islas.json`; textos de cocina en `cocina_islas.json`.
+- `islas/<isla>/vN/` · salidas congeladas de cada isla (Gran Canaria, Lanzarote, Fuerteventura, La Gomera, El Hierro). La Palma no se replica: existe el visor original de Jorge Díaz Pérez.
+- `scripts/build_site.py` · monta `site/` con la estructura de URL de la web (`/p/despensa-cerrada/`, `/p/despensa-pendiente/`, `/aviso.html`, `/v1/`…`/v4/` de Tenerife y `/<isla>/` para las demás).
 - `.github/workflows/deploy.yml` · en cada push a `main` monta `site/` y lo sube por FTP/FTPS o SFTP al hosting.
 
-Los datos pesados (parcelas en GeoParquet, shapefile del Mapa de Cultivos, DEM) no están en el repositorio; cada `00_INDICE.md` dice de dónde descargarlos y cómo rehacer cada cifra.
+Los datos pesados (parcelas en GeoParquet, shapefiles del Mapa de Cultivos, teselas DEM, descargas de AEMET) van en `_ref/`, fuera del repositorio; cada `00_INDICE.md` dice de dónde descargarlos y cómo rehacer cada cifra.
 
 ## Publicación
 

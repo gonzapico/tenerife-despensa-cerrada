@@ -1,0 +1,734 @@
+{
+"clima": [
+{
+"piso": "P1-N",
+"nombre": "Costa",
+"cota": "0-300",
+"z_ref": 150,
+"tm_anual": 20.0,
+"tm_mes_frio": 17.0,
+"tn_mes_frio": 13.7,
+"t_abs_min_est": 10.7,
+"tm_mes_calido": 23.4,
+"lluvia_mm": 152,
+"horas_frio": 0,
+"n_pluviometros": 7
+},
+{
+"piso": "P2-N",
+"nombre": "Medianías bajas",
+"cota": "300-600",
+"z_ref": 450,
+"tm_anual": 18.8,
+"tm_mes_frio": 15.2,
+"tn_mes_frio": 11.8,
+"t_abs_min_est": 8.7,
+"tm_mes_calido": 23.4,
+"lluvia_mm": 232,
+"horas_frio": 8,
+"n_pluviometros": 1
+},
+{
+"piso": "P3-N",
+"nombre": "Medianías altas",
+"cota": "600-1000",
+"z_ref": 800,
+"tm_anual": 17.4,
+"tm_mes_frio": 13.2,
+"tn_mes_frio": 9.7,
+"t_abs_min_est": 6.3,
+"tm_mes_calido": 23.5,
+"lluvia_mm": 332,
+"horas_frio": 75,
+"n_pluviometros": 2
+},
+{
+"piso": "P4-N",
+"nombre": "Cumbre baja",
+"cota": "1000-1500",
+"z_ref": 1250,
+"tm_anual": 15.7,
+"tm_mes_frio": 10.6,
+"tn_mes_frio": 6.9,
+"t_abs_min_est": 3.3,
+"tm_mes_calido": 23.5,
+"lluvia_mm": 525,
+"horas_frio": 457,
+"n_pluviometros": 0
+},
+{
+"piso": "P5-N",
+"nombre": "Cumbre",
+"cota": "1500-1956",
+"z_ref": 1700,
+"tm_anual": 13.6,
+"tm_mes_frio": 8.2,
+"tn_mes_frio": 4.6,
+"t_abs_min_est": 0.3,
+"tm_mes_calido": 21.6,
+"lluvia_mm": 832,
+"horas_frio": 1520,
+"n_pluviometros": 1
+},
+{
+"piso": "P1-S",
+"nombre": "Costa",
+"cota": "0-300",
+"z_ref": 150,
+"tm_anual": 21.1,
+"tm_mes_frio": 17.7,
+"tn_mes_frio": 14.3,
+"t_abs_min_est": 11.6,
+"tm_mes_calido": 25.4,
+"lluvia_mm": 69,
+"horas_frio": 0,
+"n_pluviometros": 7
+},
+{
+"piso": "P2-S",
+"nombre": "Medianías bajas",
+"cota": "300-600",
+"z_ref": 450,
+"tm_anual": 20.1,
+"tm_mes_frio": 16.1,
+"tn_mes_frio": 12.6,
+"t_abs_min_est": 9.5,
+"tm_mes_calido": 25.9,
+"lluvia_mm": 180,
+"horas_frio": 4,
+"n_pluviometros": 3
+},
+{
+"piso": "P3-S",
+"nombre": "Medianías altas",
+"cota": "600-1000",
+"z_ref": 800,
+"tm_anual": 19.0,
+"tm_mes_frio": 14.2,
+"tn_mes_frio": 10.5,
+"t_abs_min_est": 7.2,
+"tm_mes_calido": 26.4,
+"lluvia_mm": 202,
+"horas_frio": 36,
+"n_pluviometros": 2
+},
+{
+"piso": "P4-S",
+"nombre": "Cumbre baja",
+"cota": "1000-1500",
+"z_ref": 1250,
+"tm_anual": 17.6,
+"tm_mes_frio": 11.8,
+"tn_mes_frio": 7.9,
+"t_abs_min_est": 4.1,
+"tm_mes_calido": 27.1,
+"lluvia_mm": 347,
+"horas_frio": 203,
+"n_pluviometros": 1
+},
+{
+"piso": "P5-S",
+"nombre": "Cumbre",
+"cota": "1500-1956",
+"z_ref": 1700,
+"tm_anual": 14.8,
+"tm_mes_frio": 9.0,
+"tn_mes_frio": 5.3,
+"t_abs_min_est": 0.8,
+"tm_mes_calido": 23.9,
+"lluvia_mm": 597,
+"horas_frio": 999,
+"n_pluviometros": 0
+}
+],
+"ajuste_temperatura": {
+"N": {
+"tm": {
+"pendiente_por_100m": -0.4,
+"ordenada": 20.6,
+"n": 9
+},
+"tf": {
+"pendiente_por_100m": -0.58,
+"ordenada": 17.86,
+"n": 9
+},
+"tn": {
+"pendiente_por_100m": -0.62,
+"ordenada": 14.59,
+"n": 9
+},
+"tc": {
+"pendiente_por_100m": 0.01,
+"ordenada": 23.41,
+"n": 9
+},
+"tamin": {
+"pendiente_por_100m": -0.67,
+"ordenada": 11.7,
+"n": 9
+}
+},
+"S": {
+"tm": {
+"pendiente_por_100m": -0.32,
+"ordenada": 21.56,
+"n": 12
+},
+"tf": {
+"pendiente_por_100m": -0.54,
+"ordenada": 18.53,
+"n": 12
+},
+"tn": {
+"pendiente_por_100m": -0.58,
+"ordenada": 15.18,
+"n": 12
+},
+"tc": {
+"pendiente_por_100m": 0.15,
+"ordenada": 25.19,
+"n": 12
+},
+"tamin": {
+"pendiente_por_100m": -0.68,
+"ordenada": 12.61,
+"n": 12
+}
+}
+},
+"sesgo_2009_2025_vs_normales": 0.38,
+"lluvia_por_piso": {
+"P1-N": {
+"n": 7,
+"mediana": 152,
+"metodo": "mediana de pluviómetros"
+},
+"P2-N": {
+"n": 1,
+"mediana": 232,
+"metodo": "regresión log-lluvia/cota (vertiente)"
+},
+"P3-N": {
+"n": 2,
+"mediana": 332,
+"metodo": "regresión log-lluvia/cota (vertiente)"
+},
+"P4-N": {
+"n": 0,
+"mediana": 525,
+"metodo": "regresión log-lluvia/cota (vertiente)"
+},
+"P5-N": {
+"n": 1,
+"mediana": 832,
+"metodo": "regresión log-lluvia/cota (vertiente)"
+},
+"P1-S": {
+"n": 7,
+"mediana": 69,
+"metodo": "mediana de pluviómetros"
+},
+"P2-S": {
+"n": 3,
+"mediana": 180,
+"metodo": "mediana de pluviómetros"
+},
+"P3-S": {
+"n": 2,
+"mediana": 202,
+"metodo": "regresión log-lluvia/cota (vertiente)"
+},
+"P4-S": {
+"n": 1,
+"mediana": 347,
+"metodo": "regresión log-lluvia/cota (vertiente)"
+},
+"P5-S": {
+"n": 0,
+"mediana": 597,
+"metodo": "regresión log-lluvia/cota (vertiente)"
+}
+},
+"estaciones_temperatura": [
+{
+"src": "AEMET medias 2009-2025 (−sesgo)",
+"nombre": "MASPALOMAS, C. INSULAR TURISMO",
+"alt": 45,
+"vert": "S",
+"tm": 21.849545454545456,
+"tf": 18.365454545454547,
+"tn": 15.356363636363636,
+"tc": 25.63818181818182,
+"tamin": 13.056363636363635,
+"peso": 2
+},
+{
+"src": "AEMET normales 1991-2020",
+"nombre": "TEJEDA, CRUZ DE TEJEDA",
+"alt": 1514,
+"vert": "N",
+"tm": 14.3,
+"tf": 9.0,
+"tn": 6.1,
+"tc": 21.9,
+"tamin": 1.9,
+"peso": 3
+},
+{
+"src": "AEMET medias 2009-2025 (−sesgo)",
+"nombre": "ARUCAS",
+"alt": 86,
+"vert": "N",
+"tm": 20.189444444444447,
+"tf": 17.303333333333335,
+"tn": 14.295,
+"tc": 23.028333333333336,
+"tamin": 11.153333333333332,
+"peso": 2
+},
+{
+"src": "AEMET medias 2009-2025 (−sesgo)",
+"nombre": "LAS PALMAS DE GRAN CANARIA, TAFIRA",
+"alt": 269,
+"vert": "N",
+"tm": 18.820694444444445,
+"tf": 15.978333333333333,
+"tn": 13.194999999999999,
+"tc": 22.12,
+"tamin": 10.586666666666666,
+"peso": 2
+},
+{
+"src": "AEMET medias 2009-2025 (−sesgo)",
+"nombre": "LA ALDEA DE SAN NICOLS",
+"alt": 13,
+"vert": "N",
+"tm": 21.195925925925927,
+"tf": 17.40888888888889,
+"tn": 12.042222222222222,
+"tc": 24.775555555555556,
+"tamin": 7.986666666666667,
+"peso": 2
+},
+{
+"src": "AEMET medias 2009-2025 (−sesgo)",
+"nombre": "TELDE, CENTRO FORESTAL DORAMAS",
+"alt": 344,
+"vert": "S",
+"tm": 19.517222222222223,
+"tf": 15.631111111111112,
+"tn": 12.319999999999999,
+"tc": 24.831111111111113,
+"tamin": 9.62,
+"peso": 2
+},
+{
+"src": "AEMET medias 2009-2025 (−sesgo)",
+"nombre": "MOGN, PUERTO RICO",
+"alt": 10,
+"vert": "S",
+"tm": 21.26236111111111,
+"tf": 18.978333333333335,
+"tn": 16.203333333333333,
+"tc": 24.128333333333334,
+"tamin": 14.069999999999999,
+"peso": 2
+},
+{
+"src": "AEMET medias 2009-2025 (−sesgo)",
+"nombre": "VALLESECO",
+"alt": 900,
+"vert": "N",
+"tm": 16.178333333333335,
+"tf": 11.911666666666665,
+"tn": 8.028333333333332,
+"tc": 22.203333333333333,
+"tamin": 4.953333333333334,
+"peso": 2
+},
+{
+"src": "AEMET medias 2009-2025 (−sesgo)",
+"nombre": "AGAETE - SUERTE ALTA",
+"alt": 352,
+"vert": "N",
+"tm": 19.503333333333334,
+"tf": 16.47714285714286,
+"tn": 13.605714285714285,
+"tc": 23.97714285714286,
+"tamin": 11.09142857142857,
+"peso": 2
+},
+{
+"src": "AEMET medias 2009-2025 (−sesgo)",
+"nombre": "TEROR",
+"alt": 683,
+"vert": "N",
+"tm": 16.16652777777778,
+"tf": 12.42,
+"tn": 8.228333333333332,
+"tc": 21.053333333333335,
+"tamin": 4.5200000000000005,
+"peso": 2
+},
+{
+"src": "AEMET medias 2009-2025 (−sesgo)",
+"nombre": "SAN BARTOLOME TIRAJANA, LOMO PEDRO ALFONSO",
+"alt": 806,
+"vert": "S",
+"tm": 19.359102564102564,
+"tf": 14.735384615384614,
+"tn": 10.92,
+"tc": 27.043076923076924,
+"tamin": 7.781538461538461,
+"peso": 2
+},
+{
+"src": "AEMET medias 2009-2025 (−sesgo)",
+"nombre": "AGIMES",
+"alt": 306,
+"vert": "S",
+"tm": 20.797500000000003,
+"tf": 16.96,
+"tn": 13.239999999999998,
+"tc": 26.630000000000003,
+"tamin": 10.68,
+"peso": 2
+},
+{
+"src": "AEMET medias 2009-2025 (−sesgo)",
+"nombre": "VEGA DE SAN MATEO",
+"alt": 1702,
+"vert": "N",
+"tm": 13.71861111111111,
+"tf": 8.02,
+"tn": 4.386666666666667,
+"tc": 22.236666666666668,
+"tamin": 0.2533333333333333,
+"peso": 2
+},
+{
+"src": "AEMET medias 2009-2025 (−sesgo)",
+"nombre": "AGAETE",
+"alt": 5,
+"vert": "N",
+"tm": 21.603333333333335,
+"tf": 18.892727272727274,
+"tn": 16.174545454545456,
+"tc": 25.12909090909091,
+"tamin": 13.665454545454544,
+"peso": 2
+},
+{
+"src": "AEMET medias 2009-2025 (−sesgo)",
+"nombre": "MOGN, PUERTO",
+"alt": 10,
+"vert": "S",
+"tm": 21.749761904761904,
+"tf": 18.962857142857143,
+"tn": 15.148571428571428,
+"tc": 25.12,
+"tamin": 12.734285714285713,
+"peso": 2
+},
+{
+"src": "AEMET medias 2009-2025 (−sesgo)",
+"nombre": "SAN BARTOLOME TIRAJANA, LAS TIRAJANAS",
+"alt": 960,
+"vert": "S",
+"tm": 18.66107142857143,
+"tf": 13.37,
+"tn": 9.048571428571428,
+"tc": 27.177142857142858,
+"tamin": 5.327142857142857,
+"peso": 2
+},
+{
+"src": "AEMET medias 2009-2025 (−sesgo)",
+"nombre": "TELDE, MELENARA",
+"alt": 9,
+"vert": "S",
+"tm": 20.938333333333336,
+"tf": 17.69,
+"tn": 14.309999999999999,
+"tc": 24.470000000000002,
+"tamin": 10.94,
+"peso": 2
+},
+{
+"src": "AEMET medias 2009-2025 (−sesgo)",
+"nombre": "SAN BARTOLOME TIRAJANA, EL MATORRAL",
+"alt": 41,
+"vert": "S",
+"tm": 21.515,
+"tf": 18.2,
+"tn": 14.59,
+"tc": 25.880000000000003,
+"tamin": 11.29,
+"peso": 2
+},
+{
+"src": "AEMET normales 1991-2020",
+"nombre": "GRAN CANARIA AEROPUERTO",
+"alt": 24,
+"vert": "S",
+"tm": 21.3,
+"tf": 18.2,
+"tn": 15.2,
+"tc": 24.9,
+"tamin": 12.5,
+"peso": 3
+},
+{
+"src": "AEMET medias 2009-2025 (−sesgo)",
+"nombre": "TEJEDA",
+"alt": 1060,
+"vert": "N",
+"tm": 18.509583333333335,
+"tf": 13.194999999999999,
+"tn": 9.645,
+"tc": 26.67,
+"tamin": 5.82,
+"peso": 2
+},
+{
+"src": "AEMET normales 1991-2020",
+"nombre": "LAS PALMAS DE G.C. (TAFIRA CMT)",
+"alt": 269,
+"vert": "N",
+"tm": 19.1,
+"tf": 16.1,
+"tn": 13.4,
+"tc": 22.5,
+"tamin": 10.7,
+"peso": 3
+},
+{
+"src": "AEMET medias 2009-2025 (−sesgo)",
+"nombre": "SAN BARTOLOME TIRAJANA, CUEVAS DEL PINAR",
+"alt": 1220,
+"vert": "S",
+"tm": 17.225208333333335,
+"tf": 11.594999999999999,
+"tn": 8.4325,
+"tc": 25.8825,
+"tamin": 4.495,
+"peso": 2
+},
+{
+"src": "AEMET medias 2009-2025 (−sesgo)",
+"nombre": "LA ALDEA DE SAN NICOLS, TASARTE",
+"alt": 318,
+"vert": "S",
+"tm": 21.526944444444446,
+"tf": 17.686666666666667,
+"tn": 13.486666666666666,
+"tc": 27.045,
+"tamin": 10.953333333333333,
+"peso": 2
+}
+],
+"estaciones_lluvia": [
+{
+"src": "AEMET medias 2009-2025",
+"nombre": "LAS PALMAS DE GRAN CANARIA, SAN CRISTOBAL",
+"alt": 55,
+"vert": "N",
+"p": 96.76
+},
+{
+"src": "AEMET medias 2009-2025",
+"nombre": "MASPALOMAS, C. INSULAR TURISMO",
+"alt": 45,
+"vert": "S",
+"p": 68.88181818181818
+},
+{
+"src": "AEMET medias 2009-2025",
+"nombre": "ARUCAS",
+"alt": 86,
+"vert": "N",
+"p": 153.1
+},
+{
+"src": "AEMET medias 2009-2025",
+"nombre": "LAS PALMAS DE GRAN CANARIA, TAFIRA",
+"alt": 269,
+"vert": "N",
+"p": 232.70909090909092
+},
+{
+"src": "AEMET medias 2009-2025",
+"nombre": "LA ALDEA DE SAN NICOLS",
+"alt": 13,
+"vert": "N",
+"p": 107.4
+},
+{
+"src": "AEMET medias 2009-2025",
+"nombre": "TELDE, CENTRO FORESTAL DORAMAS",
+"alt": 344,
+"vert": "S",
+"p": 237.34285714285716
+},
+{
+"src": "AEMET medias 2009-2025",
+"nombre": "MOGN, PUERTO RICO",
+"alt": 10,
+"vert": "S",
+"p": 36.425
+},
+{
+"src": "AEMET medias 2009-2025",
+"nombre": "VALLESECO",
+"alt": 900,
+"vert": "N",
+"p": 622.5090909090909
+},
+{
+"src": "AEMET medias 2009-2025",
+"nombre": "AGAETE - SUERTE ALTA",
+"alt": 352,
+"vert": "N",
+"p": 241.32857142857142
+},
+{
+"src": "AEMET medias 2009-2025",
+"nombre": "TEROR",
+"alt": 683,
+"vert": "N",
+"p": 577.790909090909
+},
+{
+"src": "AEMET medias 2009-2025",
+"nombre": "SAN BARTOLOME TIRAJANA, LOMO PEDRO ALFONSO",
+"alt": 806,
+"vert": "S",
+"p": 164.07692307692307
+},
+{
+"src": "AEMET medias 2009-2025",
+"nombre": "AGIMES",
+"alt": 306,
+"vert": "S",
+"p": 179.82222222222222
+},
+{
+"src": "AEMET medias 2009-2025",
+"nombre": "VEGA DE SAN MATEO",
+"alt": 1702,
+"vert": "N",
+"p": 448.8
+},
+{
+"src": "AEMET medias 2009-2025",
+"nombre": "AGAETE",
+"alt": 5,
+"vert": "N",
+"p": 109.79230769230769
+},
+{
+"src": "AEMET medias 2009-2025",
+"nombre": "MOGN, PUERTO",
+"alt": 10,
+"vert": "S",
+"p": 45.86
+},
+{
+"src": "AEMET medias 2009-2025",
+"nombre": "SAN BARTOLOME TIRAJANA, LAS TIRAJANAS",
+"alt": 960,
+"vert": "S",
+"p": 288.65714285714284
+},
+{
+"src": "AEMET medias 2009-2025",
+"nombre": "TELDE, MELENARA",
+"alt": 9,
+"vert": "S",
+"p": 106.2909090909091
+},
+{
+"src": "AEMET medias 2009-2025",
+"nombre": "SAN BARTOLOME TIRAJANA, EL MATORRAL",
+"alt": 41,
+"vert": "S",
+"p": 95.57
+},
+{
+"src": "AEMET medias 2009-2025",
+"nombre": "LAS PALMAS DE GRAN CANARIA, PL. DE LA FERIA",
+"alt": 15,
+"vert": "N",
+"p": 152.12
+},
+{
+"src": "AEMET normales 1991-2020",
+"nombre": "GRAN CANARIA AEROPUERTO",
+"alt": 24,
+"vert": "S",
+"p": 134.6
+},
+{
+"src": "AEMET medias 2009-2025",
+"nombre": "MASPALOMAS",
+"alt": 6,
+"vert": "S",
+"p": 51.1
+},
+{
+"src": "AEMET normales 1991-2020",
+"nombre": "LAS PALMAS DE G.C. (TAFIRA CMT)",
+"alt": 269,
+"vert": "N",
+"p": 234.1
+},
+{
+"src": "AEMET medias 2009-2025",
+"nombre": "SAN BARTOLOME TIRAJANA, CUEVAS DEL PINAR",
+"alt": 1220,
+"vert": "S",
+"p": 242.1125
+},
+{
+"src": "AEMET medias 2009-2025",
+"nombre": "LA ALDEA DE SAN NICOLS, TASARTE",
+"alt": 318,
+"vert": "S",
+"p": 121.96666666666667
+}
+],
+"estaciones_usadas": [
+"C659H LAS PALMAS DE GRAN CANARIA, SAN CRISTOBAL (55 m): medias 0 años T, 5 años P",
+"C639M MASPALOMAS, C. INSULAR TURISMO (45 m): medias 11 años T, 11 años P",
+"C612F TEJEDA, CRUZ DE TEJEDA (1514 m): normales 1991-2020",
+"C669B ARUCAS (86 m): medias 12 años T, 13 años P",
+"C658X LAS PALMAS DE GRAN CANARIA, TAFIRA (269 m): medias 12 años T, 11 años P",
+"C619Y LA ALDEA DE SAN NICOLS (13 m): medias 9 años T, 7 años P",
+"C648N TELDE, CENTRO FORESTAL DORAMAS (344 m): medias 9 años T, 7 años P",
+"C629Q MOGN, PUERTO RICO (10 m): medias 12 años T, 12 años P",
+"C665T VALLESECO (900 m): medias 12 años T, 11 años P",
+"C668V AGAETE - SUERTE ALTA (352 m): medias 7 años T, 7 años P",
+"C656V TEROR (683 m): medias 12 años T, 11 años P",
+"C625O SAN BARTOLOME TIRAJANA, LOMO PEDRO ALFONSO (806 m): medias 13 años T, 13 años P",
+"C648C AGIMES (306 m): medias 10 años T, 9 años P",
+"C611E VEGA DE SAN MATEO (1702 m): medias 6 años T, 6 años P",
+"C619X AGAETE (5 m): medias 11 años T, 13 años P",
+"C629X MOGN, PUERTO (10 m): medias 7 años T, 5 años P",
+"C635B SAN BARTOLOME TIRAJANA, LAS TIRAJANAS (960 m): medias 14 años T, 14 años P",
+"C649R TELDE, MELENARA (9 m): medias 10 años T, 11 años P",
+"C639U SAN BARTOLOME TIRAJANA, EL MATORRAL (41 m): medias 10 años T, 10 años P",
+"C659M LAS PALMAS DE GRAN CANARIA, PL. DE LA FERIA (15 m): medias 0 años T, 5 años P",
+"C649I GRAN CANARIA AEROPUERTO (24 m): normales 1991-2020",
+"C614H TEJEDA (1060 m): medias 4 años T, 0 años P",
+"C689E MASPALOMAS (6 m): medias 0 años T, 7 años P",
+"C658L LAS PALMAS DE G.C. (TAFIRA CMT) (269 m): normales 1991-2020",
+"C623I SAN BARTOLOME TIRAJANA, CUEVAS DEL PINAR (1220 m): medias 8 años T, 8 años P",
+"C628B LA ALDEA DE SAN NICOLS, TASARTE (318 m): medias 12 años T, 12 años P"
+],
+"notas": [],
+"fuentes": [
+"AEMET OpenData, valores climatológicos normales 1991-2020 y series mensuales 2009-2025 (26 estaciones de Gran Canaria)"
+],
+"nota": "Temperaturas por regresión sobre la cota con las estaciones de cada vertiente (barlovento N, sotavento S); lluvia por mediana de los pluviómetros de cada franja. "
+}

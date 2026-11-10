@@ -1,0 +1,10 @@
+pieza,prueba,resultado,estado
+catálogo,calibración con el campo REGADIO del Mapa de Cultivos oficial,68/68,CUMPLE
+rejilla,132 escenarios resueltos por HiGHS (status 0),132/132,CUMPLE
+territorio,parcelas rasterizadas sobre el DEM,18545,CUMPLE
+clima,estaciones de temperatura y pluviómetros usados,2 / 1,REVISAR
+visor,conexiones externas al cargar,0,CUMPLE
+visor,errores de consola (escritorio y móvil),0,CUMPLE
+visor,scroll horizontal a 390 px,no,CUMPLE
+C1,tierra liberada recalculada en el navegador frente a la tabla,"56,1 ha vs 56,1 ha · CUMPLE",CUMPLE
+C4,coberturas recalculadas en el navegador frente a la rejilla,"diferencia máxima 0,011 pp · CUMPLE",CUMPLE
