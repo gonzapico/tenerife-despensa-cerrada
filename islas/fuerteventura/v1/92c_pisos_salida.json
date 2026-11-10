@@ -1,0 +1,316 @@
+{
+"clima": [
+{
+"piso": "P1-N",
+"nombre": "Costa",
+"cota": "0-150",
+"z_ref": 75,
+"tm_anual": 20.9,
+"tm_mes_frio": 17.3,
+"tn_mes_frio": 14.0,
+"t_abs_min_est": 10.1,
+"tm_mes_calido": 24.9,
+"lluvia_mm": 72,
+"horas_frio": 0,
+"n_pluviometros": 0
+},
+{
+"piso": "P2-N",
+"nombre": "Medianías bajas",
+"cota": "150-300",
+"z_ref": 225,
+"tm_anual": 19.6,
+"tm_mes_frio": 16.2,
+"tn_mes_frio": 12.4,
+"t_abs_min_est": 8.8,
+"tm_mes_calido": 23.9,
+"lluvia_mm": 82,
+"horas_frio": 4,
+"n_pluviometros": 0
+},
+{
+"piso": "P3-N",
+"nombre": "Medianías altas",
+"cota": "300-500",
+"z_ref": 400,
+"tm_anual": 18.1,
+"tm_mes_frio": 14.9,
+"tn_mes_frio": 10.6,
+"t_abs_min_est": 7.3,
+"tm_mes_calido": 22.7,
+"lluvia_mm": 95,
+"horas_frio": 9,
+"n_pluviometros": 0
+},
+{
+"piso": "P4-N",
+"nombre": "Cumbre",
+"cota": "500-807",
+"z_ref": 620,
+"tm_anual": 16.2,
+"tm_mes_frio": 13.3,
+"tn_mes_frio": 8.4,
+"t_abs_min_est": 5.3,
+"tm_mes_calido": 21.2,
+"lluvia_mm": 114,
+"horas_frio": 71,
+"n_pluviometros": 0
+},
+{
+"piso": "P1-S",
+"nombre": "Costa",
+"cota": "0-150",
+"z_ref": 75,
+"tm_anual": 20.9,
+"tm_mes_frio": 17.3,
+"tn_mes_frio": 14.0,
+"t_abs_min_est": 10.1,
+"tm_mes_calido": 24.9,
+"lluvia_mm": 61,
+"horas_frio": 0,
+"n_pluviometros": 3
+},
+{
+"piso": "P2-S",
+"nombre": "Medianías bajas",
+"cota": "150-300",
+"z_ref": 225,
+"tm_anual": 19.6,
+"tm_mes_frio": 16.2,
+"tn_mes_frio": 12.4,
+"t_abs_min_est": 8.8,
+"tm_mes_calido": 23.9,
+"lluvia_mm": 82,
+"horas_frio": 4,
+"n_pluviometros": 2
+},
+{
+"piso": "P3-S",
+"nombre": "Medianías altas",
+"cota": "300-500",
+"z_ref": 400,
+"tm_anual": 18.1,
+"tm_mes_frio": 14.9,
+"tn_mes_frio": 10.6,
+"t_abs_min_est": 7.3,
+"tm_mes_calido": 22.7,
+"lluvia_mm": 95,
+"horas_frio": 9,
+"n_pluviometros": 0
+},
+{
+"piso": "P4-S",
+"nombre": "Cumbre",
+"cota": "500-807",
+"z_ref": 620,
+"tm_anual": 16.2,
+"tm_mes_frio": 13.3,
+"tn_mes_frio": 8.4,
+"t_abs_min_est": 5.3,
+"tm_mes_calido": 21.2,
+"lluvia_mm": 114,
+"horas_frio": 71,
+"n_pluviometros": 0
+}
+],
+"ajuste_temperatura": {
+"N": {
+"tm": {
+"pendiente_por_100m": -0.86,
+"ordenada": 21.52,
+"n": 4
+},
+"tf": {
+"pendiente_por_100m": -0.72,
+"ordenada": 17.8,
+"n": 4
+},
+"tn": {
+"pendiente_por_100m": -1.02,
+"ordenada": 14.74,
+"n": 4
+},
+"tc": {
+"pendiente_por_100m": -0.69,
+"ordenada": 25.47,
+"n": 4
+},
+"tamin": {
+"pendiente_por_100m": -0.87,
+"ordenada": 10.72,
+"n": 4
+}
+},
+"S": {
+"tm": {
+"pendiente_por_100m": -0.86,
+"ordenada": 21.52,
+"n": 4
+},
+"tf": {
+"pendiente_por_100m": -0.72,
+"ordenada": 17.8,
+"n": 4
+},
+"tn": {
+"pendiente_por_100m": -1.02,
+"ordenada": 14.74,
+"n": 4
+},
+"tc": {
+"pendiente_por_100m": -0.69,
+"ordenada": 25.47,
+"n": 4
+},
+"tamin": {
+"pendiente_por_100m": -0.87,
+"ordenada": 10.72,
+"n": 4
+}
+}
+},
+"sesgo_2009_2025_vs_normales": 0.38,
+"lluvia_por_piso": {
+"P1-N": {
+"n": 0,
+"mediana": 72,
+"metodo": "regresión log-lluvia/cota (isla)"
+},
+"P2-N": {
+"n": 0,
+"mediana": 82,
+"metodo": "regresión log-lluvia/cota (isla)"
+},
+"P3-N": {
+"n": 0,
+"mediana": 95,
+"metodo": "regresión log-lluvia/cota (isla)"
+},
+"P4-N": {
+"n": 0,
+"mediana": 114,
+"metodo": "regresión log-lluvia/cota (isla)"
+},
+"P1-S": {
+"n": 3,
+"mediana": 61,
+"metodo": "mediana de pluviómetros"
+},
+"P2-S": {
+"n": 2,
+"mediana": 82,
+"metodo": "regresión log-lluvia/cota (vertiente)"
+},
+"P3-S": {
+"n": 0,
+"mediana": 95,
+"metodo": "regresión log-lluvia/cota (vertiente)"
+},
+"P4-S": {
+"n": 0,
+"mediana": 114,
+"metodo": "regresión log-lluvia/cota (vertiente)"
+}
+},
+"estaciones_temperatura": [
+{
+"src": "AEMET medias 2009-2025 (−sesgo)",
+"nombre": "LA OLIVA",
+"alt": 217,
+"vert": "S",
+"tm": 19.490000000000002,
+"tf": 16.21,
+"tn": 12.69,
+"tc": 23.52,
+"tamin": 8.579999999999998,
+"peso": 2
+},
+{
+"src": "AEMET normales 1991-2020",
+"nombre": "FUERTEVENTURA AEROPUERTO",
+"alt": 25,
+"vert": "S",
+"tm": 21.3,
+"tf": 17.8,
+"tn": 14.9,
+"tc": 24.9,
+"tamin": 11.3,
+"peso": 3
+},
+{
+"src": "AEMET medias 2009-2025 (−sesgo)",
+"nombre": "TUINEJE,PUERTO GRAN TARAJAL",
+"alt": 1,
+"vert": "S",
+"tm": 21.555119047619048,
+"tf": 17.541428571428572,
+"tn": 14.141428571428571,
+"tc": 26.062857142857144,
+"tamin": 9.67,
+"peso": 2
+},
+{
+"src": "AEMET medias 2009-2025 (−sesgo)",
+"nombre": "ANTIGUA",
+"alt": 252,
+"vert": "S",
+"tm": 19.52357142857143,
+"tf": 15.96285714285714,
+"tn": 11.948571428571428,
+"tc": 24.162857142857145,
+"tamin": 8.648571428571428,
+"peso": 2
+}
+],
+"estaciones_lluvia": [
+{
+"src": "AEMET medias 2009-2025",
+"nombre": "LA OLIVA",
+"alt": 217,
+"vert": "S",
+"p": 92.36
+},
+{
+"src": "AEMET normales 1991-2020",
+"nombre": "FUERTEVENTURA AEROPUERTO",
+"alt": 25,
+"vert": "S",
+"p": 85.9
+},
+{
+"src": "AEMET medias 2009-2025",
+"nombre": "TUINEJE,PUERTO GRAN TARAJAL",
+"alt": 1,
+"vert": "S",
+"p": 61.483333333333334
+},
+{
+"src": "AEMET medias 2009-2025",
+"nombre": "PJARA",
+"alt": 15,
+"vert": "S",
+"p": 61.08
+},
+{
+"src": "AEMET medias 2009-2025",
+"nombre": "ANTIGUA",
+"alt": 252,
+"vert": "S",
+"p": 74.22857142857143
+}
+],
+"estaciones_usadas": [
+"C258K LA OLIVA (217 m): medias 10 años T, 10 años P",
+"C249I FUERTEVENTURA AEROPUERTO (25 m): normales 1991-2020",
+"C239N TUINEJE,PUERTO GRAN TARAJAL (1 m): medias 14 años T, 12 años P",
+"C229J PJARA (15 m): medias 0 años T, 5 años P",
+"C248E ANTIGUA (252 m): medias 7 años T, 7 años P"
+],
+"notas": [
+"vertiente N: menos de 3 estaciones de temperatura; regresión con todas las de la isla"
+],
+"fuentes": [
+"AEMET OpenData, valores climatológicos normales 1991-2020 y series mensuales 2009-2025 (5 estaciones de Fuerteventura)"
+],
+"nota": "Temperaturas por regresión sobre la cota con las estaciones de cada vertiente (barlovento N, sotavento S); lluvia por mediana de los pluviómetros de cada franja. vertiente N: menos de 3 estaciones de temperatura; regresión con todas las de la isla"
+}

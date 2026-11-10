@@ -66,6 +66,27 @@ for c,k in CULT.items():
         k['rend_tf']=round(r); k['f_tf']=round(r/k['rend'],3); k['fuente_rend']='ISTAC 2017-2023, '+('isla' if REND_FUENTE.get(tuple(MAPA_ISTAC.get(c,[])))=='isla' else 'media de Canarias [APROXIMADO]')
         if c=='Papa de secano': k['f_tf']=round(r/CULT['Papa']['rend'],3)   # el secano hereda la relación de la papa
     else: k['rend_tf']=None; k['f_tf']=F_DEF; k['fuente_rend']='FAOSTAT × 0,7 [APROXIMADO]'
+# ---------- v5 (multi-isla): viabilidad climática de cada cultivo del balance según el catálogo ECOCROP de la isla [DECISIÓN v5] ----------
+# Bs (secano) solo si el catálogo da VIABLE SECANO, o VIABLE CON RIEGO con déficit ≤150 mm respecto al óptimo (secano tradicional con lluvia algo escasa);
+# A y Br solo si es VIABLE SECANO o VIABLE CON RIEGO. Las excluidas quedan a 0 en el modelo. En Tenerife v4 no excluye ninguna (reproduce v4).
+CAT={c['n']:c for c in json.load(open(out(C,'95_catalogo_salida.json')))['cat']}
+CLIMA=json.load(open(out(C,'92c_pisos_salida.json')))['clima']
+MAPA_CAT={'Papa':'Papa','Papa de secano':'Papa','Papa (medianías, regadío)':'Papa','Boniato':'Boniato','Millo (grano, gofio)':'Millo (grano)','Millo (medianías, regadío)':'Millo (grano)','Judía seca':'Judía seca / habichuela','Ñame':'Ñame (Colocasia, local)','Tomate':'Tomate','Col':'Col / repollo','Cebolla':'Cebolla seca','Zanahoria':'Zanahoria y nabo','Calabaza y bubango':'Calabaza / bubango','Lechuga':'Lechuga y escarola','Plátano (consumo local)':'Plátano','Papaya':'Papaya','Mango':'Mango','Caña de azúcar (miel de caña)':'Caña de azúcar','Cacahuete':'Cacahuete','Trigo (gofio)':'Trigo','Cebada (gofio)':'Cebada','Centeno':'Centeno','Garbanzo':'Garbanzo','Lenteja':'Lenteja','Haba seca':'Haba seca','Arveja seca':'Arveja seca','Chocho':'Chocho / altramuz','Castaña':'Castaña','Almendra':'Almendra','Higo':'Higo','Olivo (aceite)':'Aceituna / olivo','Girasol (aceite)':'Girasol'}
+DEF_SECANO=150
+EXCLUIDOS={}
+for c,k in CULT.items():
+    e=CAT.get(MAPA_CAT.get(c,''))
+    if e is None: k['viab']='sin entrada en el catálogo (se admite)'; k['excluido']=False; continue
+    k['viab']=e['c']+(f" (déficit {e['r']} mm)" if e['c']=='VIABLE CON RIEGO' else '')
+    if k['bolsa']=='Bs': ok=(e['c']=='VIABLE SECANO') or (e['c']=='VIABLE CON RIEGO' and e['r']<=DEF_SECANO)
+    else: ok=e['c'] in ('VIABLE SECANO','VIABLE CON RIEGO')
+    k['excluido']=not ok
+    if not ok: EXCLUIDOS[c]=k['viab']
+if EXCLUIDOS: print('Cultivos excluidos del balance por el catálogo de la isla:',EXCLUIDOS)
+# forraje de secano: 3 t MS/ha con ≥500 mm en el piso más lluvioso; por debajo se reduce proporcionalmente a la lluvia (islas secas) [APROXIMADO] [DECISIÓN v5]
+_llmax=max([c['lluvia_mm'] for c in CLIMA if c['lluvia_mm'] is not None] or [500])
+for _n,_f in P['FORRAJE'].items():
+    if _f[0]=='Bs' and _llmax<500: _f[1]=round(_f[1]*_llmax/500,2); print('forraje secano',_n,'→',_f[1],'t MS/ha (lluvia máx.',_llmax,'mm)')
 def fesc(esc,c):   # factor de rendimiento por escenario y cultivo
     f=CULT[c]['f_tf']
     return {'insular':f,'espana':max(f,1.0),'autarquia':f}[esc]
@@ -158,6 +179,8 @@ def resolver(esc,frac,pm,gan):
             if t=='cultivo' and n==c: r[i]=1
         A_ub.append(r); b_ub.append(P['CUOTA']*(capA if CULT[c]['bolsa']=='A' else supB))
     bounds=[(0,None)]*nv
+    for i,(t,n,f,ab) in enumerate(var):
+        if t=='cultivo' and CULT[n].get('excluido'): bounds[i]=(0,0)   # no viable en la isla según el catálogo [DECISIÓN v5]
     if not gan:
         for i,(t,n,f,ab) in enumerate(var):
             if t!='cultivo': bounds[i]=(0,0)
@@ -200,4 +223,4 @@ print(k,'z',r['z'],r['cob'],'fyh',r['cob_fyh'],'base',r['cob_base'],'pesca',r['c
 for f in r['filas']: print('   ',f['tipo'],f['nombre'],f['valor'],f.get('bolsa',''),f.get('t',f.get('t_ms',f.get('leche_t'))))
 for kk in ['autarquia|0.0|1|0','autarquia|0.3|1|1','autarquia|1.0|1|1','insular|1.0|3|1','espana|1.0|3|1','insular|0.0|1|0']:
     print(kk, rej[kk]['z'], rej[kk]['cob'], 'fyh',rej[kk]['cob_fyh'])
-json.dump({'c1':c1,'param':P,'cult':CULT,'bases':bases,'rejilla':rej,'mantiene_ha':round(MANTIENE_HA,1),'rend_bases':{n:{'rend_fao':round(k['rend']),'rend_tf':round(k['rend_tf'])} for n,k in K.items()}},open(out(C,'97_balance_salida.json'),'w'),ensure_ascii=False)
+json.dump({'c1':c1,'param':P,'cult':CULT,'excluidos':EXCLUIDOS,'bases':bases,'rejilla':rej,'mantiene_ha':round(MANTIENE_HA,1),'rend_bases':{n:{'rend_fao':round(k['rend']),'rend_tf':round(k['rend_tf'])} for n,k in K.items()}},open(out(C,'97_balance_salida.json'),'w'),ensure_ascii=False)

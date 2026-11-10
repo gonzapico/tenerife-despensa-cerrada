@@ -91,7 +91,7 @@ def fit(pts,key):
 _hf=sorted([(c['tm_mes_frio'],c['horas_frio']) for c in D['clima']])
 def horas_frio(t): return float(np.interp(t,[a for a,_ in _hf],[b for _,b in _hf]))
 IZ={'tm':10.5,'tf':4.7,'tn':1.4,'tc':18.5,'tamin':-4.1,'alt':2369}   # Izaña, para la cumbre por encima de la inversión (solo islas que la superan)
-clima=[]; ajuste={}; lluvia_tab={}; notas=[]
+clima=[]; ajuste={}; lluvia_tab={}; notas=[]; lreg_regional=False
 for v in ['N','S']:
     pts=[p for p in T if p['vert']==v and p['alt']<=INV]
     if len(pts)<3: pts=[p for p in T if p['alt']<=INV]; notas.append(f'vertiente {v}: menos de 3 estaciones de temperatura; regresión con todas las de la isla')
@@ -102,15 +102,27 @@ for v in ['N','S']:
     pp=[p for p in Pp if p['vert']==v]; pall=Pp
     lx=np.array([p['alt'] for p in pall],float); ly=np.log(np.array([max(p['p'],20) for p in pall],float))
     lreg=np.polyfit(lx,ly,1) if len(pall)>=3 and np.ptp(lx)>150 else None
+    if lreg is None and pall:   # isla con 1-2 pluviómetros: pendiente regional de Canarias (todas las estaciones AEMET ≤1500 m) anclada en los pluviómetros de la isla [APROXIMADO]
+        rx=[];ry=[]
+        for k in set(norm)|set(mens):
+            vv=norm.get(k) or mens.get(k); _,a_,la_,lo_=meta(k,vv)
+            if a_ is None or a_>1500: continue
+            n_=de_normales(k,norm[k]) if k in norm else None; m_=de_mensuales(k,mens[k]) if k in mens else None
+            p_=(n_ or {}).get('p') if n_ and n_.get('p') is not None else (m_ or {}).get('p')
+            if p_ is not None: rx.append(float(a_)); ry.append(float(np.log(max(p_,20))))
+        if len(rx)>=10:
+            b=np.polyfit(np.array(rx),np.array(ry),1)[0]; a=float(np.mean(ly-b*lx)); lreg=np.array([b,a]); lreg_regional=True
+            if v=='N': notas.append(f'lluvia: solo {len(pall)} pluviómetro(s) en la isla; se aplica la pendiente regional de Canarias ({len(rx)} estaciones AEMET ≤1500 m, {100*b:+.2f} ln(mm)/100 m) anclada en los de la isla [APROXIMADO]')
     for i,(lo,hi,nombre,z) in enumerate(PISOS):
         def est(k):
             if z<=INV or C['max_alt']<=INV+200: return round(co[k][0]*z+co[k][1],1)
             y4=co[k][0]*INV+co[k][1]; return round(y4+(IZ[k]-y4)*(z-INV)/(IZ['alt']-INV),1)
         bp=[p['p'] for p in pp if band(p['alt'])==i]; src='mediana de pluviómetros'
-        if len(bp)<2:
-            bp2=[p['p'] for p in pall if band(p['alt'])==i]
-            if len(bp2)>=2: bp=bp2; src='mediana de pluviómetros (ambas vertientes)'
-            elif lreg is not None: bp=[float(np.exp(lreg[0]*z+lreg[1]))]; src='regresión log-lluvia/cota'
+        if len(bp)<3:   # franja con pocos pluviómetros: regresión del log de la lluvia sobre la cota, de la vertiente si tiene ≥4 puntos, si no de la isla
+            vx=np.array([p['alt'] for p in pp],float); vy=np.log(np.array([max(p['p'],20) for p in pp],float))
+            vreg=np.polyfit(vx,vy,1) if len(pp)>=4 and np.ptp(vx)>150 else lreg
+            if vreg is not None: bp=[float(np.exp(vreg[0]*z+vreg[1]))]; src='regresión log-lluvia/cota ('+('vertiente' if vreg is not lreg else ('regional anclada' if lreg_regional else 'isla'))+')'
+            elif pall: bp=[float(np.median([p['p'] for p in pall]))]; src='mediana de toda la isla'
         ll=int(round(float(np.median(bp)))) if bp else None
         lluvia_tab[f'P{i+1}-{v}']={'n':len([p for p in pp if band(p['alt'])==i]),'mediana':ll,'metodo':src}
         tf=est('tf')

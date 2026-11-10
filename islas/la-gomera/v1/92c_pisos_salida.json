@@ -1,0 +1,366 @@
+{
+"clima": [
+{
+"piso": "P1-N",
+"nombre": "Costa",
+"cota": "0-300",
+"z_ref": 150,
+"tm_anual": 18.9,
+"tm_mes_frio": 16.1,
+"tn_mes_frio": 13.1,
+"t_abs_min_est": 9.6,
+"tm_mes_calido": 21.6,
+"lluvia_mm": 172,
+"horas_frio": 4,
+"n_pluviometros": 1
+},
+{
+"piso": "P2-N",
+"nombre": "Medianías bajas",
+"cota": "300-600",
+"z_ref": 450,
+"tm_anual": 17.8,
+"tm_mes_frio": 14.6,
+"tn_mes_frio": 11.6,
+"t_abs_min_est": 8.4,
+"tm_mes_calido": 21.8,
+"lluvia_mm": 223,
+"horas_frio": 21,
+"n_pluviometros": 0
+},
+{
+"piso": "P3-N",
+"nombre": "Medianías altas",
+"cota": "600-1000",
+"z_ref": 800,
+"tm_anual": 16.6,
+"tm_mes_frio": 12.9,
+"tn_mes_frio": 9.8,
+"t_abs_min_est": 7.1,
+"tm_mes_calido": 22.0,
+"lluvia_mm": 304,
+"horas_frio": 87,
+"n_pluviometros": 2
+},
+{
+"piso": "P4-N",
+"nombre": "Cumbre",
+"cota": "1000-1487",
+"z_ref": 1200,
+"tm_anual": 15.1,
+"tm_mes_frio": 10.9,
+"tn_mes_frio": 7.8,
+"t_abs_min_est": 5.6,
+"tm_mes_calido": 22.2,
+"lluvia_mm": 432,
+"horas_frio": 394,
+"n_pluviometros": 0
+},
+{
+"piso": "P1-S",
+"nombre": "Costa",
+"cota": "0-300",
+"z_ref": 150,
+"tm_anual": 20.9,
+"tm_mes_frio": 18.0,
+"tn_mes_frio": 14.4,
+"t_abs_min_est": 12.1,
+"tm_mes_calido": 24.5,
+"lluvia_mm": 119,
+"horas_frio": 0,
+"n_pluviometros": 3
+},
+{
+"piso": "P2-S",
+"nombre": "Medianías bajas",
+"cota": "300-600",
+"z_ref": 450,
+"tm_anual": 19.1,
+"tm_mes_frio": 16.2,
+"tn_mes_frio": 11.4,
+"t_abs_min_est": 8.9,
+"tm_mes_calido": 22.3,
+"lluvia_mm": 178,
+"horas_frio": 4,
+"n_pluviometros": 0
+},
+{
+"piso": "P3-S",
+"nombre": "Medianías altas",
+"cota": "600-1000",
+"z_ref": 800,
+"tm_anual": 17.0,
+"tm_mes_frio": 14.1,
+"tn_mes_frio": 7.8,
+"t_abs_min_est": 5.2,
+"tm_mes_calido": 19.7,
+"lluvia_mm": 245,
+"horas_frio": 40,
+"n_pluviometros": 0
+},
+{
+"piso": "P4-S",
+"nombre": "Cumbre",
+"cota": "1000-1487",
+"z_ref": 1200,
+"tm_anual": 14.6,
+"tm_mes_frio": 11.7,
+"tn_mes_frio": 3.6,
+"t_abs_min_est": 1.0,
+"tm_mes_calido": 16.8,
+"lluvia_mm": 353,
+"horas_frio": 224,
+"n_pluviometros": 1
+}
+],
+"ajuste_temperatura": {
+"N": {
+"tm": {
+"pendiente_por_100m": -0.37,
+"ordenada": 19.5,
+"n": 3
+},
+"tf": {
+"pendiente_por_100m": -0.5,
+"ordenada": 16.88,
+"n": 3
+},
+"tn": {
+"pendiente_por_100m": -0.5,
+"ordenada": 13.83,
+"n": 3
+},
+"tc": {
+"pendiente_por_100m": 0.06,
+"ordenada": 21.49,
+"n": 3
+},
+"tamin": {
+"pendiente_por_100m": -0.38,
+"ordenada": 10.14,
+"n": 3
+}
+},
+"S": {
+"tm": {
+"pendiente_por_100m": -0.6,
+"ordenada": 21.8,
+"n": 3
+},
+"tf": {
+"pendiente_por_100m": -0.6,
+"ordenada": 18.87,
+"n": 3
+},
+"tn": {
+"pendiente_por_100m": -1.03,
+"ordenada": 15.99,
+"n": 3
+},
+"tc": {
+"pendiente_por_100m": -0.74,
+"ordenada": 25.62,
+"n": 3
+},
+"tamin": {
+"pendiente_por_100m": -1.06,
+"ordenada": 13.71,
+"n": 3
+}
+}
+},
+"sesgo_2009_2025_vs_normales": 0.38,
+"lluvia_por_piso": {
+"P1-N": {
+"n": 1,
+"mediana": 172,
+"metodo": "regresión log-lluvia/cota (isla)"
+},
+"P2-N": {
+"n": 0,
+"mediana": 223,
+"metodo": "regresión log-lluvia/cota (isla)"
+},
+"P3-N": {
+"n": 2,
+"mediana": 304,
+"metodo": "regresión log-lluvia/cota (isla)"
+},
+"P4-N": {
+"n": 0,
+"mediana": 432,
+"metodo": "regresión log-lluvia/cota (isla)"
+},
+"P1-S": {
+"n": 3,
+"mediana": 119,
+"metodo": "mediana de pluviómetros"
+},
+"P2-S": {
+"n": 0,
+"mediana": 178,
+"metodo": "regresión log-lluvia/cota (vertiente)"
+},
+"P3-S": {
+"n": 0,
+"mediana": 245,
+"metodo": "regresión log-lluvia/cota (vertiente)"
+},
+"P4-S": {
+"n": 1,
+"mediana": 353,
+"metodo": "regresión log-lluvia/cota (vertiente)"
+}
+},
+"estaciones_temperatura": [
+{
+"src": "AEMET medias 2009-2025 (−sesgo)",
+"nombre": "HERMIGUA",
+"alt": 252,
+"vert": "N",
+"tm": 18.736666666666668,
+"tf": 15.748571428571429,
+"tn": 12.655714285714284,
+"tc": 22.055714285714288,
+"tamin": 9.205714285714285,
+"peso": 2
+},
+{
+"src": "AEMET medias 2009-2025 (−sesgo)",
+"nombre": "VALLEHERMOSO, ALTO IGUALERO  ",
+"alt": 1474,
+"vert": "S",
+"tm": 13.62238095238095,
+"tf": 8.905714285714284,
+"tn": 5.7628571428571425,
+"tc": 22.32,
+"tamin": 1.9771428571428573,
+"peso": 2
+},
+{
+"src": "AEMET normales 1991-2020",
+"nombre": "LA GOMERA, AEROPUERTO",
+"alt": 219,
+"vert": "S",
+"tm": 20.4,
+"tf": 17.5,
+"tn": 14.4,
+"tc": 23.9,
+"tamin": 12.2,
+"peso": 3
+},
+{
+"src": "AEMET medias 2009-2025 (−sesgo)",
+"nombre": "ARURE",
+"alt": 916,
+"vert": "N",
+"tm": 16.680714285714288,
+"tf": 12.734285714285713,
+"tn": 9.534285714285714,
+"tc": 23.44857142857143,
+"tamin": 6.734285714285715,
+"peso": 2
+},
+{
+"src": "AEMET medias 2009-2025 (−sesgo)",
+"nombre": "VALLEHERMOSO, DAMA",
+"alt": 190,
+"vert": "S",
+"tm": 20.78964285714286,
+"tf": 17.82,
+"tn": 12.862857142857143,
+"tc": 24.42,
+"tamin": 10.284285714285714,
+"peso": 2
+},
+{
+"src": "AEMET medias 2009-2025 (−sesgo)",
+"nombre": "AGULO",
+"alt": 765,
+"vert": "N",
+"tm": 15.96090909090909,
+"tf": 12.483636363636363,
+"tn": 9.583636363636362,
+"tc": 20.083636363636366,
+"tamin": 7.147272727272727,
+"peso": 2
+},
+{
+"src": "AEMET medias 2009-2025 (−sesgo)",
+"nombre": "SAN SEBASTIN DE LA GOMERA",
+"alt": 15,
+"vert": "S",
+"tm": 21.691296296296297,
+"tf": 18.764444444444447,
+"tn": 15.997777777777776,
+"tc": 25.486666666666668,
+"tamin": 13.753333333333332,
+"peso": 2
+}
+],
+"estaciones_lluvia": [
+{
+"src": "AEMET medias 2009-2025",
+"nombre": "HERMIGUA",
+"alt": 252,
+"vert": "N",
+"p": 348.09999999999997
+},
+{
+"src": "AEMET medias 2009-2025",
+"nombre": "VALLEHERMOSO, ALTO IGUALERO  ",
+"alt": 1474,
+"vert": "S",
+"p": 448.3
+},
+{
+"src": "AEMET normales 1991-2020",
+"nombre": "LA GOMERA, AEROPUERTO",
+"alt": 219,
+"vert": "S",
+"p": 180.9
+},
+{
+"src": "AEMET medias 2009-2025",
+"nombre": "ARURE",
+"alt": 916,
+"vert": "N",
+"p": 347.3
+},
+{
+"src": "AEMET medias 2009-2025",
+"nombre": "VALLEHERMOSO, DAMA",
+"alt": 190,
+"vert": "S",
+"p": 118.88
+},
+{
+"src": "AEMET medias 2009-2025",
+"nombre": "AGULO",
+"alt": 765,
+"vert": "N",
+"p": 382.6272727272727
+},
+{
+"src": "AEMET medias 2009-2025",
+"nombre": "SAN SEBASTIN DE LA GOMERA",
+"alt": 15,
+"vert": "S",
+"p": 113.5
+}
+],
+"estaciones_usadas": [
+"C328W HERMIGUA (252 m): medias 14 años T, 8 años P",
+"C314Z VALLEHERMOSO, ALTO IGUALERO   (1474 m): medias 7 años T, 8 años P",
+"C329B LA GOMERA, AEROPUERTO (219 m): normales 1991-2020",
+"C316I ARURE (916 m): medias 7 años T, 6 años P",
+"C319W VALLEHERMOSO, DAMA (190 m): medias 14 años T, 15 años P",
+"C317B AGULO (765 m): medias 11 años T, 11 años P",
+"C329Z SAN SEBASTIN DE LA GOMERA (15 m): medias 9 años T, 10 años P"
+],
+"notas": [],
+"fuentes": [
+"AEMET OpenData, valores climatológicos normales 1991-2020 y series mensuales 2009-2025 (7 estaciones de La Gomera)"
+],
+"nota": "Temperaturas por regresión sobre la cota con las estaciones de cada vertiente (barlovento N, sotavento S); lluvia por mediana de los pluviómetros de cada franja. "
+}

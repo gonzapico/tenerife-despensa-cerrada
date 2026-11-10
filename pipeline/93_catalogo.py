@@ -74,7 +74,7 @@ TF_MAP={ # clase del Mapa de Cultivos -> productos del catálogo
 }
 import json as _j
 _MAPA=_j.load(open(out(C,'mapa_oficial_resumen.json'))); _R100=set(_MAPA['regado_100']); _PRESENTES=set(k for k,v in _MAPA['cultivo_ha'].items() if v>=0.5)  # clases regadas al 100 % según REGADIO del Mapa de Cultivos oficial [VERIFICADO]
-_SKIP={'Hortaliza Otras Mezclas','Huerto Familiar','Aloe','Ornamentales','Próteas','Strelitzias','Viveros','Aromáticas'}  # mezclas y no alimentarios: no se usan para calibrar
+_SKIP={'Hortaliza Otras Mezclas','Huerto Familiar','Aloe','Ornamentales','Próteas','Strelitzias','Viveros','Aromáticas','Papa','Frutos Rojos'}  # mezclas, no alimentarios y clases cuyo riego es opción de rendimiento y no fisiológica (la papa se cultiva también de secano en medianías; los frutos rojos van en invernadero): no se usan para calibrar [DECISIÓN v5]
 TF_IRRIGADO=set(x for k,v in TF_MAP.items() if k in _R100 and k not in _SKIP for x in v)
 TF_SET=set(x for k,v in TF_MAP.items() if k in _PRESENTES for x in v)
 CALIB_RIEGO={'Plátano','Plátano macho','Ñame (Colocasia, local)','Ñame (Colocasia, FAOSTAT)'}  # calibración: regados hoy en Tenerife; el plátano macho sigue al plátano

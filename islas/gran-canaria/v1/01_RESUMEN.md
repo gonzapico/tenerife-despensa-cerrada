@@ -1,0 +1,7 @@
+# 01 · Resumen ejecutivo · Gran Canaria, despensa cerrada v1 [BORRADOR]
+
+1. **Qué hay.** Un visor autocontenido con las siete escenas del de La Palma y su página de carga pendiente, montados con datos de Gran Canaria leídos de su fuente: 104.976 parcelas del Mapa de Cultivos 2024 sobre el relieve Copernicus, población, censo y rendimientos del ISTAC, estaciones de AEMET, primera venta de pesca 2021 y el plan hidrológico insular.
+2. **Qué se podría cultivar.** De 144 productos alimentarios, 59 se dan en secano y 82 con riego en alguno de los 10 pisos; calibración con el campo REGADIO oficial 102/102.
+3. **Qué libera el plátano.** 1.947 ha de platanera: la isla retendría 267 ha y quedarían libres 1.680 ha; agua liberada 16,8 hm³/año con la dotación C (10.000 m³/ha), el 24 % de la demanda agraria de la isla (71,10 hm³). Suelo abandonado: 17.577 ha.
+4. **Si alcanza.** No. Con insumos actuales, el 30 % del suelo abandonado recuperado y ganado, la isla cubre el 16 % de las necesidades de sus 870.608 residentes; en el mejor de los 132 escenarios, el 41 %. La Palma llegaba al 110 % y Tenerife al 22 %. [INFERENCIA]
+5. **Qué queda pendiente.** Los coeficientes de ganado, forraje y nutrición heredados de La Palma, la dotación medida del plátano en la isla, la revisión local de la nevera y la despensa, y las decisiones declaradas en `04_lectura_balance.md`. Desglosado en `99_CARGA_PENDIENTE.html`.

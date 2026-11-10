@@ -16,7 +16,10 @@ for esc,et in [('autarquia','Autarquía estricta'),('insular','Insular, insumos 
 tab="| Insumos | Ganado | Pesca | 0 % SANU | 30 % SANU | 100 % SANU |\n|---|---|---|---:|---:|---:|\n"+"\n".join("| "+" | ".join(r)+" |" for r in rows)
 filas="| Destino | Dónde | ha / cabezas | Producción | Factor |\n|---|---|---:|---:|---:|\n"+"\n".join(f"| {x['nombre']} | {({'A':'costa, regadío (ex platanera)','Bs':'medianías, secano','Br':'medianías, regadío'}).get(x.get('bolsa'),'establo y monte')} | {f(x['valor'])} | {f(x['t'])+' t' if x['tipo']=='cultivo' else (f(x['t_ms'])+' t MS' if x['tipo']=='forraje' else f(x['leche_t'])+' t leche · '+f(x['carne_t'])+' t carne')} | {x.get('f','')} |" for x in sorted(ref['filas'],key=lambda x:(x['tipo'],-x['valor'])))
 clima="| Piso | Cota | T media | T mes frío | Mín. abs. est. | Lluvia | Pluviómetros | H. frío |\n|---|---|---:|---:|---:|---:|---:|---:|\n"+"\n".join(f"| {c['piso']} · {c['nombre']} | {c['cota']} m | {f(c['tm_anual'],1)} °C | {f(c['tm_mes_frio'],1)} °C | {f(c['t_abs_min_est'],1)} °C | {c['lluvia_mm']} mm | {c['n_pluviometros']} ({PI['lluvia_por_piso'][c['piso']]['metodo']}) | {c['horas_frio']} |" for c in K['clima'])
-rend="| Cultivo del modelo | FAOSTAT España (kg/ha) | ISTAC (kg/ha) | Factor | Fuente |\n|---|---:|---:|---:|---|\n"+"\n".join(f"| {c} | {f(k['rend'])} | {f(k['rend_tf']) if k['rend_tf'] else '—'} | {k['f_tf']} | {k['fuente_rend']} |" for c,k in B['cult'].items())
+rend="| Cultivo del modelo | Bolsa | FAOSTAT España (kg/ha) | ISTAC (kg/ha) | Factor | Fuente | Viabilidad en la isla (catálogo) |\n|---|---|---:|---:|---:|---|---|\n"+"\n".join(f"| {c} | {k['bolsa']} | {f(k['rend'])} | {f(k['rend_tf']) if k['rend_tf'] else '—'} | {k['f_tf']} | {k['fuente_rend']} | {k.get('viab','')}{' · **excluido**' if k.get('excluido') else ''} |" for c,k in B['cult'].items())
+EXC=B.get('excluidos',{})
+exc_txt=("\nCultivos del modelo excluidos por el catálogo de la isla (no viables en secano con la lluvia de sus pisos, o no viables): "+"; ".join(f"{c} ({v})" for c,v in EXC.items())+". [DECISIÓN v5]\n") if EXC else "\nNingún cultivo del modelo queda excluido por el catálogo de la isla.\n"
+forr_sec=P['FORRAJE'].get('Pasto y tagasaste (secano)',[None,3.0])[1]
 sec=sum(1 for c in K['cat'] if c['a'] and c['c']=='VIABLE SECANO'); rie=sum(1 for c in K['cat'] if c['a'] and c['c']=='VIABLE CON RIEGO')
 agua_lineas=f"{f(P['AGUA']/1e6,1)} hm³/año con la dotación {c1['metodo_defecto']} ({f({'A':c1['dot_A'],'C':c1['dot_C'],'D':c1['dot_D'],'B1':c1['dot_B'][0],'B2':c1['dot_B'][1]}[c1['metodo_defecto']])} m³/ha)" + (f", el {f(100*P['AGUA']/1e6/c1['demanda_agraria_hm3'])} % de la demanda agraria de la isla ({f(c1['demanda_agraria_hm3'],2)} hm³)" if c1['demanda_agraria_hm3'] else "")
 open(out(C,'04_lectura_balance.md'),'w',encoding='utf-8').write(f"""# 04 · Lectura del balance de suficiencia de {N} ({V}) [BORRADOR]
@@ -42,7 +45,7 @@ Corte: {hoy}. Pipeline multi-isla; método y coeficientes de nutrición y ganade
 ## Rendimientos agrícolas (ISTAC, mediana 2017-2023)
 
 {rend}
-
+{exc_txt}
 ## Cobertura mínima en los 132 escenarios
 
 {tab}
@@ -61,7 +64,8 @@ Agua usada: {f(ref['agua_usada']/1e6,1)} de {f(P['AGUA']/1e6,1)} hm³. Tierra: {
 2. Techo del monte para el caprino: 0,35 t MS por cabra sobre el máximo del censo ISTAC 2014-2025.
 3. Rendimientos: factor por cultivo ISTAC/FAOSTAT (isla, o media de Canarias si la isla no tiene superficie); España = máx(factor, 1); sin dato, 0,7.
 4. Dotación del plátano: {c1['metodo_defecto']} por defecto.
-5. Pisos climáticos: dos vertientes, regresión de temperatura, mediana de pluviómetros por franja.
+5. Pisos climáticos: dos vertientes, regresión de temperatura, mediana de pluviómetros por franja (regresión del logaritmo de la lluvia sobre la cota donde faltan pluviómetros; pendiente regional de Canarias si la isla tiene menos de 3).
+6. Viabilidad en el balance (v5): un cultivo de secano (Bs) solo entra si el catálogo lo da VIABLE SECANO o VIABLE CON RIEGO con déficit ≤150 mm; los de regadío (A, Br) si es VIABLE SECANO o VIABLE CON RIEGO. Forraje de secano: {forr_sec} t MS/ha (3 t/ha con ≥500 mm en el piso más lluvioso, proporcional por debajo).
 """)
 open(out(C,'91_fuentes_y_licencias.md'),'w',encoding='utf-8').write(f"""# 91 · Fuentes, licencias y etiquetas · {N} ({V}) [BORRADOR]
 

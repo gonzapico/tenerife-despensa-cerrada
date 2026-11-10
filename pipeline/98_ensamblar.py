@@ -31,6 +31,8 @@ R=[ # lógica
  ('[["A", "A · media del regadío"], ["B1", "B · 15 L/planta"], ["B2", "B · 20 L/planta"]]','[["A", "A · media del regadío"], ["B1", "B · 15 L/planta"], ["B2", "B · 20 L/planta"], ["C", "C · IPH Canarias"], ["D", "D · medido en la isla"]].filter(([k]) => ({A: D.c1.dot_A, D: D.c1.dot_D})[k] !== null && ({A: D.c1.dot_A, D: D.c1.dot_D})[k] !== undefined)'),
  ('sel: null, kg: 15, rend: 44, metodo: "A"',f'sel: null, kg: 15, rend: {REND}, metodo: "{MET}"'),
  ('if (S.kg === 15 && S.rend === 44 && S.metodo === "A")',f'if (S.kg === 15 && S.rend === {REND} && S.metodo === "{MET}")'),
+ ('const d = Math.abs(lib - B.c1_liberada_ha) / B.c1_liberada_ha;','const d = Math.abs(lib - B.c1_liberada_ha) / Math.max(B.c1_liberada_ha, 1);'),   # islas sin platanera exportadora: 0 ha liberadas, sin dividir por cero
+ ('const consumo_t = pob * S.kg / 1000, ret = consumo_t / S.rend, lib = B.platanera_ha - ret;','const consumo_t = pob * S.kg / 1000, ret = Math.min(consumo_t / S.rend, B.platanera_ha), lib = Math.max(B.platanera_ha - ret, 0);'),
  ('const dem = B.demanda_agraria_hm3, max = Math.max(dem, agua) * 1.05;','const dem = B.demanda_agraria_hm3 || 0, max = Math.max(dem, agua, 0.1) * 1.05;'),
  ('`Sin exportar, la platanera libera ${pct(agua / dem)} del agua agraria de la isla. Y hay ${fmt(B.sanu_ha)} ha de suelo agrícola abandonado, casi tres veces lo que libera el plátano: el suelo no es lo que falta.`',
   '(lib < 50 ? `La isla apenas tiene platanera (${fmt(B.platanera_ha)} ha): no hay tierra ni agua de exportación que liberar. El reparto de la escena 4 se hace con el suelo agrícola abandonado, ${fmt(B.sanu_ha)} ha.` : `Sin exportar, la platanera libera ${dem ? pct(agua / dem) + " del agua agraria de la isla" : fmt(agua, 1) + " hm³"}. Y hay ${fmt(B.sanu_ha)} ha de suelo agrícola abandonado, ${fmt(B.sanu_ha / lib, 1)} veces lo que libera el plátano: el suelo no es lo que falta; lo que falta es escala frente a ${fmt(B.poblacion)} residentes.`)'),
@@ -45,7 +47,7 @@ pisos_fuente=f"temperatura por regresión sobre la cota con {len(pis['estaciones
 lede3=(f'La isla apenas tiene platanera ({f(PLAT)} ha): no hay exportación que cerrar ni agua que liberar. Mueve los deslizadores para ver qué pasaría si la tuviera.' if poca else 'La isla solo necesitaría una parte de su platanera para su propio consumo. El resto, y su agua, quedaría libre.')
 T=[ # marcado
  ('<title>La Palma, despensa cerrada</title>',f'<title>{N}, despensa cerrada</title>'),
- ('<span class="tag">v6 · [BORRADOR]</span><span class="tag">datos a 2021-2026</span>',f'<span class="tag">{ver} · [BORRADOR]</span><span class="tag">datos a {anio}-2025</span>'),
+ ('<span class="tag">v6 · [BORRADOR]</span><span class="tag">datos a 2021-2026</span>',f'<span class="tag">{ver} · [BORRADOR]</span><span class="tag">datos a {anio if str(anio)=='2025' else f'{anio}-2025'}</span>'),
  ('<h1>La Palma, despensa cerrada</h1>',f'<h1>{N}, despensa cerrada</h1>'),
  ('qué habría en una nevera y una despensa solo con producto palmero.',f'qué habría en una nevera y una despensa solo con producto {G}. Y, con {f(c1["poblacion"])} residentes, si alcanzaría.'),
  ('<p>Relieve real de La Palma con las parcelas del Mapa de Cultivos.',f'<p>Relieve real de {N} con las parcelas del Mapa de Cultivos.'),

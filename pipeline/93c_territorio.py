@@ -59,7 +59,7 @@ PAL=['#eed64c','#e8a23a','#d6c35a','#b9d16a','#8ec16a','#5fa86d','#c8b04a','#a1a
 tot=g[g.futuro.notna()].groupby('futuro').ha.sum().sort_values(ascending=False)
 top=list(tot.index[:11]); COL_FUT={n:PAL[i] for i,n in enumerate(top)}
 g['futuro2']=g.futuro.where(g.futuro.isin(top),'Otros destinos'); COL_FUT['Otros destinos']='#d9c9a8'
-leyenda_futuro=[{'d':n,'c':COL_FUT[n],'ha':int(round(tot[n]))} for n in top]+([{'d':'Otros destinos','c':COL_FUT['Otros destinos'],'ha':int(round(tot[~tot.index.isin(top)].sum()))}] if (~tot.index.isin(top)).any() else [])
+leyenda_futuro=[{'d':n,'c':COL_FUT[n],'ha':int(round(tot[n]))} for n in top if tot[n]>=0.5]+([{'d':'Otros destinos','c':COL_FUT['Otros destinos'],'ha':int(round(tot[~tot.index.isin(top)].sum()))}] if (~tot.index.isin(top)).any() else [])
 mant=g[g.futuro.isna()&g.grupo.isin(['Viña','Frutales','Huerta','Otros','Ornamentales','Tomate'])].groupby('grupo').ha.sum()
 leyenda_mantiene=[{'d':k,'c':COL_HOY[k],'ha':int(round(mant[k]))} for k in ['Viña','Frutales','Huerta','Tomate','Otros','Ornamentales'] if k in mant]
 leyenda_hoy=[{'d':k,'c':COL_HOY[k]} for k in COL_HOY]

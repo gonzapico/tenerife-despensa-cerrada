@@ -10,4 +10,5 @@ __pycache__/
 site/
 _ref/
 islas/tenerife/
-islas/*/v*/93c_log.txt
+islas/*/v*/9*_log.txt
+pipeline/90_test_resultado.json

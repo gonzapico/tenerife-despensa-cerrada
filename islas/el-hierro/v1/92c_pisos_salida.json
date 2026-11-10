@@ -1,0 +1,263 @@
+{
+"clima": [
+{
+"piso": "P1-N",
+"nombre": "Costa",
+"cota": "0-300",
+"z_ref": 150,
+"tm_anual": 20.6,
+"tm_mes_frio": 17.0,
+"tn_mes_frio": 13.9,
+"t_abs_min_est": 11.0,
+"tm_mes_calido": 26.0,
+"lluvia_mm": 130,
+"horas_frio": 0,
+"n_pluviometros": 0
+},
+{
+"piso": "P2-N",
+"nombre": "Medianías bajas",
+"cota": "300-600",
+"z_ref": 450,
+"tm_anual": 18.7,
+"tm_mes_frio": 15.0,
+"tn_mes_frio": 12.0,
+"t_abs_min_est": 9.0,
+"tm_mes_calido": 24.1,
+"lluvia_mm": 201,
+"horas_frio": 9,
+"n_pluviometros": 0
+},
+{
+"piso": "P3-N",
+"nombre": "Medianías altas",
+"cota": "600-1000",
+"z_ref": 800,
+"tm_anual": 16.4,
+"tm_mes_frio": 12.8,
+"tn_mes_frio": 9.7,
+"t_abs_min_est": 6.7,
+"tm_mes_calido": 21.8,
+"lluvia_mm": 334,
+"horas_frio": 91,
+"n_pluviometros": 0
+},
+{
+"piso": "P4-N",
+"nombre": "Cumbre",
+"cota": "1000-1501",
+"z_ref": 1200,
+"tm_anual": 13.8,
+"tm_mes_frio": 10.2,
+"tn_mes_frio": 7.1,
+"t_abs_min_est": 4.1,
+"tm_mes_calido": 19.2,
+"lluvia_mm": 599,
+"horas_frio": 542,
+"n_pluviometros": 0
+},
+{
+"piso": "P1-S",
+"nombre": "Costa",
+"cota": "0-300",
+"z_ref": 150,
+"tm_anual": 20.6,
+"tm_mes_frio": 17.0,
+"tn_mes_frio": 13.9,
+"t_abs_min_est": 11.0,
+"tm_mes_calido": 26.0,
+"lluvia_mm": 130,
+"horas_frio": 0,
+"n_pluviometros": 0
+},
+{
+"piso": "P2-S",
+"nombre": "Medianías bajas",
+"cota": "300-600",
+"z_ref": 450,
+"tm_anual": 18.7,
+"tm_mes_frio": 15.0,
+"tn_mes_frio": 12.0,
+"t_abs_min_est": 9.0,
+"tm_mes_calido": 24.1,
+"lluvia_mm": 201,
+"horas_frio": 9,
+"n_pluviometros": 0
+},
+{
+"piso": "P3-S",
+"nombre": "Medianías altas",
+"cota": "600-1000",
+"z_ref": 800,
+"tm_anual": 16.4,
+"tm_mes_frio": 12.8,
+"tn_mes_frio": 9.7,
+"t_abs_min_est": 6.7,
+"tm_mes_calido": 21.8,
+"lluvia_mm": 334,
+"horas_frio": 91,
+"n_pluviometros": 1
+},
+{
+"piso": "P4-S",
+"nombre": "Cumbre",
+"cota": "1000-1501",
+"z_ref": 1200,
+"tm_anual": 13.8,
+"tm_mes_frio": 10.2,
+"tn_mes_frio": 7.1,
+"t_abs_min_est": 4.1,
+"tm_mes_calido": 19.2,
+"lluvia_mm": 599,
+"horas_frio": 542,
+"n_pluviometros": 0
+}
+],
+"ajuste_temperatura": {
+"N": {
+"tm": {
+"pendiente_por_100m": -0.65,
+"ordenada": 21.62,
+"n": 2
+},
+"tf": {
+"pendiente_por_100m": -0.65,
+"ordenada": 17.97,
+"n": 2
+},
+"tn": {
+"pendiente_por_100m": -0.65,
+"ordenada": 14.88,
+"n": 2
+},
+"tc": {
+"pendiente_por_100m": -0.65,
+"ordenada": 26.98,
+"n": 2
+},
+"tamin": {
+"pendiente_por_100m": -0.65,
+"ordenada": 11.95,
+"n": 2
+}
+},
+"S": {
+"tm": {
+"pendiente_por_100m": -0.65,
+"ordenada": 21.62,
+"n": 2
+},
+"tf": {
+"pendiente_por_100m": -0.65,
+"ordenada": 17.97,
+"n": 2
+},
+"tn": {
+"pendiente_por_100m": -0.65,
+"ordenada": 14.88,
+"n": 2
+},
+"tc": {
+"pendiente_por_100m": -0.65,
+"ordenada": 26.98,
+"n": 2
+},
+"tamin": {
+"pendiente_por_100m": -0.65,
+"ordenada": 11.95,
+"n": 2
+}
+}
+},
+"sesgo_2009_2025_vs_normales": 0.38,
+"lluvia_por_piso": {
+"P1-N": {
+"n": 0,
+"mediana": 130,
+"metodo": "regresión log-lluvia/cota (regional anclada)"
+},
+"P2-N": {
+"n": 0,
+"mediana": 201,
+"metodo": "regresión log-lluvia/cota (regional anclada)"
+},
+"P3-N": {
+"n": 0,
+"mediana": 334,
+"metodo": "regresión log-lluvia/cota (regional anclada)"
+},
+"P4-N": {
+"n": 0,
+"mediana": 599,
+"metodo": "regresión log-lluvia/cota (regional anclada)"
+},
+"P1-S": {
+"n": 0,
+"mediana": 130,
+"metodo": "regresión log-lluvia/cota (regional anclada)"
+},
+"P2-S": {
+"n": 0,
+"mediana": 201,
+"metodo": "regresión log-lluvia/cota (regional anclada)"
+},
+"P3-S": {
+"n": 1,
+"mediana": 334,
+"metodo": "regresión log-lluvia/cota (regional anclada)"
+},
+"P4-S": {
+"n": 0,
+"mediana": 599,
+"metodo": "regresión log-lluvia/cota (regional anclada)"
+}
+},
+"estaciones_temperatura": [
+{
+"src": "AEMET medias 2009-2025 (−sesgo)",
+"nombre": "FRONTERA, SABINOSA",
+"alt": 20,
+"vert": "S",
+"tm": 21.068333333333335,
+"tf": 18.32,
+"tn": 15.749999999999998,
+"tc": 24.17,
+"tamin": 13.5,
+"peso": 2
+},
+{
+"src": "AEMET medias 2009-2025 (−sesgo)",
+"nombre": "EL PINAR, DEPSITO",
+"alt": 948,
+"vert": "S",
+"tm": 15.877738095238096,
+"tf": 11.334285714285713,
+"tn": 7.72,
+"tc": 23.505714285714287,
+"tamin": 4.105714285714286,
+"peso": 2
+}
+],
+"estaciones_lluvia": [
+{
+"src": "AEMET medias 2009-2025",
+"nombre": "EL PINAR, DEPSITO",
+"alt": 948,
+"vert": "S",
+"p": 414.8666666666667
+}
+],
+"estaciones_usadas": [
+"C939T FRONTERA, SABINOSA (20 m): medias 10 años T, 0 años P",
+"C916Q EL PINAR, DEPSITO (948 m): medias 14 años T, 12 años P"
+],
+"notas": [
+"vertiente N: menos de 3 estaciones de temperatura; regresión con todas las de la isla",
+"lluvia: solo 1 pluviómetro(s) en la isla; se aplica la pendiente regional de Canarias (60 estaciones AEMET ≤1500 m, +0.15 ln(mm)/100 m) anclada en los de la isla [APROXIMADO]",
+"vertiente S: menos de 3 estaciones de temperatura; regresión con todas las de la isla"
+],
+"fuentes": [
+"AEMET OpenData, valores climatológicos normales 1991-2020 y series mensuales 2009-2025 (2 estaciones de El Hierro)"
+],
+"nota": "Temperaturas por regresión sobre la cota con las estaciones de cada vertiente (barlovento N, sotavento S); lluvia por mediana de los pluviómetros de cada franja. vertiente N: menos de 3 estaciones de temperatura; regresión con todas las de la isla lluvia: solo 1 pluviómetro(s) en la isla; se aplica la pendiente regional de Canarias (60 estaciones AEMET ≤1500 m, +0.15 ln(mm)/100 m) anclada en los de la isla [APROXIMADO] vertiente S: menos de 3 estaciones de temperatura; regresión con todas las de la isla"
+}
